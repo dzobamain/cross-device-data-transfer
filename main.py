@@ -1,10 +1,10 @@
-from file.to_zip import Compress_to_zip
+from file.zip import compress_to_zip, get_filename
 
 def main():
-    output_file = "'/Users/volodymyrdzoba/Downloads/New TXT File.txt'"
-    save_zip_to = "../send"
+    source_path = ""
+    SAVE_ZIP_TO = f"send/{get_filename(source_path)}.zip"
     
-    Compress_to_zip(output_file, save_zip_to)
+    compress_to_zip(source_path, SAVE_ZIP_TO)
 
 if __name__ == "__main__":
     main()
