@@ -1,3 +1,6 @@
 CDDT
 
+__pycache__/
+*.pyc
+
 .vscode
