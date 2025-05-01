@@ -52,15 +52,15 @@ def get_filename(SOURCE_PATH: str) -> str:
     base_name = os.path.basename(SOURCE_PATH)
     return base_name
 
-def read_file_as_2d_array(FILE_PATH: str) -> list:
+def read_file_as_array(FILE_PATH: str) -> list:
     if not os.path.exists(FILE_PATH):
         print(f"Error read_file_as_2d_array: {FILE_PATH} not found.")
-        return
+        return []
 
     with open(FILE_PATH, 'r', encoding='utf-8') as file:
         lines = file.readlines()
 
-    return [[line.strip()] for line in lines]
+    return [line.strip() for line in lines]
 
 def save_to_file(TEXT: str, FILE_PATH: str) -> None:
     if TEXT is None:
