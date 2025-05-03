@@ -1,2 +1,2 @@
 user_name
-user/not_foto.png
+user/not_foto.jpg

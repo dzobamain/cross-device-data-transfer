@@ -75,3 +75,11 @@ def save_to_file(TEXT: str, FILE_PATH: str) -> None:
             file.write(TEXT)
     except Exception as e:
         print(f"Error save_to_file: {e}")
+
+def remove_file(FILE_PATH: str) -> None:
+    try:
+        os.remove(FILE_PATH)
+    except FileNotFoundError:
+        print(f"Error remove_file: {FILE_PATH} not found.")
+    except Exception as e:
+        print(f"Error remove_file: {e}")
