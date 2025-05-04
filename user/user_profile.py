@@ -1,5 +1,6 @@
 import os
-from file.zip import read_file_as_array, save_to_file, copy_file, get_filename, remove_file
+
+from file.file_utils import read_file_as_array, save_to_file, remove_file, copy_file, get_filename
 
 USER_PROFILE = "user/user_profile.txt"
 USER_DIR = "user/"

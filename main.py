@@ -10,10 +10,9 @@ def main():
     '''
     from user.user_profile import new_user_foto, new_user_name
     
-    new_user_foto('/Users/volodymyrdzoba/Documents/PXL_20250306_145403971~6.jpg')
+    new_user_foto("")
     new_user_name("name")
     '''
-    
     '''
     from user.user_profile import get_user_profile
     print(get_user_profile())
