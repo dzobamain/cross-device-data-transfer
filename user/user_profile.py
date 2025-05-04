@@ -6,14 +6,14 @@ USER_PROFILE = "user/user_profile.txt"
 USER_DIR = "user/"
 
 def new_user_name(NEW_USER_NAME: str):
-    if NEW_USER_NAME == None or NEW_USER_NAME == read_file_as_array(USER_PROFILE)[0]:
+    if NEW_USER_NAME == None or NEW_USER_NAME == read_file_as_array(USER_PROFILE)[0] or len(NEW_USER_NAME) > 50:
         return
     
     user_profile = f"{NEW_USER_NAME}\n{read_file_as_array(USER_PROFILE)[1]}"
     save_to_file(user_profile, USER_PROFILE)
     
 def new_user_foto(NEW_USER_FOTO_PATH: str):
-    if NEW_USER_FOTO_PATH == None or NEW_USER_FOTO_PATH == read_file_as_array(USER_PROFILE)[1] or  not os.path.isfile(NEW_USER_FOTO_PATH):
+    if NEW_USER_FOTO_PATH == None or NEW_USER_FOTO_PATH == read_file_as_array(USER_PROFILE)[1] or  not os.path.isfile(NEW_USER_FOTO_PATH) or len(user_profile[1]) > 500:
         return
     
     alt_foto = read_file_as_array(USER_PROFILE)[1]
@@ -30,11 +30,11 @@ def get_user_profile() -> list:
 
     updated = False
 
-    if is_effectively_empty(user_profile[0]):
+    if is_effectively_empty(user_profile[0]) or len(user_profile[0]) > 50:
         user_profile[0] = by_default()[0]
         updated = True
 
-    if not os.path.isfile(user_profile[1]):
+    if not os.path.isfile(user_profile[1]) or len(user_profile[1]) > 500:
         user_profile[1] = by_default()[1]
         updated = True
 
