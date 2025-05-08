@@ -1,12 +1,12 @@
 #!/bin/bash
 
 OUT="cddt"
-
 SRC=$(find . -name "*.cpp")
 
-if g++ -std=c++17 $SRC -o $OUT; then
-    echo "Build complete. Executable is: $OUT"
+LIBZIP_PREFIX="/opt/homebrew/opt/libzip"
+
+if g++ -std=c++20 -Ifile -I$LIBZIP_PREFIX/include -L$LIBZIP_PREFIX/lib -lzip $SRC -o $OUT; then
+    echo "✅ Build complete. Executable is: $OUT"
 else
-    echo $SRC
-    echo "Build failed."
+    echo "❌ Build failed."
 fi
