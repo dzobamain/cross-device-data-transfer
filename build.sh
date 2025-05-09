@@ -3,9 +3,9 @@
 OUT="cddt"
 SRC=$(find . -name "*.cpp")
 
-LIBZIP_PREFIX="/opt/homebrew/opt/libzip"
+LIBZIP_PREFIX="/opt/homebrew/opt/libzip" # Only Homebrew MacOS!!!
 
-if g++ -std=c++20 -Ifile -I$LIBZIP_PREFIX/include -L$LIBZIP_PREFIX/lib -lzip $SRC -o $OUT; then
+if g++ -std=c++20 -I/opt/homebrew/include -L/opt/homebrew/lib -lzip $SRC -o $OUT; then
     echo "✅ Build complete. Executable is: $OUT"
 else
     echo "❌ Build failed."

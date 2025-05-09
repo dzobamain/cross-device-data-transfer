@@ -2,5 +2,6 @@ cddt
 
 __pycache__/
 *.pyc
+private_files/
 
 .vscode
