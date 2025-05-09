@@ -14,6 +14,7 @@ bool CompressToZip(const std::string& source_path, const std::string& zip_path)
 {
     if (IsZipFile(source_path)) 
     {
+        /* Does not overwrite an existing .zip archive. */
         zip_t* archive = CreateZipArchive(zip_path);
         if (!archive) return false;
 
@@ -29,9 +30,10 @@ bool CompressToZip(const std::string& source_path, const std::string& zip_path)
         return false;
     }
 
-    zip_t* archive = CreateZipArchive(zip_path + ".zip");
+    zip_t* archive = CreateZipArchive(zip_path + ".zip"); /* Creating a .zip archive with the file name for transfer. */
     if (!archive) return false;
 
+    /* Writing to archive. */
     bool success = false;
 
     if (std::filesystem::is_directory(source_path)) 

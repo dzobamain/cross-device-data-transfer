@@ -76,6 +76,7 @@ std::vector<std::string> ReadFileAsArray(const std::string& file_path)
         return lines;
     }
 
+    /* Splitting into an array by lines, preserving words separately. */
     std::string line;
     while (std::getline(file, line))
     {
