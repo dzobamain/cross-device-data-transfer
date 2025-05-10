@@ -10,9 +10,9 @@ int main()
     /*
     std::string source_path = "";
     std::string file = GetFileName(source_path);
-    std::string result = std::format("send/{}", file);
+    std::string save_to = std::format("send/{}", file);
 
-    CompressToZip(source_path, result);
+    CompressToZip(source_path, save_to);
     */
 
     return -1;

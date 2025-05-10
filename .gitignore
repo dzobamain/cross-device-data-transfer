@@ -3,5 +3,7 @@ cddt
 __pycache__/
 *.pyc
 private_files/
+description*.txt
+message*.txt
 
 .vscode
