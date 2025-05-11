@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <filesystem>
+#include <vector>
 
 #include "../file/file_utils.h"
 
@@ -9,6 +10,34 @@
 #else
     #define USER_DATA_FILE "user/user_data.txt"
 #endif
+
+void ResetToDefault(const bool reset_name = false, const bool reset_foto = false)
+{
+    if (!reset_name && !reset_foto) {
+        return;
+    }
+    
+    const std::string default_name = "user_name\n";
+    #ifdef _WIN32
+        const std::string default_foto = "user\\not_foto.jpg";
+    #else
+        const std::string default_foto = "user/not_foto.jpg";
+    #endif
+
+    if (reset_name && reset_foto) {
+        WriteToFile(USER_DATA_FILE, default_name + default_foto);
+        return;
+    } 
+
+    std::vector current_user_data = ReadFileAsArray(USER_DATA_FILE);
+
+    if (reset_name) {
+        WriteToFile(USER_DATA_FILE, default_name + "\n" + current_user_data[1] + "\n");
+    } 
+    else {
+        WriteToFile(USER_DATA_FILE, current_user_data[0] + "\n" + default_foto + "\n");
+    }
+}
 
 bool isValidUTF8(const std::string& str) 
 {

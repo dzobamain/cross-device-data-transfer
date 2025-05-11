@@ -16,8 +16,11 @@ int main()
     */
 
     /* Example of working with user data */
-
+    /*
     std::cout << IsUserFotoValid("not_foto.jpg");
+    */
+    /**/
+    ResetToDefault(true, true);
 
     return -1;
 }
