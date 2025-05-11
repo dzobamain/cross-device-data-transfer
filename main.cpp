@@ -1,8 +1,8 @@
 #include <iostream>
 #include <string>
-
 #include "file/file_utils.h"
 #include "file/zip.h"
+#include "user/user_data.h"
 
 int main() 
 {
@@ -14,6 +14,10 @@ int main()
 
     CompressToZip(source_path, save_to);
     */
+
+    /* Example of working with user data */
+
+    std::cout << IsUserFotoValid("not_foto.jpg");
 
     return -1;
 }
