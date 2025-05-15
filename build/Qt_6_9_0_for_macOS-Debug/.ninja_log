@@ -1,0 +1,19 @@
+# ninja log v6
+604	689	1747325247605461299	cross-device-data-transfer.app/Contents/MacOS/cross-device-data-transfer	373967d6a8d81cc8
+323	981	1747324137880951300	CMakeFiles/cross-device-data-transfer.dir/mainwindow.cpp.o	7804ce9d9263e158
+313	977	1747324936564171127	CMakeFiles/cross-device-data-transfer.dir/cross-device-data-transfer_autogen/mocs_compilation.cpp.o	d4980c905de9c943
+8	37	1747325247009756727	/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/cross-device-data-transfer_autogen/mocs_compilation.cpp	44c52431889f06a5
+8	37	1747325247009756727	cross-device-data-transfer_autogen/mocs_compilation.cpp	44c52431889f06a5
+37	604	1747325247038570081	CMakeFiles/cross-device-data-transfer.dir/main.cpp.o	718af0b3b35a9258
+313	1008	1747324936564444168	CMakeFiles/cross-device-data-transfer.dir/qtui/mainwindow/mainwindow.cpp.o	72b91a89ea99d40e
+8	37	1747325247009756727	/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/cross-device-data-transfer_autogen/timestamp	44c52431889f06a5
+8	37	1747325247009756727	cross-device-data-transfer_autogen/timestamp	44c52431889f06a5
+2	162	1747326589279881256	build.ninja	b32ba6f54f9e5299
+6	234	1747326589514354000	cross-device-data-transfer_autogen/timestamp	44c52431889f06a5
+6	234	1747326589514354000	cross-device-data-transfer_autogen/mocs_compilation.cpp	44c52431889f06a5
+6	234	1747326589514354000	/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/cross-device-data-transfer_autogen/timestamp	44c52431889f06a5
+6	234	1747326589514354000	/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/cross-device-data-transfer_autogen/mocs_compilation.cpp	44c52431889f06a5
+234	920	1747326589523252473	CMakeFiles/cross-device-data-transfer.dir/cross-device-data-transfer_autogen/mocs_compilation.cpp.o	d4980c905de9c943
+235	920	1747326589523399347	CMakeFiles/cross-device-data-transfer.dir/main.cpp.o	718af0b3b35a9258
+235	923	1747326589523492389	CMakeFiles/cross-device-data-transfer.dir/src/qtwindows/mainwindow.cpp.o	ca756140a82df3aa
+923	1051	1747326590211725008	cross-device-data-transfer.app/Contents/MacOS/cross-device-data-transfer	c352c5e3cc4389f6

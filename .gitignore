@@ -7,3 +7,4 @@ description*.txt
 message*.txt
 
 .vscode
+CMakeLists.txt.user

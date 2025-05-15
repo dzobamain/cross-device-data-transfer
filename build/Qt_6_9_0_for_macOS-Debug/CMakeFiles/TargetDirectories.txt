@@ -1,0 +1,9 @@
+/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/CMakeFiles/cross-device-data-transfer.dir
+/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/CMakeFiles/edit_cache.dir
+/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/CMakeFiles/rebuild_cache.dir
+/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/CMakeFiles/list_install_components.dir
+/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/CMakeFiles/install.dir
+/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/CMakeFiles/install/local.dir
+/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/CMakeFiles/install/strip.dir
+/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/CMakeFiles/cross-device-data-transfer_autogen_timestamp_deps.dir
+/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/CMakeFiles/cross-device-data-transfer_autogen.dir
