@@ -383,9 +383,21 @@
 	"HEADERS" : 
 	[
 		[
+			"/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/src/file/file_utils.h",
+			"MU",
+			"YEIABB4TVJ/moc_file_utils.cpp",
+			null
+		],
+		[
 			"/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/src/qtwindows/mainwindow.h",
 			"MU",
 			"A5NC2A74DX/moc_mainwindow.cpp",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/src/user/user_data.h",
+			"MU",
+			"WJXSIX3ZY6/moc_user_data.cpp",
 			null
 		]
 	],
@@ -449,12 +461,22 @@
 	"SOURCES" : 
 	[
 		[
-			"/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/main.cpp",
+			"/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/src/file/file_utils.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/src/main.cpp",
 			"MU",
 			null
 		],
 		[
 			"/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/src/qtwindows/mainwindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/src/user/user_data.cpp",
 			"MU",
 			null
 		]

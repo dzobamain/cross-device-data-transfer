@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-e7d7b766c473979a0712.json",
+					"jsonFile" : "directory-.-Debug-41f5076802201a0ef602.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "cross-device-data-transfer::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-cross-device-data-transfer-Debug-0de8dbedfeb84e88e09e.json",
+					"jsonFile" : "target-cross-device-data-transfer-Debug-b0d3af1b7bc9c4a58edc.json",
 					"name" : "cross-device-data-transfer",
 					"projectIndex" : 0
 				},

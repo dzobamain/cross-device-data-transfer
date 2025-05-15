@@ -1295,8 +1295,12 @@ cross-device-data-transfer_autogen/timestamp: \
 	/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake \
 	/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/CMakeFiles/3.30.5/CMakeSystem.cmake \
 	/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/cross-device-data-transfer_autogen/moc_predefs.h \
-	/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/main.cpp \
+	/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/src/file/file_utils.cpp \
+	/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/src/file/file_utils.h \
+	/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/src/main.cpp \
 	/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/src/qtwindows/mainwindow.cpp \
 	/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/src/qtwindows/mainwindow.h \
+	/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/src/user/user_data.cpp \
+	/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/src/user/user_data.h \
 	/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/src/qtwindows/mainwindow.ui \
 	/Applications/Qt/Tools/CMake/CMake.app/Contents/bin/cmake
