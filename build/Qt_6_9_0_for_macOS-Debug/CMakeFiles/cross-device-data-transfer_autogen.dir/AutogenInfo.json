@@ -383,9 +383,9 @@
 	"HEADERS" : 
 	[
 		[
-			"/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/src/file/file_utils.h",
+			"/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/src/file/fcrud.h",
 			"MU",
-			"YEIABB4TVJ/moc_file_utils.cpp",
+			"YEIABB4TVJ/moc_fcrud.cpp",
 			null
 		],
 		[
@@ -461,7 +461,7 @@
 	"SOURCES" : 
 	[
 		[
-			"/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/src/file/file_utils.cpp",
+			"/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/src/file/fcrud.cpp",
 			"MU",
 			null
 		],

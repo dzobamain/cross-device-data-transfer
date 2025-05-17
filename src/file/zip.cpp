@@ -1,9 +1,22 @@
+/**
+ * @file zip.cpp
+ * @brief Compresses files into a ZIP archive using libzip.
+ *
+ * This file provides functionality for compressing files into a ZIP archive
+ * using the libzip library. It is used to package files before sending them
+ * to the server, ensuring efficient and structured data transfer.
+ *
+ * Dependencies:
+ *  - libzip (https://libzip.org)
+*/
+
 #include <iostream>
 #include <string>
 #include <filesystem>
 #include <zip.h>
 
-#include "file_utils.h"
+#include "zip.h"
+#include "fcrud.h"
 
 bool IsZipFile(const std::string& file_path);
 zip_t* CreateZipArchive(const std::string& zip_path);

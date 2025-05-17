@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.16)
+cmake_minimum_required(VERSION 3.20)
 
 project(cross-device-data-transfer VERSION 0.1 LANGUAGES CXX)
 
@@ -21,10 +21,10 @@ set(PROJECT_SOURCES
         src/qtwindows/mainwindow.ui
 
         #Core
-        src/file/file_utils.cpp
-        src/file/file_utils.h
-        #src/file/zip.cpp
-        #src/file/zip.h
+        src/file/fcrud.cpp
+        src/file/fcrud.h
+        src/file/zip.cpp
+        src/file/zip.h
         src/user/user_data.cpp
         src/user/user_data.h
 )
@@ -53,6 +53,20 @@ else()
 endif()
 
 target_link_libraries(cross-device-data-transfer PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
+
+if(WIN32)
+    # path for Windows
+    target_include_directories(${PROJECT_NAME} PRIVATE "C:/path/to/libzip/include")
+    target_link_libraries(${PROJECT_NAME} PRIVATE "C:/path/to/libzip/lib/libzip.lib")
+elseif(APPLE)
+    # macOS, libzip via Homebrew
+    target_include_directories(${PROJECT_NAME} PRIVATE /opt/homebrew/include)
+    target_link_libraries(${PROJECT_NAME} PRIVATE /opt/homebrew/lib/libzip.dylib)
+elseif(UNIX)
+    # Linux
+    target_include_directories(${PROJECT_NAME} PRIVATE /usr/include)
+    target_link_libraries(${PROJECT_NAME} PRIVATE /usr/lib/libzip.so)
+endif()
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an

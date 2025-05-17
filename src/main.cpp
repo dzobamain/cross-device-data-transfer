@@ -1,3 +1,8 @@
+/*
+ * @file main.cpp
+ * @brief main file.
+*/
+
 #include "qtwindows/mainwindow.h"
 
 #include <QApplication>

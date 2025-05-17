@@ -1,9 +1,18 @@
+/**
+ * @file user_data.cpp
+ * @brief Handles user data operations.
+ *
+ * This file manages user-related data locally before it is sent to the server.
+ * It includes functions for reading, updating, and maintaining user information.
+ */
+
+
 #include <iostream>
 #include <string>
 #include <filesystem>
 #include <vector>
 
-#include "../file/file_utils.h"
+#include "../file/fcrud.h"
 
 #ifdef _WIN32
     #define USER_DATA_FILE "user\\user_data.txt"

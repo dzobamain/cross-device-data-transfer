@@ -1,3 +1,16 @@
+/**
+ * @file fcrud.cpp
+ * @brief Implements basic file CRUD operations.
+ *
+ * This file provides functionality for basic Create, Read, Update, and Delete (CRUD)
+ * operations on local files. It also includes helper utilities for interacting
+ * with the file system, such as checking for file existence or creating new files.
+ *
+ * Usage:
+ * Functions are designed to work with standard C-style file paths and textual content.
+ * Suitable for managing local plain text files within the application.
+*/
+
 #include <iostream>
 #include <cstdio>
 #include <cerrno>
@@ -5,7 +18,7 @@
 #include <filesystem>
 #include <fstream>
 
-#include "file_utils.h"
+#include "fcrud.h"
 
 bool MoveFile(const std::string& from_path, const std::string& to_path)
 {
