@@ -15,7 +15,7 @@
 #include <filesystem>
 #include <zip.h>
 
-#include "zip.h"
+#include "tozip.h"
 #include "fcrud.h"
 
 bool IsZipFile(const std::string& file_path);

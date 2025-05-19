@@ -23,8 +23,8 @@ set(PROJECT_SOURCES
         #Core
         src/file/fcrud.cpp
         src/file/fcrud.h
-        src/file/zip.cpp
-        src/file/zip.h
+        src/file/tozip.cpp
+        src/file/tozip.h
         src/user/user_data.cpp
         src/user/user_data.h
 )
@@ -54,19 +54,15 @@ endif()
 
 target_link_libraries(cross-device-data-transfer PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
 
-if(WIN32)
-    # path for Windows
-    target_include_directories(${PROJECT_NAME} PRIVATE "C:/path/to/libzip/include")
-    target_link_libraries(${PROJECT_NAME} PRIVATE "C:/path/to/libzip/lib/libzip.lib")
-elseif(APPLE)
-    # macOS, libzip via Homebrew
-    target_include_directories(${PROJECT_NAME} PRIVATE /opt/homebrew/include)
-    target_link_libraries(${PROJECT_NAME} PRIVATE /opt/homebrew/lib/libzip.dylib)
-elseif(UNIX)
-    # Linux
-    target_include_directories(${PROJECT_NAME} PRIVATE /usr/include)
-    target_link_libraries(${PROJECT_NAME} PRIVATE /usr/lib/libzip.so)
-endif()
+# To use `libzip`, you need to install `zlib`. Run the following:
+# macOS: `brew install zlib`
+# Ubuntu: `sudo apt install zlib1g-dev`
+# Windows: `vcpkg install zlib`
+#Without `zlib`, `libzip` will not function correctly! 🚀
+find_package(ZLIB REQUIRED)
+include_directories(${CMAKE_SOURCE_DIR}/libs/libzip)
+add_subdirectory(libs/libzip)
+target_link_libraries(${PROJECT_NAME} PRIVATE zip ZLIB::ZLIB)
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an
