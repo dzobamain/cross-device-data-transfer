@@ -18,17 +18,15 @@
 #include "tozip.h"
 #include "fcrud.h"
 
-bool IsZipFile(const std::string& file_path);
-zip_t* CreateZipArchive(const std::string& zip_path);
-bool AddFileToZip(zip_t* archive, const std::string& file_path, const std::string& relative_path);
-bool AddDirectoryToZip(zip_t* archive, const std::string& source_path);
-
 bool CompressToZip(const std::string& source_path, const std::string& zip_path) 
 {
     if (IsZipFile(source_path)) {
         /* Does not overwrite an existing .zip archive. */
         zip_t* archive = CreateZipArchive(zip_path);
-        if (!archive) return false;
+        if (!archive) {
+
+            return false;
+        }
 
         if (!AddFileToZip(archive, source_path, std::filesystem::path(source_path).filename().string())) {
             return false;

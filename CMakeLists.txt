@@ -60,8 +60,8 @@ target_link_libraries(cross-device-data-transfer PRIVATE Qt${QT_VERSION_MAJOR}::
 # Windows: `vcpkg install zlib`
 #Without `zlib`, `libzip` will not function correctly! 🚀
 find_package(ZLIB REQUIRED)
-include_directories(${CMAKE_SOURCE_DIR}/libs/libzip)
-add_subdirectory(libs/libzip)
+include_directories(${CMAKE_SOURCE_DIR}/lib/libzip)
+add_subdirectory(lib/libzip)
 target_link_libraries(${PROJECT_NAME} PRIVATE zip ZLIB::ZLIB)
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
