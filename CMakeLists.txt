@@ -15,7 +15,7 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 set(PROJECT_SOURCES
         src/main.cpp
 
-        #Windows
+        #QTWindows
         src/qtwindows/mainwindow.cpp
         src/qtwindows/mainwindow.h
         src/qtwindows/mainwindow.ui
@@ -53,12 +53,7 @@ else()
 endif()
 
 target_link_libraries(cross-device-data-transfer PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
-
-# To use `libzip`, you need to install `zlib`. Run the following:
-# macOS: `brew install zlib`
-# Ubuntu: `sudo apt install zlib1g-dev`
-# Windows: `vcpkg install zlib`
-#Without `zlib`, `libzip` will not function correctly! 🚀
+# libzip
 find_package(ZLIB REQUIRED)
 include_directories(${CMAKE_SOURCE_DIR}/lib/libzip)
 add_subdirectory(lib/libzip)
