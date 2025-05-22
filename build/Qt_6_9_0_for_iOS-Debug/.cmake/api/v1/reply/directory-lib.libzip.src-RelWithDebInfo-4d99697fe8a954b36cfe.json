@@ -1,0 +1,123 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"lib/libzip/src/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 7,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 7,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 7,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "bin",
+			"paths" : 
+			[
+				{
+					"from" : "lib/libzip/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/zipcmp.app",
+					"to" : "zipcmp.app/zipcmp"
+				}
+			],
+			"targetId" : "zipcmp::@fc8882a14b334891f414",
+			"targetIndex" : 29,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "zipcmp::@fc8882a14b334891f414",
+				"index" : 29
+			},
+			"destination" : "bin",
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "bin",
+			"paths" : 
+			[
+				{
+					"from" : "lib/libzip/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/zipmerge.app",
+					"to" : "zipmerge.app/zipmerge"
+				}
+			],
+			"targetId" : "zipmerge::@fc8882a14b334891f414",
+			"targetIndex" : 31,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "zipmerge::@fc8882a14b334891f414",
+				"index" : 31
+			},
+			"destination" : "bin",
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "bin",
+			"paths" : 
+			[
+				{
+					"from" : "lib/libzip/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/ziptool.app",
+					"to" : "ziptool.app/ziptool"
+				}
+			],
+			"targetId" : "ziptool::@fc8882a14b334891f414",
+			"targetIndex" : 33,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "ziptool::@fc8882a14b334891f414",
+				"index" : 33
+			},
+			"destination" : "bin",
+			"type" : "cxxModuleBmi"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "lib/libzip/src",
+		"source" : "lib/libzip/src"
+	}
+}

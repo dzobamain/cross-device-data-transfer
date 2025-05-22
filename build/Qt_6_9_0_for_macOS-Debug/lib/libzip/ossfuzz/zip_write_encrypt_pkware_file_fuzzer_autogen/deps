@@ -1,0 +1,5 @@
+zip_write_encrypt_pkware_file_fuzzer_autogen/timestamp: \
+	/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/ossfuzz/CMakeLists.txt \
+	/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/ossfuzz/fuzz_main.c \
+	/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/ossfuzz/zip_write_encrypt_pkware_file_fuzzer.c \
+	/Applications/Qt/Tools/CMake/CMake.app/Contents/bin/cmake

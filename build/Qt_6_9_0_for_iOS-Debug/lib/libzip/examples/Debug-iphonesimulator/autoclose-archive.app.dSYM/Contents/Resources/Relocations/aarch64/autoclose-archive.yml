@@ -1,0 +1,9 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/examples/Debug-iphonesimulator/autoclose-archive.app/autoclose-archive'
+relocations:
+  - { offset: 0x26, size: 0x8, addend: 0x0, symName: _callback, symObjAddr: 0x0, symBinAddr: 0x10000369C, symSize: 0x84 }
+  - { offset: 0x10A, size: 0x8, addend: 0x0, symName: _callback, symObjAddr: 0x0, symBinAddr: 0x10000369C, symSize: 0x84 }
+  - { offset: 0x178, size: 0x8, addend: 0x0, symName: _create_layered_autoclose, symObjAddr: 0x84, symBinAddr: 0x100003720, symSize: 0xB4 }
+  - { offset: 0x1D8, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x138, symBinAddr: 0x1000037D4, symSize: 0x4B8 }
+...

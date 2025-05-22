@@ -1,0 +1,68 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"lib/libzip/src/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "ZERO_CHECK::@9954c0ca6148a436b653"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "zip::@1dcd1b6f2a3a85803506"
+		}
+	],
+	"id" : "zipmerge_autogen::@fc8882a14b334891f414",
+	"isGeneratorProvided" : true,
+	"name" : "zipmerge_autogen",
+	"paths" : 
+	{
+		"build" : "lib/libzip/src",
+		"source" : "lib/libzip/src"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Qt_6_9_0_for_iOS-Debug/lib/libzip/src/CMakeFiles/zipmerge_autogen",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Qt_6_9_0_for_iOS-Debug/lib/libzip/src/CMakeFiles/zipmerge_autogen.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

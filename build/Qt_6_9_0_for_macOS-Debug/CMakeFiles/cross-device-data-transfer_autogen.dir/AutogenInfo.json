@@ -1,17 +1,17 @@
 {
-	"BUILD_DIR" : "/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/cross-device-data-transfer_autogen",
-	"CMAKE_BINARY_DIR" : "/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug",
-	"CMAKE_CURRENT_BINARY_DIR" : "/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug",
-	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer",
+	"BUILD_DIR" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/cross-device-data-transfer_autogen",
+	"CMAKE_BINARY_DIR" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer",
 	"CMAKE_EXECUTABLE" : "/Applications/Qt/Tools/CMake/CMake.app/Contents/bin/cmake",
 	"CMAKE_LIST_FILES" : 
 	[
-		"/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/CMakeLists.txt",
-		"/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/.qtc/package-manager/auto-setup.cmake",
-		"/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/CMakeFiles/3.30.5/CMakeSystem.cmake",
+		"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/CMakeLists.txt",
+		"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/.qtc/package-manager/auto-setup.cmake",
+		"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/CMakeFiles/3.30.5/CMakeSystem.cmake",
 		"/Applications/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake",
 		"/Applications/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Platform/Darwin-Initialize.cmake",
-		"/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake",
+		"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake",
 		"/Applications/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake",
 		"/Applications/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeGenericSystem.cmake",
 		"/Applications/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake",
@@ -373,37 +373,47 @@
 		"/Applications/Qt/6.9.0/macos/lib/cmake/Qt6Widgets/Qt6QMacStylePluginTargets-relwithdebinfo.cmake",
 		"/Applications/Qt/6.9.0/macos/lib/cmake/Qt6Widgets/Qt6QMacStylePluginAdditionalTargetInfo.cmake",
 		"/Applications/Qt/6.9.0/macos/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessAliasTargets.cmake",
+		"/Applications/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/FindZLIB.cmake",
+		"/Applications/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/SelectLibraryConfigurations.cmake",
+		"/Applications/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/FindPackageHandleStandardArgs.cmake",
+		"/Applications/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/FindPackageMessage.cmake",
 		"/Applications/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/GNUInstallDirs.cmake",
 		"/Applications/Qt/6.9.0/macos/lib/cmake/Qt6/macos/Info.plist.app.in"
 	],
-	"CMAKE_SOURCE_DIR" : "/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer",
+	"CMAKE_SOURCE_DIR" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer",
 	"CROSS_CONFIG" : false,
-	"DEP_FILE" : "/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/cross-device-data-transfer_autogen/deps",
+	"DEP_FILE" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/cross-device-data-transfer_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "cross-device-data-transfer_autogen/timestamp",
 	"HEADERS" : 
 	[
 		[
-			"/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/src/file/fcrud.h",
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/src/file/fcrud.h",
 			"MU",
 			"YEIABB4TVJ/moc_fcrud.cpp",
 			null
 		],
 		[
-			"/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/src/qtwindows/mainwindow.h",
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/src/file/tozip.h",
+			"MU",
+			"YEIABB4TVJ/moc_tozip.cpp",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/src/qtwindows/mainwindow.h",
 			"MU",
 			"A5NC2A74DX/moc_mainwindow.cpp",
 			null
 		],
 		[
-			"/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/src/user/user_data.h",
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/src/user/user_data.h",
 			"MU",
 			"WJXSIX3ZY6/moc_user_data.cpp",
 			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/cross-device-data-transfer_autogen/include",
-	"MOC_COMPILATION_FILE" : "/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/cross-device-data-transfer_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/cross-device-data-transfer_autogen/include",
+	"MOC_COMPILATION_FILE" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/cross-device-data-transfer_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_WIDGETS_LIB" ],
 	"MOC_DEPEND_FILTERS" : 
 	[
@@ -414,6 +424,9 @@
 	],
 	"MOC_INCLUDES" : 
 	[
+		"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip",
+		"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib",
+		"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/lib/libzip",
 		"/Applications/Qt/6.9.0/macos/lib/QtCore.framework/Headers",
 		"/Applications/Qt/6.9.0/macos/lib/QtCore.framework",
 		"/Applications/Qt/6.9.0/macos/mkspecs/macx-clang",
@@ -422,9 +435,9 @@
 		"/Applications/Qt/6.9.0/macos/lib/QtWidgets.framework",
 		"/Applications/Qt/6.9.0/macos/lib/QtGui.framework/Headers",
 		"/Applications/Qt/6.9.0/macos/lib/QtGui.framework",
+		"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include",
 		"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1",
 		"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include",
-		"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include",
 		"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"
 	],
 	"MOC_MACRO_NAMES" : 
@@ -447,36 +460,41 @@
 		"-c",
 		"/Applications/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/cross-device-data-transfer_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/cross-device-data-transfer_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 11,
-	"PARSE_CACHE_FILE" : "/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/CMakeFiles/cross-device-data-transfer_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/CMakeFiles/cross-device-data-transfer_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/Applications/Qt/6.9.0/macos/libexec/moc",
 	"QT_UIC_EXECUTABLE" : "/Applications/Qt/6.9.0/macos/libexec/uic",
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 9,
-	"SETTINGS_FILE" : "/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/CMakeFiles/cross-device-data-transfer_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/CMakeFiles/cross-device-data-transfer_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
 		[
-			"/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/src/file/fcrud.cpp",
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/src/file/fcrud.cpp",
 			"MU",
 			null
 		],
 		[
-			"/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/src/main.cpp",
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/src/file/tozip.cpp",
 			"MU",
 			null
 		],
 		[
-			"/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/src/qtwindows/mainwindow.cpp",
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/src/main.cpp",
 			"MU",
 			null
 		],
 		[
-			"/Users/volodymyrdzoba/it-hub/test/cross-device-data-transfer/src/user/user_data.cpp",
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/src/qtwindows/mainwindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/src/user/user_data.cpp",
 			"MU",
 			null
 		]

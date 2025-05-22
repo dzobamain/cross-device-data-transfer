@@ -1,0 +1,150 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"lib/libzip/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 370,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 478,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 491,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 492,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 495,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 499,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib/pkgconfig",
+			"paths" : 
+			[
+				"build/Qt_6_9_0_for_iOS-Debug/lib/libzip/libzip.pc"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/libzip/modules",
+			"paths" : 
+			[
+				"lib/libzip/cmake/FindNettle.cmake",
+				"lib/libzip/cmake/Findzstd.cmake",
+				"lib/libzip/cmake/FindMbedTLS.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "include",
+			"paths" : 
+			[
+				"build/Qt_6_9_0_for_iOS-Debug/lib/libzip/zipconf.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/libzip",
+			"paths" : 
+			[
+				"build/Qt_6_9_0_for_iOS-Debug/lib/libzip/libzip-config.cmake",
+				"build/Qt_6_9_0_for_iOS-Debug/lib/libzip/libzip-config-version.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/libzip",
+			"exportName" : "libzip-targets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "zip::@1dcd1b6f2a3a85803506",
+					"index" : 19
+				}
+			],
+			"paths" : 
+			[
+				"lib/libzip/CMakeFiles/Export/ab63c3a9eda5ec24a2943b813039874c/libzip-targets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/libzip",
+			"exportName" : "libzip-bin-targets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "zipcmp::@fc8882a14b334891f414",
+					"index" : 29
+				},
+				{
+					"id" : "zipmerge::@fc8882a14b334891f414",
+					"index" : 31
+				},
+				{
+					"id" : "ziptool::@fc8882a14b334891f414",
+					"index" : 33
+				}
+			],
+			"paths" : 
+			[
+				"lib/libzip/CMakeFiles/Export/ab63c3a9eda5ec24a2943b813039874c/libzip-bin-targets.cmake"
+			],
+			"type" : "export"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "lib/libzip",
+		"source" : "lib/libzip"
+	}
+}

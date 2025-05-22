@@ -1,0 +1,34 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"lib/libzip/examples/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "zip::@1dcd1b6f2a3a85803506"
+		}
+	],
+	"id" : "add-compressed-data_autogen_timestamp_deps::@4b3587d4194ab6644df4",
+	"isGeneratorProvided" : true,
+	"name" : "add-compressed-data_autogen_timestamp_deps",
+	"paths" : 
+	{
+		"build" : "lib/libzip/examples",
+		"source" : "lib/libzip/examples"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

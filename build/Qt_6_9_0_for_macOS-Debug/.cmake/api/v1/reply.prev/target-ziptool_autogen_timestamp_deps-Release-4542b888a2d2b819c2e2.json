@@ -1,0 +1,34 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"lib/libzip/src/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "zip::@1dcd1b6f2a3a85803506"
+		}
+	],
+	"id" : "ziptool_autogen_timestamp_deps::@fc8882a14b334891f414",
+	"isGeneratorProvided" : true,
+	"name" : "ziptool_autogen_timestamp_deps",
+	"paths" : 
+	{
+		"build" : "lib/libzip/src",
+		"source" : "lib/libzip/src"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

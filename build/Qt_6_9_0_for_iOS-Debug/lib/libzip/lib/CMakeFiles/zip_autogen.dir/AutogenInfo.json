@@ -1,0 +1,746 @@
+{
+	"BUILD_DIR" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/lib/zip_autogen",
+	"CMAKE_BINARY_DIR" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/lib",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib",
+	"CMAKE_EXECUTABLE" : "/Applications/Qt/Tools/CMake/CMake.app/Contents/bin/cmake",
+	"CMAKE_LIST_FILES" : 
+	[
+		"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/CMakeLists.txt",
+		"/Applications/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CheckFunctionExists.cmake"
+	],
+	"CMAKE_SOURCE_DIR" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer",
+	"CROSS_CONFIG" : false,
+	"DEP_FILE" : "",
+	"DEP_FILE_RULE_NAME" : "",
+	"HEADERS" : 
+	[
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_crypto_commoncrypto.h",
+			"MU",
+			"EWIEGA46WW/moc_zip_crypto_commoncrypto.cpp",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_source_file_stdio.h",
+			"MU",
+			"EWIEGA46WW/moc_zip_source_file_stdio.cpp",
+			null
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/lib/zip_autogen/include",
+	"INCLUDE_DIR_Debug" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/lib/zip_autogen/include_Debug",
+	"INCLUDE_DIR_MinSizeRel" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/lib/zip_autogen/include_MinSizeRel",
+	"INCLUDE_DIR_RelWithDebInfo" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/lib/zip_autogen/include_RelWithDebInfo",
+	"INCLUDE_DIR_Release" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/lib/zip_autogen/include_Release",
+	"MOC_COMPILATION_FILE" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/lib/zip_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : [],
+	"MOC_DEFINITIONS_Debug" : [ "zip_EXPORTS" ],
+	"MOC_DEFINITIONS_MinSizeRel" : [ "zip_EXPORTS" ],
+	"MOC_DEFINITIONS_RelWithDebInfo" : [ "zip_EXPORTS" ],
+	"MOC_DEFINITIONS_Release" : [ "zip_EXPORTS" ],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : [],
+	"MOC_INCLUDES_Debug" : 
+	[
+		"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip",
+		"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib",
+		"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip",
+		"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.2.sdk/usr/include",
+		"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.2.sdk/usr/include/c++/v1",
+		"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include",
+		"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"
+	],
+	"MOC_INCLUDES_MinSizeRel" : 
+	[
+		"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip",
+		"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib",
+		"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip",
+		"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.2.sdk/usr/include",
+		"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.2.sdk/usr/include/c++/v1",
+		"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include",
+		"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"
+	],
+	"MOC_INCLUDES_RelWithDebInfo" : 
+	[
+		"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip",
+		"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib",
+		"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip",
+		"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.2.sdk/usr/include",
+		"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.2.sdk/usr/include/c++/v1",
+		"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include",
+		"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"
+	],
+	"MOC_INCLUDES_Release" : 
+	[
+		"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip",
+		"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib",
+		"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip",
+		"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.2.sdk/usr/include",
+		"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.2.sdk/usr/include/c++/v1",
+		"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include",
+		"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"
+	],
+	"MOC_MACRO_NAMES" : 
+	[
+		"Q_OBJECT",
+		"Q_GADGET",
+		"Q_NAMESPACE",
+		"Q_NAMESPACE_EXPORT",
+		"Q_GADGET_EXPORT",
+		"Q_ENUM_NS"
+	],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+		"-std=gnu++17",
+		"-dM",
+		"-E",
+		"-c",
+		"/Applications/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/lib/zip_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE_Debug" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/lib/zip_autogen/moc_predefs_Debug.h",
+	"MOC_PREDEFS_FILE_MinSizeRel" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/lib/zip_autogen/moc_predefs_MinSizeRel.h",
+	"MOC_PREDEFS_FILE_RelWithDebInfo" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/lib/zip_autogen/moc_predefs_RelWithDebInfo.h",
+	"MOC_PREDEFS_FILE_Release" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/lib/zip_autogen/moc_predefs_Release.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : true,
+	"PARALLEL" : 11,
+	"PARSE_CACHE_FILE" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/lib/CMakeFiles/zip_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE_Debug" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/lib/CMakeFiles/zip_autogen.dir/ParseCache_Debug.txt",
+	"PARSE_CACHE_FILE_MinSizeRel" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/lib/CMakeFiles/zip_autogen.dir/ParseCache_MinSizeRel.txt",
+	"PARSE_CACHE_FILE_RelWithDebInfo" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/lib/CMakeFiles/zip_autogen.dir/ParseCache_RelWithDebInfo.txt",
+	"PARSE_CACHE_FILE_Release" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/lib/CMakeFiles/zip_autogen.dir/ParseCache_Release.txt",
+	"QT_MOC_EXECUTABLE" : "",
+	"QT_MOC_EXECUTABLE_Debug" : "/Applications/Qt/6.9.0/macos/libexec/moc",
+	"QT_MOC_EXECUTABLE_MinSizeRel" : "/Applications/Qt/6.9.0/macos/libexec/moc",
+	"QT_MOC_EXECUTABLE_RelWithDebInfo" : "/Applications/Qt/6.9.0/macos/libexec/moc",
+	"QT_MOC_EXECUTABLE_Release" : "/Applications/Qt/6.9.0/macos/libexec/moc",
+	"QT_UIC_EXECUTABLE" : "",
+	"QT_UIC_EXECUTABLE_Debug" : "/Applications/Qt/6.9.0/macos/libexec/uic",
+	"QT_UIC_EXECUTABLE_MinSizeRel" : "/Applications/Qt/6.9.0/macos/libexec/uic",
+	"QT_UIC_EXECUTABLE_RelWithDebInfo" : "/Applications/Qt/6.9.0/macos/libexec/uic",
+	"QT_UIC_EXECUTABLE_Release" : "/Applications/Qt/6.9.0/macos/libexec/uic",
+	"QT_VERSION_MAJOR" : 6,
+	"QT_VERSION_MINOR" : 9,
+	"SETTINGS_FILE" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/lib/CMakeFiles/zip_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE_Debug" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/lib/CMakeFiles/zip_autogen.dir/AutogenUsed_Debug.txt",
+	"SETTINGS_FILE_MinSizeRel" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/lib/CMakeFiles/zip_autogen.dir/AutogenUsed_MinSizeRel.txt",
+	"SETTINGS_FILE_RelWithDebInfo" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/lib/CMakeFiles/zip_autogen.dir/AutogenUsed_RelWithDebInfo.txt",
+	"SETTINGS_FILE_Release" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/lib/CMakeFiles/zip_autogen.dir/AutogenUsed_Release.txt",
+	"SOURCES" : 
+	[
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/lib/zip_err_str.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_add.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_add_dir.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_add_entry.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_algorithm_bzip2.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_algorithm_deflate.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_buffer.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_close.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_crypto_commoncrypto.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_delete.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_dir_add.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_dirent.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_discard.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_entry.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_error.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_error_clear.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_error_get.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_error_get_sys_type.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_error_strerror.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_error_to_str.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_extra_field.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_extra_field_api.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_fclose.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_fdopen.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_file_add.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_file_error_clear.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_file_error_get.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_file_get_comment.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_file_get_external_attributes.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_file_get_offset.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_file_rename.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_file_replace.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_file_set_comment.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_file_set_encryption.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_file_set_external_attributes.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_file_set_mtime.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_file_strerror.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_fopen.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_fopen_encrypted.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_fopen_index.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_fopen_index_encrypted.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_fread.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_fseek.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_ftell.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_get_archive_comment.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_get_archive_flag.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_get_encryption_implementation.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_get_file_comment.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_get_name.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_get_num_entries.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_get_num_files.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_hash.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_io_util.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_libzip_version.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_memdup.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_name_locate.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_new.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_open.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_pkware.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_progress.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_random_unix.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_realloc.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_rename.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_replace.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_set_archive_comment.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_set_archive_flag.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_set_default_password.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_set_file_comment.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_set_file_compression.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_set_name.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_source_accept_empty.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_source_begin_write.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_source_begin_write_cloning.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_source_buffer.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_source_call.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_source_close.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_source_commit_write.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_source_compress.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_source_crc.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_source_error.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_source_file_common.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_source_file_stdio.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_source_file_stdio_named.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_source_free.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_source_function.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_source_get_dostime.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_source_get_file_attributes.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_source_is_deleted.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_source_layered.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_source_open.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_source_pass_to_lower_layer.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_source_pkware_decode.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_source_pkware_encode.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_source_read.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_source_remove.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_source_rollback_write.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_source_seek.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_source_seek_write.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_source_stat.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_source_supports.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_source_tell.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_source_tell_write.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_source_window.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_source_winzip_aes_decode.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_source_winzip_aes_encode.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_source_write.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_source_zip.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_source_zip_new.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_stat.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_stat_index.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_stat_init.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_strerror.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_string.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_unchange.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_unchange_all.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_unchange_archive.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_unchange_data.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_utf-8.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib/zip_winzip_aes.c",
+			"MU",
+			null
+		]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
+	"USE_BETTER_GRAPH" : true,
+	"VERBOSITY" : 0
+}

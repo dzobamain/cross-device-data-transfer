@@ -1,0 +1,68 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"lib/libzip/examples/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "ZERO_CHECK::@9954c0ca6148a436b653"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "zip::@1dcd1b6f2a3a85803506"
+		}
+	],
+	"id" : "in-memory_autogen::@4b3587d4194ab6644df4",
+	"isGeneratorProvided" : true,
+	"name" : "in-memory_autogen",
+	"paths" : 
+	{
+		"build" : "lib/libzip/examples",
+		"source" : "lib/libzip/examples"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Qt_6_9_0_for_iOS-Debug/lib/libzip/examples/CMakeFiles/in-memory_autogen",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Qt_6_9_0_for_iOS-Debug/lib/libzip/examples/CMakeFiles/in-memory_autogen.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

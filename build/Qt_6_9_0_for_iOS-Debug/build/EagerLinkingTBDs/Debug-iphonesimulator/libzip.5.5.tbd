@@ -1,0 +1,167 @@
+{
+  "main_library": {
+    "compatibility_versions": [
+      {
+        "version": "6"
+      }
+    ],
+    "current_versions": [
+      {
+        "version": "6.5"
+      }
+    ],
+    "exported_symbols": [
+      {
+        "text": {
+          "global": [
+            "_zip_file_extra_field_set",
+            "_zip_add",
+            "_zip_close",
+            "_zip_file_replace",
+            "_zip_source_seek",
+            "_zip_error_init",
+            "_zip_source_stat",
+            "_zip_strerror",
+            "_zip_source_free",
+            "_zip_source_layered_create",
+            "_zip_register_cancel_callback_with_state",
+            "_zip_source_is_seekable",
+            "_zip_file_is_seekable",
+            "_zip_open",
+            "_zip_fopen",
+            "_zip_source_keep",
+            "_zip_compression_method_supported",
+            "_zip_get_file_comment",
+            "_zip_source_seek_compute_offset",
+            "_zip_set_file_comment",
+            "_zip_source_layered",
+            "_zip_error_code_system",
+            "_zip_stat_index",
+            "_zip_libzip_version",
+            "_zip_file_extra_field_delete",
+            "_zip_source_buffer",
+            "_zip_error_code_zip",
+            "_zip_error_fini",
+            "_zip_source_buffer_fragment_create",
+            "_zip_set_default_password",
+            "_zip_file_set_comment",
+            "_zip_source_write",
+            "_zip_fopen_index_encrypted",
+            "_zip_file_extra_field_get",
+            "_zip_file_rename",
+            "_zip_source_tell_write",
+            "_zip_source_zip_create",
+            "_zip_source_zip_file_create",
+            "_zip_error_get_sys_type",
+            "_zip_stat_init",
+            "_zip_source_tell",
+            "_zip_ftell",
+            "_zip_source_zip_file",
+            "_zip_rename",
+            "_zip_delete",
+            "_zip_error_set_from_source",
+            "_zip_dir_add",
+            "_zip_error_system_type",
+            "_zip_source_commit_write",
+            "_zip_file_set_encryption",
+            "_zip_file_extra_field_delete_by_id",
+            "_zip_fopen_encrypted",
+            "_zip_discard",
+            "_zip_unchange_all",
+            "_zip_source_window_create",
+            "_zip_error_set",
+            "_zip_get_num_entries",
+            "_zip_unchange_archive",
+            "_zip_source_filep_create",
+            "_zip_file_strerror",
+            "_zip_error_clear",
+            "_zip_file_get_comment",
+            "_zip_source_file",
+            "_zip_stat",
+            "_zip_open_from_source",
+            "_zip_register_progress_callback",
+            "_zip_file_set_external_attributes",
+            "_zip_source_seek_write",
+            "_zip_source_zip",
+            "_zip_source_get_file_attributes",
+            "_zip_source_read",
+            "_zip_fdopen",
+            "_zip_source_filep",
+            "_zip_source_pass_to_lower_layer",
+            "_zip_error_get",
+            "_zip_source_buffer_create",
+            "_zip_error_to_str",
+            "_zip_source_close",
+            "_zip_source_make_command_bitmap",
+            "_zip_encryption_method_supported",
+            "_zip_source_begin_write",
+            "_zip_get_archive_flag",
+            "_zip_get_num_files",
+            "_zip_fopen_index",
+            "_zip_file_extra_fields_count_by_id",
+            "_zip_source_rollback_write",
+            "_zip_add_dir",
+            "_zip_source_is_deleted",
+            "_zip_file_extra_field_get_by_id",
+            "_zip_set_file_compression",
+            "_zip_source_begin_write_cloning",
+            "_zip_file_extra_fields_count",
+            "_zip_source_file_create",
+            "_zip_error_to_data",
+            "_zip_file_attributes_init",
+            "_zip_set_archive_comment",
+            "_zip_set_archive_flag",
+            "_zip_file_add",
+            "_zip_get_error",
+            "_zip_unchange",
+            "_zip_file_get_error",
+            "_zip_source_buffer_fragment",
+            "_zip_source_error",
+            "_zip_file_set_mtime",
+            "_zip_source_function_create",
+            "_zip_source_function",
+            "_zip_fseek",
+            "_zip_error_strerror",
+            "_zip_source_open",
+            "_zip_fclose",
+            "_zip_get_name",
+            "_zip_error_init_with_code",
+            "_zip_file_set_dostime",
+            "_zip_replace",
+            "_zip_file_error_get",
+            "_zip_file_get_external_attributes",
+            "_zip_secure_random",
+            "_zip_fread",
+            "_zip_file_error_clear",
+            "_zip_name_locate",
+            "_zip_get_archive_comment",
+            "_zip_register_progress_callback_with_state"
+          ]
+        }
+      }
+    ],
+    "flags": [
+      {
+        "attributes": [
+          "not_app_extension_safe"
+        ]
+      }
+    ],
+    "install_names": [
+      {
+        "name": "@rpath/libzip.5.dylib"
+      }
+    ],
+    "target_info": [
+      {
+        "min_deployment": "16",
+        "target": "x86_64-ios-simulator"
+      },
+      {
+        "min_deployment": "16",
+        "target": "arm64-ios-simulator"
+      }
+    ]
+  },
+  "tapi_tbd_version": 5
+}

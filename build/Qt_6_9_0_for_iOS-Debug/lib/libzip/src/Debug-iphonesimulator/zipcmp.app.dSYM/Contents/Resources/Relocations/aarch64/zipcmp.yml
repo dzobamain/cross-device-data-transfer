@@ -1,0 +1,51 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/src/Debug-iphonesimulator/zipcmp.app/zipcmp'
+relocations:
+  - { offset: 0x26, size: 0x8, addend: 0x0, symName: _diff_output_init, symObjAddr: 0x0, symBinAddr: 0x100004070, symSize: 0x64 }
+  - { offset: 0x41, size: 0x8, addend: 0x0, symName: _diff_output_init, symObjAddr: 0x0, symBinAddr: 0x100004070, symSize: 0x64 }
+  - { offset: 0x81, size: 0x8, addend: 0x0, symName: _diff_output_start_file, symObjAddr: 0x64, symBinAddr: 0x1000040D4, symSize: 0x50 }
+  - { offset: 0xDD, size: 0x8, addend: 0x0, symName: _diff_output_end_file, symObjAddr: 0xB4, symBinAddr: 0x100004124, symSize: 0x18 }
+  - { offset: 0x101, size: 0x8, addend: 0x0, symName: _diff_output, symObjAddr: 0xCC, symBinAddr: 0x10000413C, symSize: 0xDC }
+  - { offset: 0x150, size: 0x8, addend: 0x0, symName: _ensure_header, symObjAddr: 0x1A8, symBinAddr: 0x100004218, symSize: 0x80 }
+  - { offset: 0x174, size: 0x8, addend: 0x0, symName: _diff_output_file, symObjAddr: 0x228, symBinAddr: 0x100004298, symSize: 0x12C }
+  - { offset: 0x1DE, size: 0x8, addend: 0x0, symName: _diff_output_data, symObjAddr: 0x354, symBinAddr: 0x1000043C4, symSize: 0x218 }
+  - { offset: 0x3E3, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x1000045DC, symSize: 0x2C8 }
+  - { offset: 0x416, size: 0x8, addend: 0x0, symName: _comp_methods, symObjAddr: 0x35E0, symBinAddr: 0x100008190, symSize: 0x0 }
+  - { offset: 0x485, size: 0x8, addend: 0x0, symName: _extra_fields, symObjAddr: 0x3790, symBinAddr: 0x100008340, symSize: 0x0 }
+  - { offset: 0x4A6, size: 0x8, addend: 0x0, symName: _help_head, symObjAddr: 0x3AD0, symBinAddr: 0x10000C000, symSize: 0x0 }
+  - { offset: 0x4C7, size: 0x8, addend: 0x0, symName: _help, symObjAddr: 0x3B1A, symBinAddr: 0x10000C04A, symSize: 0x0 }
+  - { offset: 0x4E9, size: 0x8, addend: 0x0, symName: _version_string, symObjAddr: 0x3CCF, symBinAddr: 0x10000C1FF, symSize: 0x0 }
+  - { offset: 0x50A, size: 0x8, addend: 0x0, symName: _plus_count, symObjAddr: 0x8E24, symBinAddr: 0x10000C2C0, symSize: 0x0 }
+  - { offset: 0x526, size: 0x8, addend: 0x0, symName: _minus_count, symObjAddr: 0x8E28, symBinAddr: 0x10000C2C4, symSize: 0x0 }
+  - { offset: 0x53B, size: 0x8, addend: 0x0, symName: _progname, symBinAddr: 0x10000C318, symSize: 0x0 }
+  - { offset: 0x550, size: 0x8, addend: 0x0, symName: _ignore_case, symBinAddr: 0x10000C2D4, symSize: 0x0 }
+  - { offset: 0x565, size: 0x8, addend: 0x0, symName: _test_files, symBinAddr: 0x10000C324, symSize: 0x0 }
+  - { offset: 0x57A, size: 0x8, addend: 0x0, symName: _paranoid, symBinAddr: 0x10000C310, symSize: 0x0 }
+  - { offset: 0x58F, size: 0x8, addend: 0x0, symName: _verbose, symBinAddr: 0x10000C328, symSize: 0x0 }
+  - { offset: 0x5A4, size: 0x8, addend: 0x0, symName: _have_directory, symBinAddr: 0x10000C2D0, symSize: 0x0 }
+  - { offset: 0x5B9, size: 0x8, addend: 0x0, symName: _check_consistency, symBinAddr: 0x10000C2C8, symSize: 0x0 }
+  - { offset: 0x5CE, size: 0x8, addend: 0x0, symName: _compare_time_stamps, symBinAddr: 0x10000C2CC, symSize: 0x0 }
+  - { offset: 0x5E3, size: 0x8, addend: 0x0, symName: _summary, symBinAddr: 0x10000C320, symSize: 0x0 }
+  - { offset: 0x5F8, size: 0x8, addend: 0x0, symName: _output, symBinAddr: 0x10000C2D8, symSize: 0x0 }
+  - { offset: 0x68D, size: 0x8, addend: 0x0, symName: _map_enum, symObjAddr: 0x2964, symBinAddr: 0x100006F40, symSize: 0xDC }
+  - { offset: 0x6B4, size: 0x8, addend: 0x0, symName: _map_enum.unknown, symObjAddr: 0x8E2C, symBinAddr: 0x10000C32C, symSize: 0x0 }
+  - { offset: 0x87D, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x1000045DC, symSize: 0x2C8 }
+  - { offset: 0x8C1, size: 0x8, addend: 0x0, symName: _compare_zip, symObjAddr: 0x398, symBinAddr: 0x100004974, symSize: 0x534 }
+  - { offset: 0x955, size: 0x8, addend: 0x0, symName: _is_directory, symObjAddr: 0x8CC, symBinAddr: 0x100004EA8, symSize: 0x60 }
+  - { offset: 0x98E, size: 0x8, addend: 0x0, symName: _list_directory, symObjAddr: 0x92C, symBinAddr: 0x100004F08, symSize: 0x6E8 }
+  - { offset: 0xA80, size: 0x8, addend: 0x0, symName: _list_zip, symObjAddr: 0x1014, symBinAddr: 0x1000055F0, symSize: 0x3CC }
+  - { offset: 0xB32, size: 0x8, addend: 0x0, symName: _entry_cmp, symObjAddr: 0x13E0, symBinAddr: 0x1000059BC, symSize: 0x18C }
+  - { offset: 0xB98, size: 0x8, addend: 0x0, symName: _compare_list, symObjAddr: 0x156C, symBinAddr: 0x100005B48, symSize: 0x5FC }
+  - { offset: 0xC8A, size: 0x8, addend: 0x0, symName: _entry_ignore, symObjAddr: 0x1B68, symBinAddr: 0x100006144, symSize: 0x160 }
+  - { offset: 0xCFF, size: 0x8, addend: 0x0, symName: _entry_paranoia_checks, symObjAddr: 0x1CC8, symBinAddr: 0x1000062A4, symSize: 0x1A0 }
+  - { offset: 0xD74, size: 0x8, addend: 0x0, symName: _entry_print, symObjAddr: 0x1E68, symBinAddr: 0x100006444, symSize: 0x58 }
+  - { offset: 0xDB8, size: 0x8, addend: 0x0, symName: _entry_start_file, symObjAddr: 0x1EC0, symBinAddr: 0x10000649C, symSize: 0x50 }
+  - { offset: 0xDED, size: 0x8, addend: 0x0, symName: _comment_compare, symObjAddr: 0x1F10, symBinAddr: 0x1000064EC, symSize: 0xC8 }
+  - { offset: 0xE44, size: 0x8, addend: 0x0, symName: _compute_crc, symObjAddr: 0x1FD8, symBinAddr: 0x1000065B4, symSize: 0x1FC }
+  - { offset: 0xEAF, size: 0x8, addend: 0x0, symName: _test_file, symObjAddr: 0x21D4, symBinAddr: 0x1000067B0, symSize: 0x354 }
+  - { offset: 0xF7A, size: 0x8, addend: 0x0, symName: _ef_read, symObjAddr: 0x2528, symBinAddr: 0x100006B04, symSize: 0x32C }
+  - { offset: 0xFEF, size: 0x8, addend: 0x0, symName: _ef_order, symObjAddr: 0x2854, symBinAddr: 0x100006E30, symSize: 0x110 }
+  - { offset: 0x1046, size: 0x8, addend: 0x0, symName: _ef_compare, symObjAddr: 0x2A40, symBinAddr: 0x10000701C, symSize: 0xC4 }
+  - { offset: 0x10AC, size: 0x8, addend: 0x0, symName: _ef_print, symObjAddr: 0x2B04, symBinAddr: 0x1000070E0, symSize: 0xC0 }
+...

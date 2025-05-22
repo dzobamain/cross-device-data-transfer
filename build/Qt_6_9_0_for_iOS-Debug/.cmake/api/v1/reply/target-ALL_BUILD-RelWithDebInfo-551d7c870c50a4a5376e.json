@@ -1,0 +1,100 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"lib/libzip/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "ZERO_CHECK::@9954c0ca6148a436b653"
+		},
+		{
+			"id" : "zip::@1dcd1b6f2a3a85803506"
+		},
+		{
+			"id" : "man::@a8c3c59fe65059b97481"
+		},
+		{
+			"id" : "zipcmp::@fc8882a14b334891f414"
+		},
+		{
+			"id" : "zipmerge::@fc8882a14b334891f414"
+		},
+		{
+			"id" : "ziptool::@fc8882a14b334891f414"
+		},
+		{
+			"id" : "zip_read_file_fuzzer::@e4d74189f42c38319558"
+		},
+		{
+			"id" : "zip_read_fuzzer::@e4d74189f42c38319558"
+		},
+		{
+			"id" : "zip_write_encrypt_aes256_file_fuzzer::@e4d74189f42c38319558"
+		},
+		{
+			"id" : "zip_write_encrypt_pkware_file_fuzzer::@e4d74189f42c38319558"
+		},
+		{
+			"id" : "add-compressed-data::@4b3587d4194ab6644df4"
+		},
+		{
+			"id" : "autoclose-archive::@4b3587d4194ab6644df4"
+		},
+		{
+			"id" : "in-memory::@4b3587d4194ab6644df4"
+		}
+	],
+	"id" : "ALL_BUILD::@9954c0ca6148a436b653",
+	"isGeneratorProvided" : true,
+	"name" : "ALL_BUILD",
+	"paths" : 
+	{
+		"build" : "lib/libzip",
+		"source" : "lib/libzip"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Qt_6_9_0_for_iOS-Debug/lib/libzip/CMakeFiles/ALL_BUILD",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Qt_6_9_0_for_iOS-Debug/lib/libzip/CMakeFiles/ALL_BUILD.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

@@ -1,0 +1,10 @@
+---
+triple:          'x86_64-apple-darwin'
+binary-path:     '/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/examples/Debug-iphonesimulator/in-memory.app/in-memory'
+relocations:
+  - { offset: 0x26, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100001470, symSize: 0x3E0 }
+  - { offset: 0x7C, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100001470, symSize: 0x3E0 }
+  - { offset: 0x124, size: 0x8, addend: 0x0, symName: _get_data, symObjAddr: 0x3E0, symBinAddr: 0x100001850, symSize: 0x250 }
+  - { offset: 0x186, size: 0x8, addend: 0x0, symName: _modify_archive, symObjAddr: 0x630, symBinAddr: 0x100001AA0, symSize: 0x10 }
+  - { offset: 0x1AE, size: 0x8, addend: 0x0, symName: _use_data, symObjAddr: 0x640, symBinAddr: 0x100001AB0, symSize: 0x1D0 }
+...

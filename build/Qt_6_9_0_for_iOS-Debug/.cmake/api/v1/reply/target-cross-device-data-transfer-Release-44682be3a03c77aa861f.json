@@ -1,0 +1,1184 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "Release${EFFECTIVE_PLATFORM_NAME}/cross-device-data-transfer.app/cross-device-data-transfer"
+		}
+	],
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"_qt_internal_create_executable",
+			"qt6_add_executable",
+			"qt_add_executable",
+			"install",
+			"target_link_libraries",
+			"set_target_properties",
+			"include",
+			"find_package",
+			"find_dependency",
+			"_qt_internal_find_qt_dependencies",
+			"__qt_internal_apply_plugin_imports_finalizer_mode",
+			"_qt_internal_finalize_executable",
+			"qt6_finalize_target",
+			"qt_finalize_executable",
+			"__qt_internal_include_plugin_packages",
+			"qt_find_package_system_or_bundled",
+			"_qt_internal_find_third_party_dependencies",
+			"include_directories",
+			"target_sources",
+			"_qt_internal_handle_ios_launch_screen",
+			"_qt_internal_finalize_ios_app",
+			"_qt_internal_finalize_uikit_app"
+		],
+		"files" : 
+		[
+			"/Applications/Qt/6.9.0/ios/lib/cmake/Qt6Core/Qt6CoreMacros.cmake",
+			"CMakeLists.txt",
+			"/Applications/Qt/6.9.0/ios/lib/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake",
+			"/Applications/Qt/6.9.0/ios/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake",
+			"/Applications/Qt/6.9.0/ios/lib/cmake/Qt6/Qt6Config.cmake",
+			"/Applications/Qt/6.9.0/ios/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake",
+			"/Applications/Qt/6.9.0/ios/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake",
+			"/Applications/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake",
+			"/Applications/Qt/6.9.0/ios/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake",
+			"/Applications/Qt/6.9.0/ios/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake",
+			"/Applications/Qt/6.9.0/ios/lib/cmake/Qt6/QtPublicPluginHelpers.cmake",
+			"/Applications/Qt/6.9.0/ios/lib/cmake/Qt6Gui/Qt6QIOSIntegrationPluginTargets.cmake",
+			"/Applications/Qt/6.9.0/ios/lib/cmake/Qt6Gui/Qt6QIOSIntegrationPluginConfig.cmake",
+			"/Applications/Qt/6.9.0/ios/lib/cmake/Qt6Gui/Qt6GuiPlugins.cmake",
+			"/Applications/Qt/6.9.0/ios/lib/cmake/Qt6/QtFindWrapHelper.cmake",
+			"/Applications/Qt/6.9.0/ios/lib/cmake/Qt6/FindWrapJpeg.cmake",
+			"/Applications/Qt/6.9.0/ios/lib/cmake/Qt6Gui/Qt6QJpegPluginDependencies.cmake",
+			"/Applications/Qt/6.9.0/ios/lib/cmake/Qt6Gui/Qt6QJpegPluginConfig.cmake",
+			"/Applications/Qt/6.9.0/ios/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets.cmake",
+			"/Applications/Qt/6.9.0/ios/lib/cmake/Qt6Gui/Qt6QSvgIconPluginConfig.cmake",
+			"/Applications/Qt/6.9.0/ios/lib/cmake/Qt6Core/Qt6CoreTargets.cmake",
+			"/Applications/Qt/6.9.0/ios/lib/cmake/Qt6Core/Qt6CoreConfig.cmake",
+			"/Applications/Qt/6.9.0/ios/lib/cmake/Qt6/FindWrapPCRE2.cmake",
+			"/Applications/Qt/6.9.0/ios/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake",
+			"/Applications/Qt/6.9.0/ios/lib/cmake/Qt6/FindGLESv2.cmake",
+			"/Applications/Qt/6.9.0/ios/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake",
+			"/Applications/Qt/6.9.0/ios/lib/cmake/Qt6/FindWrapHarfbuzz.cmake",
+			"/Applications/Qt/6.9.0/ios/lib/cmake/Qt6/FindWrapFreetype.cmake",
+			"/Applications/Qt/6.9.0/ios/lib/cmake/Qt6/FindWrapPNG.cmake",
+			"/Applications/Qt/6.9.0/ios/lib/cmake/Qt6/FindWrapSystemZLIB.cmake",
+			"/Applications/Qt/6.9.0/ios/lib/cmake/Qt6/FindWrapZLIB.cmake",
+			"/Applications/Qt/6.9.0/ios/lib/cmake/Qt6/QtPublicAppleHelpers.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 33,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 938,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 639,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 688,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 77,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 640,
+				"parent" : 2
+			},
+			{
+				"command" : 8,
+				"file" : 1,
+				"line" : 13,
+				"parent" : 0
+			},
+			{
+				"file" : 4,
+				"parent" : 7
+			},
+			{
+				"command" : 8,
+				"file" : 4,
+				"line" : 212,
+				"parent" : 8
+			},
+			{
+				"file" : 3,
+				"parent" : 9
+			},
+			{
+				"command" : 7,
+				"file" : 3,
+				"line" : 55,
+				"parent" : 10
+			},
+			{
+				"file" : 2,
+				"parent" : 11
+			},
+			{
+				"command" : 6,
+				"file" : 2,
+				"line" : 62,
+				"parent" : 12
+			},
+			{
+				"command" : 7,
+				"file" : 3,
+				"line" : 43,
+				"parent" : 10
+			},
+			{
+				"file" : 9,
+				"parent" : 14
+			},
+			{
+				"command" : 10,
+				"file" : 9,
+				"line" : 45,
+				"parent" : 15
+			},
+			{
+				"command" : 9,
+				"file" : 8,
+				"line" : 137,
+				"parent" : 16
+			},
+			{
+				"command" : 8,
+				"file" : 7,
+				"line" : 76,
+				"parent" : 17
+			},
+			{
+				"file" : 6,
+				"parent" : 18
+			},
+			{
+				"command" : 7,
+				"file" : 6,
+				"line" : 55,
+				"parent" : 19
+			},
+			{
+				"file" : 5,
+				"parent" : 20
+			},
+			{
+				"command" : 6,
+				"file" : 5,
+				"line" : 62,
+				"parent" : 21
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 55,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 60,
+				"parent" : 0
+			},
+			{
+				"command" : 14,
+				"file" : 1,
+				"line" : 84,
+				"parent" : 0
+			},
+			{
+				"command" : 13,
+				"file" : 0,
+				"line" : 946,
+				"parent" : 25
+			},
+			{
+				"command" : 12,
+				"file" : 0,
+				"line" : 816,
+				"parent" : 26
+			},
+			{
+				"command" : 11,
+				"file" : 0,
+				"line" : 763,
+				"parent" : 27
+			},
+			{
+				"command" : 5,
+				"file" : 10,
+				"line" : 483,
+				"parent" : 28
+			},
+			{
+				"command" : 7,
+				"file" : 6,
+				"line" : 201,
+				"parent" : 19
+			},
+			{
+				"file" : 13,
+				"parent" : 30
+			},
+			{
+				"command" : 15,
+				"file" : 13,
+				"line" : 13,
+				"parent" : 31
+			},
+			{
+				"command" : 7,
+				"file" : 10,
+				"line" : 560,
+				"parent" : 32
+			},
+			{
+				"file" : 12,
+				"parent" : 33
+			},
+			{
+				"command" : 7,
+				"file" : 12,
+				"line" : 61,
+				"parent" : 34
+			},
+			{
+				"file" : 11,
+				"parent" : 35
+			},
+			{
+				"command" : 6,
+				"file" : 11,
+				"line" : 61,
+				"parent" : 36
+			},
+			{
+				"command" : 7,
+				"file" : 10,
+				"line" : 560,
+				"parent" : 32
+			},
+			{
+				"file" : 17,
+				"parent" : 38
+			},
+			{
+				"command" : 7,
+				"file" : 17,
+				"line" : 55,
+				"parent" : 39
+			},
+			{
+				"file" : 16,
+				"parent" : 40
+			},
+			{
+				"command" : 17,
+				"file" : 16,
+				"line" : 8,
+				"parent" : 41
+			},
+			{
+				"command" : 9,
+				"file" : 8,
+				"line" : 36,
+				"parent" : 42
+			},
+			{
+				"command" : 8,
+				"file" : 7,
+				"line" : 76,
+				"parent" : 43
+			},
+			{
+				"file" : 15,
+				"parent" : 44
+			},
+			{
+				"command" : 16,
+				"file" : 15,
+				"line" : 6,
+				"parent" : 45
+			},
+			{
+				"command" : 5,
+				"file" : 14,
+				"line" : 76,
+				"parent" : 46
+			},
+			{
+				"command" : 7,
+				"file" : 10,
+				"line" : 560,
+				"parent" : 32
+			},
+			{
+				"file" : 19,
+				"parent" : 48
+			},
+			{
+				"command" : 7,
+				"file" : 19,
+				"line" : 61,
+				"parent" : 49
+			},
+			{
+				"file" : 18,
+				"parent" : 50
+			},
+			{
+				"command" : 6,
+				"file" : 18,
+				"line" : 61,
+				"parent" : 51
+			},
+			{
+				"command" : 9,
+				"file" : 8,
+				"line" : 137,
+				"parent" : 16
+			},
+			{
+				"command" : 8,
+				"file" : 7,
+				"line" : 76,
+				"parent" : 53
+			},
+			{
+				"file" : 21,
+				"parent" : 54
+			},
+			{
+				"command" : 7,
+				"file" : 21,
+				"line" : 57,
+				"parent" : 55
+			},
+			{
+				"file" : 20,
+				"parent" : 56
+			},
+			{
+				"command" : 6,
+				"file" : 20,
+				"line" : 62,
+				"parent" : 57
+			},
+			{
+				"command" : 7,
+				"file" : 21,
+				"line" : 45,
+				"parent" : 55
+			},
+			{
+				"file" : 23,
+				"parent" : 59
+			},
+			{
+				"command" : 17,
+				"file" : 23,
+				"line" : 39,
+				"parent" : 60
+			},
+			{
+				"command" : 9,
+				"file" : 8,
+				"line" : 36,
+				"parent" : 61
+			},
+			{
+				"command" : 8,
+				"file" : 7,
+				"line" : 76,
+				"parent" : 62
+			},
+			{
+				"file" : 22,
+				"parent" : 63
+			},
+			{
+				"command" : 16,
+				"file" : 22,
+				"line" : 6,
+				"parent" : 64
+			},
+			{
+				"command" : 5,
+				"file" : 14,
+				"line" : 76,
+				"parent" : 65
+			},
+			{
+				"command" : 7,
+				"file" : 6,
+				"line" : 43,
+				"parent" : 19
+			},
+			{
+				"file" : 25,
+				"parent" : 67
+			},
+			{
+				"command" : 17,
+				"file" : 25,
+				"line" : 39,
+				"parent" : 68
+			},
+			{
+				"command" : 9,
+				"file" : 8,
+				"line" : 36,
+				"parent" : 69
+			},
+			{
+				"command" : 8,
+				"file" : 7,
+				"line" : 76,
+				"parent" : 70
+			},
+			{
+				"file" : 24,
+				"parent" : 71
+			},
+			{
+				"command" : 5,
+				"file" : 24,
+				"line" : 76,
+				"parent" : 72
+			},
+			{
+				"command" : 9,
+				"file" : 8,
+				"line" : 36,
+				"parent" : 69
+			},
+			{
+				"command" : 8,
+				"file" : 7,
+				"line" : 76,
+				"parent" : 74
+			},
+			{
+				"file" : 26,
+				"parent" : 75
+			},
+			{
+				"command" : 16,
+				"file" : 26,
+				"line" : 6,
+				"parent" : 76
+			},
+			{
+				"command" : 5,
+				"file" : 14,
+				"line" : 76,
+				"parent" : 77
+			},
+			{
+				"command" : 9,
+				"file" : 8,
+				"line" : 36,
+				"parent" : 69
+			},
+			{
+				"command" : 8,
+				"file" : 7,
+				"line" : 76,
+				"parent" : 79
+			},
+			{
+				"file" : 27,
+				"parent" : 80
+			},
+			{
+				"command" : 16,
+				"file" : 27,
+				"line" : 6,
+				"parent" : 81
+			},
+			{
+				"command" : 5,
+				"file" : 14,
+				"line" : 76,
+				"parent" : 82
+			},
+			{
+				"command" : 9,
+				"file" : 8,
+				"line" : 36,
+				"parent" : 69
+			},
+			{
+				"command" : 8,
+				"file" : 7,
+				"line" : 76,
+				"parent" : 84
+			},
+			{
+				"file" : 28,
+				"parent" : 85
+			},
+			{
+				"command" : 16,
+				"file" : 28,
+				"line" : 6,
+				"parent" : 86
+			},
+			{
+				"command" : 5,
+				"file" : 14,
+				"line" : 76,
+				"parent" : 87
+			},
+			{
+				"command" : 9,
+				"file" : 8,
+				"line" : 36,
+				"parent" : 61
+			},
+			{
+				"command" : 8,
+				"file" : 7,
+				"line" : 76,
+				"parent" : 89
+			},
+			{
+				"file" : 30,
+				"parent" : 90
+			},
+			{
+				"command" : 16,
+				"file" : 30,
+				"line" : 6,
+				"parent" : 91
+			},
+			{
+				"command" : 8,
+				"file" : 14,
+				"line" : 69,
+				"parent" : 92
+			},
+			{
+				"file" : 29,
+				"parent" : 93
+			},
+			{
+				"command" : 5,
+				"file" : 29,
+				"line" : 25,
+				"parent" : 94
+			},
+			{
+				"command" : 18,
+				"file" : 1,
+				"line" : 58,
+				"parent" : 0
+			},
+			{
+				"command" : 22,
+				"file" : 0,
+				"line" : 752,
+				"parent" : 27
+			},
+			{
+				"command" : 21,
+				"file" : 31,
+				"line" : 1030,
+				"parent" : 97
+			},
+			{
+				"command" : 20,
+				"file" : 31,
+				"line" : 1038,
+				"parent" : 98
+			},
+			{
+				"command" : 19,
+				"file" : 31,
+				"line" : 73,
+				"parent" : 99
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-DQT_QML_DEBUG -O3 -DNDEBUG '-std=gnu++17' -fcolor-diagnostics"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 6,
+					"define" : "QT_CORE_LIB"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "QT_GUI_LIB"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "QT_NO_DEBUG"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "QT_WIDGETS_LIB"
+				}
+			],
+			"frameworks" : 
+			[
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/Applications/Qt/6.9.0/ios/lib/QtCore.framework"
+				},
+				{
+					"backtrace" : 23,
+					"isSystem" : true,
+					"path" : "/Applications/Qt/6.9.0/ios/lib/QtWidgets.framework"
+				},
+				{
+					"backtrace" : 23,
+					"isSystem" : true,
+					"path" : "/Applications/Qt/6.9.0/ios/lib/QtGui.framework"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 0,
+					"path" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/cross-device-data-transfer_autogen/include_Release"
+				},
+				{
+					"backtrace" : 96,
+					"path" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip"
+				},
+				{
+					"backtrace" : 24,
+					"path" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib"
+				},
+				{
+					"backtrace" : 24,
+					"path" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/Applications/Qt/6.9.0/ios/lib/QtCore.framework/Headers"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/Applications/Qt/6.9.0/ios/mkspecs/macx-ios-clang"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/Applications/Qt/6.9.0/ios/include"
+				},
+				{
+					"backtrace" : 23,
+					"isSystem" : true,
+					"path" : "/Applications/Qt/6.9.0/ios/lib/QtWidgets.framework/Headers"
+				},
+				{
+					"backtrace" : 23,
+					"isSystem" : true,
+					"path" : "/Applications/Qt/6.9.0/ios/lib/QtGui.framework/Headers"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					6,
+					6
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				5,
+				7,
+				9
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "cross-device-data-transfer_autogen::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 24,
+			"id" : "zip::@1dcd1b6f2a3a85803506"
+		}
+	],
+	"id" : "cross-device-data-transfer::@6890427a1f51a3e7e1df",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 5,
+				"path" : "."
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/tmp"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-DQT_QML_DEBUG -O3 -DNDEBUG",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-Xlinker",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-no_warn_duplicate_libraries",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "'-Wl,-e,_qt_main_wrapper'",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-F/Applications/Qt/6.9.0/ios/lib",
+				"role" : "frameworkPath"
+			},
+			{
+				"fragment" : "-Wl,-rpath,\"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/lib/Release\\$${EFFECTIVE_PLATFORM_NAME}\"",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 13,
+				"fragment" : "/Applications/Qt/6.9.0/ios/lib/objects-Release/Widgets_resources_1/.qt/rcc/qrc_qstyle_init.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 13,
+				"fragment" : "/Applications/Qt/6.9.0/ios/lib/objects-Release/Widgets_resources_2/.qt/rcc/qrc_qstyle1_init.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 13,
+				"fragment" : "/Applications/Qt/6.9.0/ios/lib/objects-Release/Widgets_resources_3/.qt/rcc/qrc_qstyle_fusion_init.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 13,
+				"fragment" : "/Applications/Qt/6.9.0/ios/lib/objects-Release/Widgets_resources_4/.qt/rcc/qrc_qmessagebox_init.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 22,
+				"fragment" : "/Applications/Qt/6.9.0/ios/lib/objects-Release/Gui_resources_1/.qt/rcc/qrc_qpdf_init.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 22,
+				"fragment" : "/Applications/Qt/6.9.0/ios/lib/objects-Release/Gui_resources_2/.qt/rcc/qrc_gui_shaders_init.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "/Applications/Qt/6.9.0/ios/lib/QtCore.framework/QtCore",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 23,
+				"fragment" : "/Applications/Qt/6.9.0/ios/lib/QtWidgets.framework/QtWidgets",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 24,
+				"fragment" : "\"lib/libzip/lib/Release\\$${EFFECTIVE_PLATFORM_NAME}/libzip.5.5.dylib\"",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 24,
+				"fragment" : "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.2.sdk/usr/lib/libz.tbd",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 29,
+				"fragment" : "/Applications/Qt/6.9.0/ios/plugins/imageformats/libqgif.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 29,
+				"fragment" : "/Applications/Qt/6.9.0/ios/plugins/imageformats/libqico.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 29,
+				"fragment" : "/Applications/Qt/6.9.0/ios/plugins/platforms/libqios.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 29,
+				"fragment" : "/Applications/Qt/6.9.0/ios/plugins/imageformats/libqjpeg.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 29,
+				"fragment" : "/Applications/Qt/6.9.0/ios/plugins/iconengines/libqsvgicon.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 29,
+				"fragment" : "/Applications/Qt/6.9.0/ios/plugins/imageformats/libqsvg.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 37,
+				"fragment" : "-framework AudioToolbox",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 37,
+				"fragment" : "/Applications/Qt/6.9.0/ios/lib/QtOpenGL.framework/QtOpenGL",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 37,
+				"fragment" : "-framework Photos",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 47,
+				"fragment" : "/Applications/Qt/6.9.0/ios/lib/libQt6BundledLibjpeg.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 52,
+				"fragment" : "/Applications/Qt/6.9.0/ios/lib/QtSvg.framework/QtSvg",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 13,
+				"fragment" : "/Applications/Qt/6.9.0/ios/lib/QtGui.framework/QtGui",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "/Applications/Qt/6.9.0/ios/lib/QtCore.framework/QtCore",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 58,
+				"fragment" : "-framework IOKit",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 58,
+				"fragment" : "-framework UniformTypeIdentifiers",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 58,
+				"fragment" : "-lm",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 66,
+				"fragment" : "/Applications/Qt/6.9.0/ios/lib/libQt6BundledPcre2.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 58,
+				"fragment" : "-framework MobileCoreServices",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 73,
+				"fragment" : "-framework OpenGLES",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 22,
+				"fragment" : "-framework ImageIO",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 58,
+				"fragment" : "-framework CoreFoundation",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 37,
+				"fragment" : "-framework CoreGraphics",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 22,
+				"fragment" : "-framework CoreText",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 58,
+				"fragment" : "-framework Foundation",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 37,
+				"fragment" : "-framework Metal",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 37,
+				"fragment" : "-framework QuartzCore",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 58,
+				"fragment" : "-framework UIKit",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 78,
+				"fragment" : "/Applications/Qt/6.9.0/ios/lib/libQt6BundledHarfbuzz.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 83,
+				"fragment" : "/Applications/Qt/6.9.0/ios/lib/libQt6BundledFreetype.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 88,
+				"fragment" : "/Applications/Qt/6.9.0/ios/lib/libQt6BundledLibpng.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 95,
+				"fragment" : "-lz",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "cross-device-data-transfer",
+	"nameOnDisk" : "cross-device-data-transfer",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				5,
+				7,
+				9
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				3,
+				6,
+				8,
+				10,
+				12
+			]
+		},
+		{
+			"name" : "Forms",
+			"sourceIndexes" : 
+			[
+				4
+			]
+		},
+		{
+			"name" : "Resources",
+			"sourceIndexes" : 
+			[
+				11
+			]
+		},
+		{
+			"name" : "Object Libraries",
+			"sourceIndexes" : 
+			[
+				13,
+				14,
+				15,
+				16,
+				17,
+				18
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Qt_6_9_0_for_iOS-Debug/cross-device-data-transfer_autogen/mocs_compilation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/main.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/qtwindows/mainwindow.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/qtwindows/mainwindow.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/qtwindows/mainwindow.ui",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/file/fcrud.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/file/fcrud.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/file/tozip.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/file/tozip.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/user/user_data.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/user/user_data.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 100,
+			"path" : "build/Qt_6_9_0_for_iOS-Debug/.qt/launch_screen_storyboards/cross_device_data_transfer/LaunchScreen.storyboard",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Qt_6_9_0_for_iOS-Debug/cross-device-data-transfer_autogen/include/src/qtwindows/ui_mainwindow.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 29,
+			"isGenerated" : true,
+			"path" : "/Applications/Qt/6.9.0/ios/plugins/imageformats/objects-Release/QGifPlugin_init/QGifPlugin_init.cpp.o",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 29,
+			"isGenerated" : true,
+			"path" : "/Applications/Qt/6.9.0/ios/plugins/imageformats/objects-Release/QICOPlugin_init/QICOPlugin_init.cpp.o",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 29,
+			"isGenerated" : true,
+			"path" : "/Applications/Qt/6.9.0/ios/plugins/platforms/objects-Release/QIOSIntegrationPlugin_init/QIOSIntegrationPlugin_init.cpp.o",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 29,
+			"isGenerated" : true,
+			"path" : "/Applications/Qt/6.9.0/ios/plugins/imageformats/objects-Release/QJpegPlugin_init/QJpegPlugin_init.cpp.o",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 29,
+			"isGenerated" : true,
+			"path" : "/Applications/Qt/6.9.0/ios/plugins/iconengines/objects-Release/QSvgIconPlugin_init/QSvgIconPlugin_init.cpp.o",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 29,
+			"isGenerated" : true,
+			"path" : "/Applications/Qt/6.9.0/ios/plugins/imageformats/objects-Release/QSvgPlugin_init/QSvgPlugin_init.cpp.o",
+			"sourceGroupIndex" : 4
+		}
+	],
+	"type" : "EXECUTABLE"
+}

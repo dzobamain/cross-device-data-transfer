@@ -1,0 +1,76 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"lib/libzip/lib/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 191,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 197,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libzip/lib/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libzip.5.5.dylib",
+				"lib/libzip/lib/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libzip.5.dylib"
+			],
+			"targetId" : "zip::@1dcd1b6f2a3a85803506",
+			"targetIndex" : 19,
+			"targetInstallNamelink" : "skip",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libzip/lib/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libzip.dylib"
+			],
+			"targetId" : "zip::@1dcd1b6f2a3a85803506",
+			"targetIndex" : 19,
+			"targetInstallNamelink" : "only",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "include",
+			"paths" : 
+			[
+				"lib/libzip/lib/zip.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "lib/libzip/lib",
+		"source" : "lib/libzip/lib"
+	}
+}

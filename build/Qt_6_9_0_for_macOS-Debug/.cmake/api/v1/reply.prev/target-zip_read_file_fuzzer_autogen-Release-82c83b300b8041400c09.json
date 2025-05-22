@@ -1,0 +1,71 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"lib/libzip/ossfuzz/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "zip_read_file_fuzzer_autogen_timestamp_deps::@e4d74189f42c38319558"
+		}
+	],
+	"id" : "zip_read_file_fuzzer_autogen::@e4d74189f42c38319558",
+	"isGeneratorProvided" : true,
+	"name" : "zip_read_file_fuzzer_autogen",
+	"paths" : 
+	{
+		"build" : "lib/libzip/ossfuzz",
+		"source" : "lib/libzip/ossfuzz"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Qt_6_9_0_for_macOS-Debug/lib/libzip/ossfuzz/CMakeFiles/zip_read_file_fuzzer_autogen",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Qt_6_9_0_for_macOS-Debug/lib/libzip/ossfuzz/CMakeFiles/zip_read_file_fuzzer_autogen.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Qt_6_9_0_for_macOS-Debug/lib/libzip/ossfuzz/zip_read_file_fuzzer_autogen/timestamp.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

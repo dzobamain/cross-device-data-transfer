@@ -1,0 +1,154 @@
+{
+	"BUILD_DIR" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/src/zipcmp_autogen",
+	"CMAKE_BINARY_DIR" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/src",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/src",
+	"CMAKE_EXECUTABLE" : "/Applications/Qt/Tools/CMake/CMake.app/Contents/bin/cmake",
+	"CMAKE_LIST_FILES" : 
+	[
+		"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/src/CMakeLists.txt"
+	],
+	"CMAKE_SOURCE_DIR" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer",
+	"CROSS_CONFIG" : false,
+	"DEP_FILE" : "",
+	"DEP_FILE_RULE_NAME" : "",
+	"HEADERS" : 
+	[
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/src/diff_output.h",
+			"MU",
+			"EWIEGA46WW/moc_diff_output.cpp",
+			null
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/src/zipcmp_autogen/include",
+	"INCLUDE_DIR_Debug" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/src/zipcmp_autogen/include_Debug",
+	"INCLUDE_DIR_MinSizeRel" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/src/zipcmp_autogen/include_MinSizeRel",
+	"INCLUDE_DIR_RelWithDebInfo" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/src/zipcmp_autogen/include_RelWithDebInfo",
+	"INCLUDE_DIR_Release" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/src/zipcmp_autogen/include_Release",
+	"MOC_COMPILATION_FILE" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/src/zipcmp_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : [],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : [],
+	"MOC_INCLUDES_Debug" : 
+	[
+		"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip",
+		"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/src/BEFORE",
+		"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib",
+		"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip",
+		"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.2.sdk/usr/include",
+		"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.2.sdk/usr/include/c++/v1",
+		"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include",
+		"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"
+	],
+	"MOC_INCLUDES_MinSizeRel" : 
+	[
+		"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip",
+		"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/src/BEFORE",
+		"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib",
+		"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip",
+		"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.2.sdk/usr/include",
+		"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.2.sdk/usr/include/c++/v1",
+		"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include",
+		"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"
+	],
+	"MOC_INCLUDES_RelWithDebInfo" : 
+	[
+		"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip",
+		"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/src/BEFORE",
+		"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib",
+		"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip",
+		"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.2.sdk/usr/include",
+		"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.2.sdk/usr/include/c++/v1",
+		"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include",
+		"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"
+	],
+	"MOC_INCLUDES_Release" : 
+	[
+		"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip",
+		"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/src/BEFORE",
+		"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib",
+		"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip",
+		"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.2.sdk/usr/include",
+		"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.2.sdk/usr/include/c++/v1",
+		"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include",
+		"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"
+	],
+	"MOC_MACRO_NAMES" : 
+	[
+		"Q_OBJECT",
+		"Q_GADGET",
+		"Q_NAMESPACE",
+		"Q_NAMESPACE_EXPORT",
+		"Q_GADGET_EXPORT",
+		"Q_ENUM_NS"
+	],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+		"-std=gnu++17",
+		"-dM",
+		"-E",
+		"-c",
+		"/Applications/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/src/zipcmp_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE_Debug" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/src/zipcmp_autogen/moc_predefs_Debug.h",
+	"MOC_PREDEFS_FILE_MinSizeRel" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/src/zipcmp_autogen/moc_predefs_MinSizeRel.h",
+	"MOC_PREDEFS_FILE_RelWithDebInfo" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/src/zipcmp_autogen/moc_predefs_RelWithDebInfo.h",
+	"MOC_PREDEFS_FILE_Release" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/src/zipcmp_autogen/moc_predefs_Release.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : true,
+	"PARALLEL" : 11,
+	"PARSE_CACHE_FILE" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/src/CMakeFiles/zipcmp_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE_Debug" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/src/CMakeFiles/zipcmp_autogen.dir/ParseCache_Debug.txt",
+	"PARSE_CACHE_FILE_MinSizeRel" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/src/CMakeFiles/zipcmp_autogen.dir/ParseCache_MinSizeRel.txt",
+	"PARSE_CACHE_FILE_RelWithDebInfo" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/src/CMakeFiles/zipcmp_autogen.dir/ParseCache_RelWithDebInfo.txt",
+	"PARSE_CACHE_FILE_Release" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/src/CMakeFiles/zipcmp_autogen.dir/ParseCache_Release.txt",
+	"QT_MOC_EXECUTABLE" : "",
+	"QT_MOC_EXECUTABLE_Debug" : "/Applications/Qt/6.9.0/macos/libexec/moc",
+	"QT_MOC_EXECUTABLE_MinSizeRel" : "/Applications/Qt/6.9.0/macos/libexec/moc",
+	"QT_MOC_EXECUTABLE_RelWithDebInfo" : "/Applications/Qt/6.9.0/macos/libexec/moc",
+	"QT_MOC_EXECUTABLE_Release" : "/Applications/Qt/6.9.0/macos/libexec/moc",
+	"QT_UIC_EXECUTABLE" : "",
+	"QT_UIC_EXECUTABLE_Debug" : "/Applications/Qt/6.9.0/macos/libexec/uic",
+	"QT_UIC_EXECUTABLE_MinSizeRel" : "/Applications/Qt/6.9.0/macos/libexec/uic",
+	"QT_UIC_EXECUTABLE_RelWithDebInfo" : "/Applications/Qt/6.9.0/macos/libexec/uic",
+	"QT_UIC_EXECUTABLE_Release" : "/Applications/Qt/6.9.0/macos/libexec/uic",
+	"QT_VERSION_MAJOR" : 6,
+	"QT_VERSION_MINOR" : 9,
+	"SETTINGS_FILE" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/src/CMakeFiles/zipcmp_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE_Debug" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/src/CMakeFiles/zipcmp_autogen.dir/AutogenUsed_Debug.txt",
+	"SETTINGS_FILE_MinSizeRel" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/src/CMakeFiles/zipcmp_autogen.dir/AutogenUsed_MinSizeRel.txt",
+	"SETTINGS_FILE_RelWithDebInfo" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/src/CMakeFiles/zipcmp_autogen.dir/AutogenUsed_RelWithDebInfo.txt",
+	"SETTINGS_FILE_Release" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/src/CMakeFiles/zipcmp_autogen.dir/AutogenUsed_Release.txt",
+	"SOURCES" : 
+	[
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/src/diff_output.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/src/zipcmp.c",
+			"MU",
+			null
+		]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
+	"USE_BETTER_GRAPH" : true,
+	"VERBOSITY" : 0
+}

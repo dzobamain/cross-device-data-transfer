@@ -1,0 +1,559 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-31ea65f7f0f979d7c671.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						6,
+						7,
+						8
+					]
+				},
+				{
+					"build" : "lib/libzip",
+					"childIndexes" : 
+					[
+						2,
+						3,
+						4,
+						5,
+						6
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-lib.libzip-Release-432c10589a21fab514af.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "lib/libzip",
+					"targetIndexes" : 
+					[
+						9,
+						10
+					]
+				},
+				{
+					"build" : "lib/libzip/lib",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-lib.libzip.lib-Release-f2a7a6fb81c114b2a7ab.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "lib/libzip/lib",
+					"targetIndexes" : 
+					[
+						19,
+						20,
+						21
+					]
+				},
+				{
+					"build" : "lib/libzip/man",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-lib.libzip.man-Release-e5014c82e20bfc1101ab.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "lib/libzip/man",
+					"targetIndexes" : 
+					[
+						15,
+						16,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "lib/libzip/src",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-lib.libzip.src-Release-b0ccfe9d65be72a06a02.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "lib/libzip/src",
+					"targetIndexes" : 
+					[
+						34,
+						35,
+						36,
+						37,
+						38,
+						39,
+						40,
+						41,
+						42
+					]
+				},
+				{
+					"build" : "lib/libzip/ossfuzz",
+					"jsonFile" : "directory-lib.libzip.ossfuzz-Release-7425398d3e9346bbe8c8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "lib/libzip/ossfuzz",
+					"targetIndexes" : 
+					[
+						14,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27,
+						28,
+						29,
+						30,
+						31,
+						32,
+						33
+					]
+				},
+				{
+					"build" : "lib/libzip/examples",
+					"jsonFile" : "directory-lib.libzip.examples-Release-68971c19c05e98cf4a48.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "lib/libzip/examples",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						11,
+						12,
+						13
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "cross-device-data-transfer",
+					"targetIndexes" : 
+					[
+						6,
+						7,
+						8
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					],
+					"name" : "libzip",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27,
+						28,
+						29,
+						30,
+						31,
+						32,
+						33,
+						34,
+						35,
+						36,
+						37,
+						38,
+						39,
+						40,
+						41,
+						42
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 6,
+					"id" : "add-compressed-data::@4b3587d4194ab6644df4",
+					"jsonFile" : "target-add-compressed-data-Release-bff4671ed9c5dd44f1e3.json",
+					"name" : "add-compressed-data",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "add-compressed-data_autogen::@4b3587d4194ab6644df4",
+					"jsonFile" : "target-add-compressed-data_autogen-Release-f7caf2e0cd32758df1bf.json",
+					"name" : "add-compressed-data_autogen",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "add-compressed-data_autogen_timestamp_deps::@4b3587d4194ab6644df4",
+					"jsonFile" : "target-add-compressed-data_autogen_timestamp_deps-Release-4c386a501234f0368904.json",
+					"name" : "add-compressed-data_autogen_timestamp_deps",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "autoclose-archive::@4b3587d4194ab6644df4",
+					"jsonFile" : "target-autoclose-archive-Release-9b61f6a22c4e58a90bf1.json",
+					"name" : "autoclose-archive",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "autoclose-archive_autogen::@4b3587d4194ab6644df4",
+					"jsonFile" : "target-autoclose-archive_autogen-Release-83c8f432cef3f8a4ac8d.json",
+					"name" : "autoclose-archive_autogen",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "autoclose-archive_autogen_timestamp_deps::@4b3587d4194ab6644df4",
+					"jsonFile" : "target-autoclose-archive_autogen_timestamp_deps-Release-8ec6ff172bf4d1073c37.json",
+					"name" : "autoclose-archive_autogen_timestamp_deps",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cross-device-data-transfer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cross-device-data-transfer-Release-4f3ac39031704bb9c8e7.json",
+					"name" : "cross-device-data-transfer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cross-device-data-transfer_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cross-device-data-transfer_autogen-Release-6baab26ad9732ab340f8.json",
+					"name" : "cross-device-data-transfer_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cross-device-data-transfer_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cross-device-data-transfer_autogen_timestamp_deps-Release-277d5a3249dbdc846691.json",
+					"name" : "cross-device-data-transfer_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "dist::@9954c0ca6148a436b653",
+					"jsonFile" : "target-dist-Release-cba80edc023d4f887010.json",
+					"name" : "dist",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "distcheck::@9954c0ca6148a436b653",
+					"jsonFile" : "target-distcheck-Release-a3ee3adec6f788888630.json",
+					"name" : "distcheck",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "in-memory::@4b3587d4194ab6644df4",
+					"jsonFile" : "target-in-memory-Release-76a180fb08ded7e577a9.json",
+					"name" : "in-memory",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "in-memory_autogen::@4b3587d4194ab6644df4",
+					"jsonFile" : "target-in-memory_autogen-Release-422cda5750333358d8c6.json",
+					"name" : "in-memory_autogen",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "in-memory_autogen_timestamp_deps::@4b3587d4194ab6644df4",
+					"jsonFile" : "target-in-memory_autogen_timestamp_deps-Release-042db811f433af08683c.json",
+					"name" : "in-memory_autogen_timestamp_deps",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "list-fuzzers::@e4d74189f42c38319558",
+					"jsonFile" : "target-list-fuzzers-Release-8d2f51ba5855bc9ab253.json",
+					"name" : "list-fuzzers",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "man::@a8c3c59fe65059b97481",
+					"jsonFile" : "target-man-Release-eb23a2abe4627fe3fa5c.json",
+					"name" : "man",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "update-html::@a8c3c59fe65059b97481",
+					"jsonFile" : "target-update-html-Release-d240fe97ae72b92da915.json",
+					"name" : "update-html",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "update-man::@a8c3c59fe65059b97481",
+					"jsonFile" : "target-update-man-Release-c38f07c3591f24531397.json",
+					"name" : "update-man",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "update_zip_errors::@a8c3c59fe65059b97481",
+					"jsonFile" : "target-update_zip_errors-Release-dc0288f69db94d70eab3.json",
+					"name" : "update_zip_errors",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "zip::@1dcd1b6f2a3a85803506",
+					"jsonFile" : "target-zip-Release-1b54f3efb063c5d323d7.json",
+					"name" : "zip",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "zip_autogen::@1dcd1b6f2a3a85803506",
+					"jsonFile" : "target-zip_autogen-Release-ddc0e878f94af72ce889.json",
+					"name" : "zip_autogen",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "zip_autogen_timestamp_deps::@1dcd1b6f2a3a85803506",
+					"jsonFile" : "target-zip_autogen_timestamp_deps-Release-870ad300646859c99af8.json",
+					"name" : "zip_autogen_timestamp_deps",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "zip_read_file_fuzzer::@e4d74189f42c38319558",
+					"jsonFile" : "target-zip_read_file_fuzzer-Release-c67704aa656a05ae19b7.json",
+					"name" : "zip_read_file_fuzzer",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "zip_read_file_fuzzer_autogen::@e4d74189f42c38319558",
+					"jsonFile" : "target-zip_read_file_fuzzer_autogen-Release-82c83b300b8041400c09.json",
+					"name" : "zip_read_file_fuzzer_autogen",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "zip_read_file_fuzzer_autogen_timestamp_deps::@e4d74189f42c38319558",
+					"jsonFile" : "target-zip_read_file_fuzzer_autogen_timestamp_deps-Release-055b575401161f23c201.json",
+					"name" : "zip_read_file_fuzzer_autogen_timestamp_deps",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "zip_read_fuzzer::@e4d74189f42c38319558",
+					"jsonFile" : "target-zip_read_fuzzer-Release-c0b1e941276263e0e903.json",
+					"name" : "zip_read_fuzzer",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "zip_read_fuzzer_autogen::@e4d74189f42c38319558",
+					"jsonFile" : "target-zip_read_fuzzer_autogen-Release-01deb20b5a38e42d169a.json",
+					"name" : "zip_read_fuzzer_autogen",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "zip_read_fuzzer_autogen_timestamp_deps::@e4d74189f42c38319558",
+					"jsonFile" : "target-zip_read_fuzzer_autogen_timestamp_deps-Release-98300479e9bd0eaac170.json",
+					"name" : "zip_read_fuzzer_autogen_timestamp_deps",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "zip_write_encrypt_aes256_file_fuzzer::@e4d74189f42c38319558",
+					"jsonFile" : "target-zip_write_encrypt_aes256_file_fuzzer-Release-ec59895fb1ca873463f2.json",
+					"name" : "zip_write_encrypt_aes256_file_fuzzer",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "zip_write_encrypt_aes256_file_fuzzer_autogen::@e4d74189f42c38319558",
+					"jsonFile" : "target-zip_write_encrypt_aes256_file_fuzzer_autogen-Release-87b2bd2c85aa7366947d.json",
+					"name" : "zip_write_encrypt_aes256_file_fuzzer_autogen",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "zip_write_encrypt_aes256_file_fuzzer_autogen_timestamp_deps::@e4d74189f42c38319558",
+					"jsonFile" : "target-zip_write_encrypt_aes256_file_fuzzer_autogen_timestamp_deps-Release-5bde7eb0d3c7092b28f1.json",
+					"name" : "zip_write_encrypt_aes256_file_fuzzer_autogen_timestamp_deps",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "zip_write_encrypt_pkware_file_fuzzer::@e4d74189f42c38319558",
+					"jsonFile" : "target-zip_write_encrypt_pkware_file_fuzzer-Release-12e21d517d4f2db19289.json",
+					"name" : "zip_write_encrypt_pkware_file_fuzzer",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "zip_write_encrypt_pkware_file_fuzzer_autogen::@e4d74189f42c38319558",
+					"jsonFile" : "target-zip_write_encrypt_pkware_file_fuzzer_autogen-Release-46f7f8d0ab4ee13508bf.json",
+					"name" : "zip_write_encrypt_pkware_file_fuzzer_autogen",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "zip_write_encrypt_pkware_file_fuzzer_autogen_timestamp_deps::@e4d74189f42c38319558",
+					"jsonFile" : "target-zip_write_encrypt_pkware_file_fuzzer_autogen_timestamp_deps-Release-930a1ea641983fa0e58f.json",
+					"name" : "zip_write_encrypt_pkware_file_fuzzer_autogen_timestamp_deps",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "zipcmp::@fc8882a14b334891f414",
+					"jsonFile" : "target-zipcmp-Release-906b0b65540e778d6e49.json",
+					"name" : "zipcmp",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "zipcmp_autogen::@fc8882a14b334891f414",
+					"jsonFile" : "target-zipcmp_autogen-Release-af6ddbe87682fbfb5680.json",
+					"name" : "zipcmp_autogen",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "zipcmp_autogen_timestamp_deps::@fc8882a14b334891f414",
+					"jsonFile" : "target-zipcmp_autogen_timestamp_deps-Release-c0f511742c3043157a5d.json",
+					"name" : "zipcmp_autogen_timestamp_deps",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "zipmerge::@fc8882a14b334891f414",
+					"jsonFile" : "target-zipmerge-Release-ac366dff92e0c57cab7c.json",
+					"name" : "zipmerge",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "zipmerge_autogen::@fc8882a14b334891f414",
+					"jsonFile" : "target-zipmerge_autogen-Release-c0698e768f6fa81c56ab.json",
+					"name" : "zipmerge_autogen",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "zipmerge_autogen_timestamp_deps::@fc8882a14b334891f414",
+					"jsonFile" : "target-zipmerge_autogen_timestamp_deps-Release-b36e4452ea400d064df0.json",
+					"name" : "zipmerge_autogen_timestamp_deps",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "ziptool::@fc8882a14b334891f414",
+					"jsonFile" : "target-ziptool-Release-3a159112216ce8fb8827.json",
+					"name" : "ziptool",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "ziptool_autogen::@fc8882a14b334891f414",
+					"jsonFile" : "target-ziptool_autogen-Release-c43ad213bf06ee0bdd9c.json",
+					"name" : "ziptool_autogen",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "ziptool_autogen_timestamp_deps::@fc8882a14b334891f414",
+					"jsonFile" : "target-ziptool_autogen_timestamp_deps-Release-4542b888a2d2b819c2e2.json",
+					"name" : "ziptool_autogen_timestamp_deps",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug",
+		"source" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

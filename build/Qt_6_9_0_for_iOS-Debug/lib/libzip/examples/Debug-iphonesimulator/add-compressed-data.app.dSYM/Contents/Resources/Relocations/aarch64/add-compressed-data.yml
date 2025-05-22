@@ -1,0 +1,13 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/examples/Debug-iphonesimulator/add-compressed-data.app/add-compressed-data'
+relocations:
+  - { offset: 0x26, size: 0x8, addend: 0x0, symName: _callback, symObjAddr: 0x0, symBinAddr: 0x10000379C, symSize: 0x120 }
+  - { offset: 0x3F, size: 0x8, addend: 0x0, symName: _compression_method, symObjAddr: 0x538, symBinAddr: 0x100008000, symSize: 0x0 }
+  - { offset: 0x71, size: 0x8, addend: 0x0, symName: _uncompressed_size, symObjAddr: 0x540, symBinAddr: 0x100008008, symSize: 0x0 }
+  - { offset: 0xA3, size: 0x8, addend: 0x0, symName: _crc, symObjAddr: 0x548, symBinAddr: 0x100008010, symSize: 0x0 }
+  - { offset: 0xD5, size: 0x8, addend: 0x0, symName: _data, symObjAddr: 0x54C, symBinAddr: 0x100008014, symSize: 0x0 }
+  - { offset: 0x29D, size: 0x8, addend: 0x0, symName: _callback, symObjAddr: 0x0, symBinAddr: 0x10000379C, symSize: 0x120 }
+  - { offset: 0x327, size: 0x8, addend: 0x0, symName: _create_layered_compressed_source, symObjAddr: 0x120, symBinAddr: 0x1000038BC, symSize: 0xD4 }
+  - { offset: 0x3A3, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x1F4, symBinAddr: 0x100003990, symSize: 0x344 }
+...

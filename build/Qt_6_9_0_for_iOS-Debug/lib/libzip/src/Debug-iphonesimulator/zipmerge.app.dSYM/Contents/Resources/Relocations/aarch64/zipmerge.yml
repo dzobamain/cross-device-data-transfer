@@ -1,0 +1,18 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/src/Debug-iphonesimulator/zipmerge.app/zipmerge'
+relocations:
+  - { offset: 0x26, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100002B58, symSize: 0x4EC }
+  - { offset: 0x3F, size: 0x8, addend: 0x0, symName: _help_head, symObjAddr: 0xFD8, symBinAddr: 0x100008000, symSize: 0x0 }
+  - { offset: 0x6E, size: 0x8, addend: 0x0, symName: _help, symObjAddr: 0x1024, symBinAddr: 0x10000804C, symSize: 0x0 }
+  - { offset: 0x90, size: 0x8, addend: 0x0, symName: _version_string, symObjAddr: 0x11A9, symBinAddr: 0x1000081D1, symSize: 0x0 }
+  - { offset: 0xB1, size: 0x8, addend: 0x0, symName: _progname, symBinAddr: 0x1000082A8, symSize: 0x0 }
+  - { offset: 0xCB, size: 0x8, addend: 0x0, symName: _confirm, symBinAddr: 0x100008298, symSize: 0x0 }
+  - { offset: 0xE7, size: 0x8, addend: 0x0, symName: _name_flags, symBinAddr: 0x1000082A0, symSize: 0x0 }
+  - { offset: 0x125, size: 0x8, addend: 0x0, symName: _keep_stored, symBinAddr: 0x10000829C, symSize: 0x0 }
+  - { offset: 0x16D, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100002B58, symSize: 0x4EC }
+  - { offset: 0x222, size: 0x8, addend: 0x0, symName: _merge_zip, symObjAddr: 0x5AC, symBinAddr: 0x100003104, symSize: 0x3E4 }
+  - { offset: 0x2DB, size: 0x8, addend: 0x0, symName: _confirm_replace, symObjAddr: 0x990, symBinAddr: 0x1000034E8, symSize: 0x3A0 }
+  - { offset: 0x37C, size: 0x8, addend: 0x0, symName: _copy_file, symObjAddr: 0xD30, symBinAddr: 0x100003888, symSize: 0x1C4 }
+  - { offset: 0x40E, size: 0x8, addend: 0x0, symName: _copy_extra_fields, symObjAddr: 0xEF4, symBinAddr: 0x100003A4C, symSize: 0xE4 }
+...
