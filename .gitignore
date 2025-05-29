@@ -1,34 +1,28 @@
-# Qt Creator / CMake config
-*.user
-*.user.*
-CMakeLists.txt.user
+# Qt Creator / QMake
 
-# Qt build artifacts
 *.pro.user
+*.pro.user.*
+*.qmake.stash
 *.autosave
 *.qmlproject.user
-*.qmake.stash
 
-# CMake generated
+# CMake build artifacts
+
+CMakeLists.txt.user
 CMakeCache.txt
 CMakeFiles/
 cmake_install.cmake
 Makefile
-build/
-out/
-bin/
-lib/
+*.idx
 
 # Ninja
-*.ninja
-*.ninja_log
-*.ninja_deps
 
-# VS Code
-.vscode/
-*.code-workspace
+.ninja
+.ninja_log
+.ninja_deps
+.ninja/
 
-# Object files and executables
+# Build output
 *.o
 *.obj
 *.so
@@ -37,12 +31,23 @@ lib/
 *.a
 *.lib
 
-# Qt translation files (optional)
-*.qm
+# Backup / temp / logs
 
-# Backup or temp files
 *~
 *.swp
 *.bak
 *.tmp
 *.log
+
+# IDE configs
+
+.vscode/
+*.code-workspace
+
+.idea/
+*.iml
+
+# Qt Creator build directories (optional, if not in source)
+
+Qt_6_9_0_for_iOS-Debug/
+Qt_6_9_0_for_macOS-Debug/

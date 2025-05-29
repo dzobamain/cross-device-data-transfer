@@ -1,4 +1,4 @@
-/*
+/**
  * @file main.cpp
  * @brief main file.
 */
@@ -9,13 +9,11 @@
 
 int main(int argc, char *argv[])
 {
-    QApplication a(argc, argv);
-    MainWindow w;
-    w.setWindowTitle("cross device data transfer");
+    QApplication app(argc, argv);
+    MainWindow main_window;
+    main_window.setWindowTitle("cross device data transfer");
 
-    w.show();
+    main_window.show();
 
-
-
-    return a.exec();
+    return app.exec();
 }
