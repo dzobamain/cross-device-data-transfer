@@ -1,0 +1,311 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-b6f6afa2e10d049ad8d3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				},
+				{
+					"build" : "lib/libzip",
+					"childIndexes" : 
+					[
+						2,
+						3
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-lib.libzip-Debug-86b9ceb0254dd72aaa56.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "lib/libzip",
+					"targetIndexes" : 
+					[
+						3,
+						4
+					]
+				},
+				{
+					"build" : "lib/libzip/lib",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-lib.libzip.lib-Debug-382469d989a31a0e06d3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "lib/libzip/lib",
+					"targetIndexes" : 
+					[
+						6,
+						7,
+						8
+					]
+				},
+				{
+					"build" : "lib/libzip/ossfuzz",
+					"jsonFile" : "directory-lib.libzip.ossfuzz-Debug-7425398d3e9346bbe8c8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "lib/libzip/ossfuzz",
+					"targetIndexes" : 
+					[
+						5,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "cross-device-data-transfer",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"name" : "libzip",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "cross-device-data-transfer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cross-device-data-transfer-Debug-4e547843045ae8a92388.json",
+					"name" : "cross-device-data-transfer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cross-device-data-transfer_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cross-device-data-transfer_autogen-Debug-6baab26ad9732ab340f8.json",
+					"name" : "cross-device-data-transfer_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cross-device-data-transfer_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cross-device-data-transfer_autogen_timestamp_deps-Debug-277d5a3249dbdc846691.json",
+					"name" : "cross-device-data-transfer_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "dist::@9954c0ca6148a436b653",
+					"jsonFile" : "target-dist-Debug-cba80edc023d4f887010.json",
+					"name" : "dist",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "distcheck::@9954c0ca6148a436b653",
+					"jsonFile" : "target-distcheck-Debug-a3ee3adec6f788888630.json",
+					"name" : "distcheck",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "list-fuzzers::@e4d74189f42c38319558",
+					"jsonFile" : "target-list-fuzzers-Debug-8d2f51ba5855bc9ab253.json",
+					"name" : "list-fuzzers",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "zip::@1dcd1b6f2a3a85803506",
+					"jsonFile" : "target-zip-Debug-9eb80602822db91b9af4.json",
+					"name" : "zip",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "zip_autogen::@1dcd1b6f2a3a85803506",
+					"jsonFile" : "target-zip_autogen-Debug-ddc0e878f94af72ce889.json",
+					"name" : "zip_autogen",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "zip_autogen_timestamp_deps::@1dcd1b6f2a3a85803506",
+					"jsonFile" : "target-zip_autogen_timestamp_deps-Debug-870ad300646859c99af8.json",
+					"name" : "zip_autogen_timestamp_deps",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "zip_read_file_fuzzer::@e4d74189f42c38319558",
+					"jsonFile" : "target-zip_read_file_fuzzer-Debug-46a8ed087c0462da69e3.json",
+					"name" : "zip_read_file_fuzzer",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "zip_read_file_fuzzer_autogen::@e4d74189f42c38319558",
+					"jsonFile" : "target-zip_read_file_fuzzer_autogen-Debug-82c83b300b8041400c09.json",
+					"name" : "zip_read_file_fuzzer_autogen",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "zip_read_file_fuzzer_autogen_timestamp_deps::@e4d74189f42c38319558",
+					"jsonFile" : "target-zip_read_file_fuzzer_autogen_timestamp_deps-Debug-055b575401161f23c201.json",
+					"name" : "zip_read_file_fuzzer_autogen_timestamp_deps",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "zip_read_fuzzer::@e4d74189f42c38319558",
+					"jsonFile" : "target-zip_read_fuzzer-Debug-30912e1606e88b79632e.json",
+					"name" : "zip_read_fuzzer",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "zip_read_fuzzer_autogen::@e4d74189f42c38319558",
+					"jsonFile" : "target-zip_read_fuzzer_autogen-Debug-01deb20b5a38e42d169a.json",
+					"name" : "zip_read_fuzzer_autogen",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "zip_read_fuzzer_autogen_timestamp_deps::@e4d74189f42c38319558",
+					"jsonFile" : "target-zip_read_fuzzer_autogen_timestamp_deps-Debug-98300479e9bd0eaac170.json",
+					"name" : "zip_read_fuzzer_autogen_timestamp_deps",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "zip_write_encrypt_aes256_file_fuzzer::@e4d74189f42c38319558",
+					"jsonFile" : "target-zip_write_encrypt_aes256_file_fuzzer-Debug-576cd4d9015787e1f130.json",
+					"name" : "zip_write_encrypt_aes256_file_fuzzer",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "zip_write_encrypt_aes256_file_fuzzer_autogen::@e4d74189f42c38319558",
+					"jsonFile" : "target-zip_write_encrypt_aes256_file_fuzzer_autogen-Debug-87b2bd2c85aa7366947d.json",
+					"name" : "zip_write_encrypt_aes256_file_fuzzer_autogen",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "zip_write_encrypt_aes256_file_fuzzer_autogen_timestamp_deps::@e4d74189f42c38319558",
+					"jsonFile" : "target-zip_write_encrypt_aes256_file_fuzzer_autogen_timestamp_deps-Debug-5bde7eb0d3c7092b28f1.json",
+					"name" : "zip_write_encrypt_aes256_file_fuzzer_autogen_timestamp_deps",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "zip_write_encrypt_pkware_file_fuzzer::@e4d74189f42c38319558",
+					"jsonFile" : "target-zip_write_encrypt_pkware_file_fuzzer-Debug-d89afa73d79bd166517d.json",
+					"name" : "zip_write_encrypt_pkware_file_fuzzer",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "zip_write_encrypt_pkware_file_fuzzer_autogen::@e4d74189f42c38319558",
+					"jsonFile" : "target-zip_write_encrypt_pkware_file_fuzzer_autogen-Debug-46f7f8d0ab4ee13508bf.json",
+					"name" : "zip_write_encrypt_pkware_file_fuzzer_autogen",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "zip_write_encrypt_pkware_file_fuzzer_autogen_timestamp_deps::@e4d74189f42c38319558",
+					"jsonFile" : "target-zip_write_encrypt_pkware_file_fuzzer_autogen_timestamp_deps-Debug-930a1ea641983fa0e58f.json",
+					"name" : "zip_write_encrypt_pkware_file_fuzzer_autogen_timestamp_deps",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug",
+		"source" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

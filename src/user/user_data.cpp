@@ -7,45 +7,62 @@
  */
 
 
-#include <iostream>
 #include <string>
 #include <filesystem>
 #include <vector>
 
+#include "user_data.h"
 #include "../file/fcrud.h"
 
 #ifdef _WIN32
-    #define USER_DATA_FILE "user\\user_data.txt"
+    #define USER_DATA_FILE "user\\udata\\user_data.txt"
 #else
-    #define USER_DATA_FILE "user/user_data.txt"
+    #define USER_DATA_FILE "user/udata/user_data.txt"
 #endif
 
-void ResetToDefault(const bool reset_name = false, const bool reset_foto = false)
+bool ResetToDefault(const bool reset_name, const bool reset_foto)
 {
     if (!reset_name && !reset_foto) {
-        return;
+        return true;
     }
     
-    const std::string default_name = "user_name\n";
+    const std::string default_name = "user_name";
     #ifdef _WIN32
-        const std::string default_foto = "user\\not_foto.jpg";
+        const std::string default_foto = "user\\udata\\not_foto.jpg";
     #else
-        const std::string default_foto = "user/not_foto.jpg";
+        const std::string default_foto = "user/udata/not_foto.jpg";
     #endif
 
-    if (reset_name && reset_foto) {
-        WriteToFile(USER_DATA_FILE, default_name + default_foto);
-        return;
-    } 
-
+    /* Reset values */
     std::vector current_user_data = ReadFileAsArray(USER_DATA_FILE);
 
+    if (reset_name && reset_foto) {
+        std::string save_as = default_name + "\n" + default_foto + "\n" + current_user_data[2] + "\n";
+        return WriteToFile(USER_DATA_FILE, default_name + default_foto);
+    }
+
+    /* - Reset name or photo to default */
     if (reset_name) {
-        WriteToFile(USER_DATA_FILE, default_name + "\n" + current_user_data[1] + "\n");
+        std::string save_as = default_name + "\n" + current_user_data[1] + "\n" + current_user_data[2] + "\n";
+        return WriteToFile(USER_DATA_FILE, save_as);
     } 
     else {
-        WriteToFile(USER_DATA_FILE, current_user_data[0] + "\n" + default_foto + "\n");
+        std::string save_as = current_user_data[0] + "\n" + default_foto + "\n" + current_user_data[2] + "\n";
+        return WriteToFile(USER_DATA_FILE, save_as);
     }
+}
+
+bool isAllDigits(const std::string& str)
+{
+    if (str.empty())
+        return false;
+    for (size_t i = 0; i < str.size(); ++i) {
+        if (str[i] < '0' || str[i] > '9') {
+            return false;
+        }
+    }
+
+    return true;
 }
 
 bool isValidUTF8(const std::string& str) 
@@ -80,9 +97,11 @@ bool isValidUTF8(const std::string& str)
 
 bool IsUserNameValid(const std::string& name)
 {
+    const int max_size = 50;
+
     if (name.empty())
         return false;
-    if (name.size() <= 0 || name.size() > 50)
+    if (name.size() <= 0 || name.size() > max_size)
         return false;
     if (!isValidUTF8(name))
         return false;
@@ -92,12 +111,28 @@ bool IsUserNameValid(const std::string& name)
 
 bool IsUserFotoValid(const std::string& foto)
 {
+    const int max_size = 100;
+
     if (foto.empty())
+        return false;
+    if (foto.size() <= 0 || foto.size() > max_size)
         return false;
     if (!std::filesystem::exists(foto))
         return false;
-    if (foto.size() <= 0 || foto.size() > 100)
-        return false;
     
+    return true;
+}
+
+bool IsIdValid(const std::string& id)
+{
+    const int id_size = 10;
+
+    if (id.empty())
+        return false;
+    if (id.size() != id_size)
+        return false;
+    if (!isAllDigits(id))
+        return false;
+
     return true;
 }

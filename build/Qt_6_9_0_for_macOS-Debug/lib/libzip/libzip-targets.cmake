@@ -47,18 +47,18 @@ unset(_cmake_expected_targets)
 
 
 # Create imported target zip
-add_library(zip SHARED IMPORTED)
+add_library(zip STATIC IMPORTED)
 
 set_target_properties(zip PROPERTIES
   INTERFACE_INCLUDE_DIRECTORIES "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/libzip/lib;/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/lib/libzip"
+  INTERFACE_LINK_LIBRARIES "\$<LINK_ONLY:BZip2::BZip2>;\$<LINK_ONLY:LibLZMA::LibLZMA>;\$<LINK_ONLY:zstd::libzstd_static>;\$<LINK_ONLY:ZLIB::ZLIB>"
 )
 
 # Import target "zip" for configuration "Debug"
 set_property(TARGET zip APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(zip PROPERTIES
-  IMPORTED_LINK_DEPENDENT_LIBRARIES_DEBUG "zstd::libzstd_shared"
-  IMPORTED_LOCATION_DEBUG "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/lib/libzip/lib/libzip.5.5.dylib"
-  IMPORTED_SONAME_DEBUG "@rpath/libzip.5.dylib"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "C;CXX"
+  IMPORTED_LOCATION_DEBUG "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/lib/libzip/lib/libzip.a"
   )
 
 # This file does not depend on other imported targets which have

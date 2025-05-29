@@ -374,7 +374,6 @@
 		"/Applications/Qt/6.9.0/macos/lib/cmake/Qt6Widgets/Qt6QMacStylePluginAdditionalTargetInfo.cmake",
 		"/Applications/Qt/6.9.0/macos/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessAliasTargets.cmake",
 		"/Applications/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/FindZLIB.cmake",
-		"/Applications/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/SelectLibraryConfigurations.cmake",
 		"/Applications/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/FindPackageHandleStandardArgs.cmake",
 		"/Applications/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/FindPackageMessage.cmake",
 		"/Applications/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/GNUInstallDirs.cmake",
@@ -435,9 +434,10 @@
 		"/Applications/Qt/6.9.0/macos/lib/QtWidgets.framework",
 		"/Applications/Qt/6.9.0/macos/lib/QtGui.framework/Headers",
 		"/Applications/Qt/6.9.0/macos/lib/QtGui.framework",
-		"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include",
+		"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/zlib",
 		"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1",
 		"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include",
+		"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include",
 		"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"
 	],
 	"MOC_MACRO_NAMES" : 

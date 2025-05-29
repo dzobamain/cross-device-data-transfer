@@ -1,4 +1,4 @@
-prefix=/usr/local
+prefix=/tmp
 exec_prefix=${prefix}
 bindir=${prefix}/bin
 libdir=${prefix}/lib

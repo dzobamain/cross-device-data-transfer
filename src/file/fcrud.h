@@ -1,10 +1,9 @@
-#ifndef FILE_UTILS_H
-#define FILE_UTILS_H
+#ifndef FCRUD_H
+#define FCRUD_H
 
 #include <iostream>
-#include <cstdio>
 #include <cerrno>
-#include <string.h>
+#include <string>
 #include <filesystem>
 #include <fstream>
 
@@ -16,4 +15,4 @@ extern std::vector<std::string> ReadFileAsArray(const std::string& file_path);
 extern std::string GetFileName(const std::string& full_path);
 extern std::string GetDirectory(const std::string& full_path);
 
-#endif /* FILE_UTILS_H */
+#endif /* FCRUD_H */

@@ -70,7 +70,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
       if(EXISTS "${file}" AND
          NOT IS_SYMLINK "${file}")
         execute_process(COMMAND /usr/bin/install_name_tool
-          -add_rpath "/usr/local/lib"
+          -add_rpath "/tmp/lib"
           "${file}")
       endif()
     endforeach()
@@ -86,7 +86,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
       if(EXISTS "${file}" AND
          NOT IS_SYMLINK "${file}")
         execute_process(COMMAND /usr/bin/install_name_tool
-          -add_rpath "/usr/local/lib"
+          -add_rpath "/tmp/lib"
           "${file}")
       endif()
     endforeach()
@@ -102,7 +102,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
       if(EXISTS "${file}" AND
          NOT IS_SYMLINK "${file}")
         execute_process(COMMAND /usr/bin/install_name_tool
-          -add_rpath "/usr/local/lib"
+          -add_rpath "/tmp/lib"
           "${file}")
       endif()
     endforeach()
@@ -118,7 +118,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
       if(EXISTS "${file}" AND
          NOT IS_SYMLINK "${file}")
         execute_process(COMMAND /usr/bin/install_name_tool
-          -add_rpath "/usr/local/lib"
+          -add_rpath "/tmp/lib"
           "${file}")
       endif()
     endforeach()

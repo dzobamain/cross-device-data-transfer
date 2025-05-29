@@ -1,0 +1,247 @@
+{
+	"BUILD_DIR" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/lib/zlib/zlib_autogen",
+	"CMAKE_BINARY_DIR" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/lib/zlib",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/zlib",
+	"CMAKE_EXECUTABLE" : "/Applications/Qt/Tools/CMake/CMake.app/Contents/bin/cmake",
+	"CMAKE_LIST_FILES" : 
+	[
+		"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/zlib/CMakeLists.txt",
+		"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/.qtc/package-manager/auto-setup.cmake",
+		"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/CMakeFiles/3.30.5/CMakeCCompiler.cmake",
+		"/Applications/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeCInformation.cmake",
+		"/Applications/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake",
+		"/Applications/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/AppleClang-C.cmake",
+		"/Applications/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/Clang.cmake",
+		"/Applications/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Platform/Apple-AppleClang-C.cmake",
+		"/Applications/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Platform/Apple-Clang-C.cmake",
+		"/Applications/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Platform/Apple-Clang.cmake",
+		"/Applications/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake",
+		"/Applications/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CheckCSourceCompiles.cmake",
+		"/Applications/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake",
+		"/Applications/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CheckFunctionExists.cmake",
+		"/Applications/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CheckIncludeFile.cmake",
+		"/Applications/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakePackageConfigHelpers.cmake",
+		"/Applications/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/WriteBasicConfigVersionFile.cmake",
+		"/Applications/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CheckTypeSize.cmake",
+		"/Applications/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CheckIncludeFile.cmake",
+		"/Applications/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CheckIncludeFileCXX.cmake",
+		"/Applications/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CPack.cmake",
+		"/Applications/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CPackComponent.cmake",
+		"/Applications/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Templates/CPackConfig.cmake.in",
+		"/Applications/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Templates/CPackConfig.cmake.in",
+		"/Applications/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/GNUInstallDirs.cmake",
+		"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/zlib/zlib.pc.cmakein",
+		"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/lib/zlib/zconf.h.cmakein",
+		"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/zlib/zlibConfig.cmake.in",
+		"/Applications/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in"
+	],
+	"CMAKE_SOURCE_DIR" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer",
+	"CROSS_CONFIG" : false,
+	"DEP_FILE" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/lib/zlib/zlib_autogen/deps",
+	"DEP_FILE_RULE_NAME" : "zlib_autogen/timestamp",
+	"HEADERS" : 
+	[
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/lib/zlib/zconf.h",
+			"MU",
+			"EJRQKI7XPS/moc_zconf.cpp",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/zlib/crc32.h",
+			"MU",
+			"EWIEGA46WW/moc_crc32.cpp",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/zlib/deflate.h",
+			"MU",
+			"EWIEGA46WW/moc_deflate.cpp",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/zlib/gzguts.h",
+			"MU",
+			"EWIEGA46WW/moc_gzguts.cpp",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/zlib/inffast.h",
+			"MU",
+			"EWIEGA46WW/moc_inffast.cpp",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/zlib/inffixed.h",
+			"MU",
+			"EWIEGA46WW/moc_inffixed.cpp",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/zlib/inflate.h",
+			"MU",
+			"EWIEGA46WW/moc_inflate.cpp",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/zlib/inftrees.h",
+			"MU",
+			"EWIEGA46WW/moc_inftrees.cpp",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/zlib/trees.h",
+			"MU",
+			"EWIEGA46WW/moc_trees.cpp",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/zlib/zlib.h",
+			"MU",
+			"EWIEGA46WW/moc_zlib.cpp",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/zlib/zutil.h",
+			"MU",
+			"EWIEGA46WW/moc_zutil.cpp",
+			null
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/lib/zlib/zlib_autogen/include",
+	"MOC_COMPILATION_FILE" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/lib/zlib/zlib_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : [ "HAVE_HIDDEN", "NO_FSEEKO", "ZLIB_BUILD", "ZLIB_DLL" ],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/lib/zlib",
+		"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/zlib",
+		"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1",
+		"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include",
+		"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include",
+		"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"
+	],
+	"MOC_MACRO_NAMES" : 
+	[
+		"Q_OBJECT",
+		"Q_GADGET",
+		"Q_NAMESPACE",
+		"Q_NAMESPACE_EXPORT",
+		"Q_GADGET_EXPORT",
+		"Q_ENUM_NS"
+	],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+		"-std=gnu++17",
+		"-dM",
+		"-E",
+		"-c",
+		"/Applications/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/lib/zlib/zlib_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 11,
+	"PARSE_CACHE_FILE" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/lib/zlib/CMakeFiles/zlib_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/Applications/Qt/6.9.0/macos/libexec/moc",
+	"QT_UIC_EXECUTABLE" : "/Applications/Qt/6.9.0/macos/libexec/uic",
+	"QT_VERSION_MAJOR" : 6,
+	"QT_VERSION_MINOR" : 9,
+	"SETTINGS_FILE" : "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/lib/zlib/CMakeFiles/zlib_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/zlib/adler32.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/zlib/compress.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/zlib/crc32.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/zlib/deflate.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/zlib/gzclose.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/zlib/gzlib.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/zlib/gzread.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/zlib/gzwrite.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/zlib/infback.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/zlib/inffast.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/zlib/inflate.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/zlib/inftrees.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/zlib/trees.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/zlib/uncompr.c",
+			"MU",
+			null
+		],
+		[
+			"/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/lib/zlib/zutil.c",
+			"MU",
+			null
+		]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
+	"USE_BETTER_GRAPH" : true,
+	"VERBOSITY" : 0
+}

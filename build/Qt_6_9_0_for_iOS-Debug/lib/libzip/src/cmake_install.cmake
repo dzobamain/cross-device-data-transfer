@@ -64,7 +64,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
        NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/zipcmp.app/zipcmp")
       execute_process(COMMAND /usr/bin/install_name_tool
         -delete_rpath "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/lib/Debug${EFFECTIVE_PLATFORM_NAME}"
-        -add_rpath "/usr/local/lib"
+        -add_rpath "/tmp/lib"
         "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/zipcmp.app/zipcmp")
     endif()
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
@@ -73,7 +73,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
        NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/zipcmp.app/zipcmp")
       execute_process(COMMAND /usr/bin/install_name_tool
         -delete_rpath "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/lib/Release${EFFECTIVE_PLATFORM_NAME}"
-        -add_rpath "/usr/local/lib"
+        -add_rpath "/tmp/lib"
         "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/zipcmp.app/zipcmp")
     endif()
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
@@ -82,7 +82,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
        NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/zipcmp.app/zipcmp")
       execute_process(COMMAND /usr/bin/install_name_tool
         -delete_rpath "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/lib/MinSizeRel${EFFECTIVE_PLATFORM_NAME}"
-        -add_rpath "/usr/local/lib"
+        -add_rpath "/tmp/lib"
         "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/zipcmp.app/zipcmp")
     endif()
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
@@ -91,7 +91,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
        NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/zipcmp.app/zipcmp")
       execute_process(COMMAND /usr/bin/install_name_tool
         -delete_rpath "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/lib/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}"
-        -add_rpath "/usr/local/lib"
+        -add_rpath "/tmp/lib"
         "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/zipcmp.app/zipcmp")
     endif()
   endif()
@@ -116,7 +116,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
        NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/zipmerge.app/zipmerge")
       execute_process(COMMAND /usr/bin/install_name_tool
         -delete_rpath "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/lib/Debug${EFFECTIVE_PLATFORM_NAME}"
-        -add_rpath "/usr/local/lib"
+        -add_rpath "/tmp/lib"
         "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/zipmerge.app/zipmerge")
     endif()
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
@@ -125,7 +125,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
        NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/zipmerge.app/zipmerge")
       execute_process(COMMAND /usr/bin/install_name_tool
         -delete_rpath "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/lib/Release${EFFECTIVE_PLATFORM_NAME}"
-        -add_rpath "/usr/local/lib"
+        -add_rpath "/tmp/lib"
         "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/zipmerge.app/zipmerge")
     endif()
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
@@ -134,7 +134,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
        NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/zipmerge.app/zipmerge")
       execute_process(COMMAND /usr/bin/install_name_tool
         -delete_rpath "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/lib/MinSizeRel${EFFECTIVE_PLATFORM_NAME}"
-        -add_rpath "/usr/local/lib"
+        -add_rpath "/tmp/lib"
         "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/zipmerge.app/zipmerge")
     endif()
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
@@ -143,7 +143,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
        NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/zipmerge.app/zipmerge")
       execute_process(COMMAND /usr/bin/install_name_tool
         -delete_rpath "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/lib/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}"
-        -add_rpath "/usr/local/lib"
+        -add_rpath "/tmp/lib"
         "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/zipmerge.app/zipmerge")
     endif()
   endif()
@@ -168,7 +168,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
        NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/ziptool.app/ziptool")
       execute_process(COMMAND /usr/bin/install_name_tool
         -delete_rpath "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/lib/Debug${EFFECTIVE_PLATFORM_NAME}"
-        -add_rpath "/usr/local/lib"
+        -add_rpath "/tmp/lib"
         "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/ziptool.app/ziptool")
     endif()
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
@@ -177,7 +177,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
        NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/ziptool.app/ziptool")
       execute_process(COMMAND /usr/bin/install_name_tool
         -delete_rpath "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/lib/Release${EFFECTIVE_PLATFORM_NAME}"
-        -add_rpath "/usr/local/lib"
+        -add_rpath "/tmp/lib"
         "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/ziptool.app/ziptool")
     endif()
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
@@ -186,7 +186,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
        NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/ziptool.app/ziptool")
       execute_process(COMMAND /usr/bin/install_name_tool
         -delete_rpath "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/lib/MinSizeRel${EFFECTIVE_PLATFORM_NAME}"
-        -add_rpath "/usr/local/lib"
+        -add_rpath "/tmp/lib"
         "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/ziptool.app/ziptool")
     endif()
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
@@ -195,7 +195,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
        NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/ziptool.app/ziptool")
       execute_process(COMMAND /usr/bin/install_name_tool
         -delete_rpath "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_iOS-Debug/lib/libzip/lib/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}"
-        -add_rpath "/usr/local/lib"
+        -add_rpath "/tmp/lib"
         "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/ziptool.app/ziptool")
     endif()
   endif()

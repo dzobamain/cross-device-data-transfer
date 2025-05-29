@@ -25,7 +25,7 @@ endmacro()
 ####################################################################################
 
 # We need to supply transitive dependencies if this config is for a static library
-set(IS_SHARED ON)
+set(IS_SHARED OFF)
 if (NOT IS_SHARED)
   include(CMakeFindDependencyMacro)
   set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_CURRENT_LIST_DIR}/modules")

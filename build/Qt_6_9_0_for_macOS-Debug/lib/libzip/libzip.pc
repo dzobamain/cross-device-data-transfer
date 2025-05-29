@@ -10,5 +10,5 @@ Name: libzip
 Description: library for handling zip archives
 Version: 1.11.3
 Libs:  -L${libdir} -lzip
-Libs.private:  -lbz2 -llzma -lzstd -lz
+Libs.private:  -lbz2 -llzma -lzstd -lzlibstatic
 Cflags: -I${includedir}

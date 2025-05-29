@@ -48,7 +48,6 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./cross-device-data-transfer.app/Contents/MacOS/cross-device-data-transfer")
     execute_process(COMMAND /usr/bin/install_name_tool
       -delete_rpath "/Applications/Qt/6.9.0/macos/lib"
-      -delete_rpath "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/lib/libzip/lib"
       -add_rpath "@executable_path/../Frameworks"
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./cross-device-data-transfer.app/Contents/MacOS/cross-device-data-transfer")
   endif()

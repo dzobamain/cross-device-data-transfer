@@ -3176,3 +3176,131 @@ events:
         
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "/Applications/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "lib/zlib/CMakeLists.txt:83 (check_type_size)"
+    checks:
+      - "Check size of off64_t"
+    directories:
+      source: "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/CMakeFiles/CMakeScratch/TryCompile-rt9BEd"
+      binary: "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/CMakeFiles/CMakeScratch/TryCompile-rt9BEd"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Applications/Qt/6.9.0/macos/lib/cmake/Qt6;/Applications/Qt/6.9.0/macos/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/Applications/Qt/6.9.0/macos/lib/cmake/Qt6/3rdparty/kwin;/Applications/Qt/6.9.0/macos/lib/cmake/Qt6;/Applications/Qt/6.9.0/macos/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/Applications/Qt/6.9.0/macos/lib/cmake/Qt6/3rdparty/kwin"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "HAVE_OFF64_T"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/CMakeFiles/CMakeScratch/TryCompile-rt9BEd'
+        
+        Run Build Command(s): /Applications/Qt/Tools/Ninja/ninja -v cmTC_bd29b
+        [1/2 17.2/sec] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -D_LARGEFILE64_SOURCE=1  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_bd29b.dir/OFF64_T.c.o -MF CMakeFiles/cmTC_bd29b.dir/OFF64_T.c.o.d -o CMakeFiles/cmTC_bd29b.dir/OFF64_T.c.o -c /Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/CMakeFiles/CMakeScratch/TryCompile-rt9BEd/OFF64_T.c
+        \x1b[31mFAILED: \x1b[0mCMakeFiles/cmTC_bd29b.dir/OFF64_T.c.o 
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -D_LARGEFILE64_SOURCE=1  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_bd29b.dir/OFF64_T.c.o -MF CMakeFiles/cmTC_bd29b.dir/OFF64_T.c.o.d -o CMakeFiles/cmTC_bd29b.dir/OFF64_T.c.o -c /Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/CMakeFiles/CMakeScratch/TryCompile-rt9BEd/OFF64_T.c
+        /Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/CMakeFiles/CMakeScratch/TryCompile-rt9BEd/OFF64_T.c:29:12: error: use of undeclared identifier 'off64_t'
+           29 |   ('0' + ((SIZE / 10000)%10)),
+              |            ^
+        /Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/CMakeFiles/CMakeScratch/TryCompile-rt9BEd/OFF64_T.c:27:22: note: expanded from macro 'SIZE'
+           27 | #define SIZE (sizeof(off64_t))
+              |                      ^
+        /Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/CMakeFiles/CMakeScratch/TryCompile-rt9BEd/OFF64_T.c:30:12: error: use of undeclared identifier 'off64_t'
+           30 |   ('0' + ((SIZE / 1000)%10)),
+              |            ^
+        /Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/CMakeFiles/CMakeScratch/TryCompile-rt9BEd/OFF64_T.c:27:22: note: expanded from macro 'SIZE'
+           27 | #define SIZE (sizeof(off64_t))
+              |                      ^
+        /Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/CMakeFiles/CMakeScratch/TryCompile-rt9BEd/OFF64_T.c:31:12: error: use of undeclared identifier 'off64_t'
+           31 |   ('0' + ((SIZE / 100)%10)),
+              |            ^
+        /Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/CMakeFiles/CMakeScratch/TryCompile-rt9BEd/OFF64_T.c:27:22: note: expanded from macro 'SIZE'
+           27 | #define SIZE (sizeof(off64_t))
+              |                      ^
+        /Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/CMakeFiles/CMakeScratch/TryCompile-rt9BEd/OFF64_T.c:32:12: error: use of undeclared identifier 'off64_t'
+           32 |   ('0' + ((SIZE / 10)%10)),
+              |            ^
+        /Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/CMakeFiles/CMakeScratch/TryCompile-rt9BEd/OFF64_T.c:27:22: note: expanded from macro 'SIZE'
+           27 | #define SIZE (sizeof(off64_t))
+              |                      ^
+        /Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/CMakeFiles/CMakeScratch/TryCompile-rt9BEd/OFF64_T.c:33:12: error: use of undeclared identifier 'off64_t'
+           33 |   ('0' +  (SIZE    % 10)),
+              |            ^
+        /Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/CMakeFiles/CMakeScratch/TryCompile-rt9BEd/OFF64_T.c:27:22: note: expanded from macro 'SIZE'
+           27 | #define SIZE (sizeof(off64_t))
+              |                      ^
+        5 errors generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "lib/zlib/CMakeLists.txt:94 (check_include_file)"
+    checks:
+      - "Looking for stdarg.h"
+    directories:
+      source: "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/CMakeFiles/CMakeScratch/TryCompile-8dbS57"
+      binary: "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/CMakeFiles/CMakeScratch/TryCompile-8dbS57"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Applications/Qt/6.9.0/macos/lib/cmake/Qt6;/Applications/Qt/6.9.0/macos/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/Applications/Qt/6.9.0/macos/lib/cmake/Qt6/3rdparty/kwin;/Applications/Qt/6.9.0/macos/lib/cmake/Qt6;/Applications/Qt/6.9.0/macos/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/Applications/Qt/6.9.0/macos/lib/cmake/Qt6/3rdparty/kwin"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "HAVE_STDARG_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/CMakeFiles/CMakeScratch/TryCompile-8dbS57'
+        
+        Run Build Command(s): /Applications/Qt/Tools/Ninja/ninja -v cmTC_52237
+        [1/2 40.0/sec] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_52237.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_52237.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_52237.dir/CheckIncludeFile.c.o -c /Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/CMakeFiles/CMakeScratch/TryCompile-8dbS57/CheckIncludeFile.c
+        [2/2 16.7/sec] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_52237.dir/CheckIncludeFile.c.o -o cmTC_52237   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/Applications/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "lib/zlib/CMakeLists.txt:110 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE___ATTR__VIS_HIDDEN"
+    directories:
+      source: "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/CMakeFiles/CMakeScratch/TryCompile-0gDGuH"
+      binary: "/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/CMakeFiles/CMakeScratch/TryCompile-0gDGuH"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Applications/Qt/6.9.0/macos/lib/cmake/Qt6;/Applications/Qt/6.9.0/macos/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/Applications/Qt/6.9.0/macos/lib/cmake/Qt6/3rdparty/kwin;/Applications/Qt/6.9.0/macos/lib/cmake/Qt6;/Applications/Qt/6.9.0/macos/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/Applications/Qt/6.9.0/macos/lib/cmake/Qt6/3rdparty/kwin"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "HAVE___ATTR__VIS_HIDDEN"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/CMakeFiles/CMakeScratch/TryCompile-0gDGuH'
+        
+        Run Build Command(s): /Applications/Qt/Tools/Ninja/ninja -v cmTC_0f5b6
+        [1/2 50.0/sec] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -DHAVE___ATTR__VIS_HIDDEN  -WError -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_0f5b6.dir/src.c.o -MF CMakeFiles/cmTC_0f5b6.dir/src.c.o.d -o CMakeFiles/cmTC_0f5b6.dir/src.c.o -c /Users/volodymyrdzoba/it-hub/projects/cross-device-data-transfer/build/Qt_6_9_0_for_macOS-Debug/CMakeFiles/CMakeScratch/TryCompile-0gDGuH/src.c
+        warning: unknown warning option '-WError' [-Wunknown-warning-option]
+        1 warning generated.
+        [2/2 46.5/sec] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -WError -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_0f5b6.dir/src.c.o -o cmTC_0f5b6   && :
+        
+      exitCode: 0
+...
