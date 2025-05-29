@@ -25,14 +25,17 @@ public:
     QGridLayout *gridLayout_2;
     QGridLayout *gridLayout;
     QTabWidget *tabWidget;
-    QWidget *tab;
-    QWidget *tab_2;
+    QWidget *tabProfile;
+    QWidget *tabSend;
+    QWidget *tabSettings;
+    QWidget *tabHelp;
 
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
         MainWindow->resize(800, 600);
+        MainWindow->setAnimated(true);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
         gridLayout_2 = new QGridLayout(centralwidget);
@@ -41,12 +44,18 @@ public:
         gridLayout->setObjectName("gridLayout");
         tabWidget = new QTabWidget(centralwidget);
         tabWidget->setObjectName("tabWidget");
-        tab = new QWidget();
-        tab->setObjectName("tab");
-        tabWidget->addTab(tab, QString());
-        tab_2 = new QWidget();
-        tab_2->setObjectName("tab_2");
-        tabWidget->addTab(tab_2, QString());
+        tabProfile = new QWidget();
+        tabProfile->setObjectName("tabProfile");
+        tabWidget->addTab(tabProfile, QString());
+        tabSend = new QWidget();
+        tabSend->setObjectName("tabSend");
+        tabWidget->addTab(tabSend, QString());
+        tabSettings = new QWidget();
+        tabSettings->setObjectName("tabSettings");
+        tabWidget->addTab(tabSettings, QString());
+        tabHelp = new QWidget();
+        tabHelp->setObjectName("tabHelp");
+        tabWidget->addTab(tabHelp, QString());
 
         gridLayout->addWidget(tabWidget, 0, 0, 1, 1);
 
@@ -57,14 +66,19 @@ public:
 
         retranslateUi(MainWindow);
 
+        tabWidget->setCurrentIndex(2);
+
+
         QMetaObject::connectSlotsByName(MainWindow);
     } // setupUi
 
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("MainWindow", "Tab 1", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("MainWindow", "Tab 2", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tabProfile), QCoreApplication::translate("MainWindow", "Profile", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tabSend), QCoreApplication::translate("MainWindow", "Send", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tabSettings), QCoreApplication::translate("MainWindow", "Settings", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tabHelp), QCoreApplication::translate("MainWindow", "Help", nullptr));
     } // retranslateUi
 
 };

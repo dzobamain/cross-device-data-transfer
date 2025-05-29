@@ -13,20 +13,36 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout_2">
     <item row="0" column="0">
      <layout class="QGridLayout" name="gridLayout">
       <item row="0" column="0">
        <widget class="QTabWidget" name="tabWidget">
-        <widget class="QWidget" name="tab">
+        <property name="currentIndex">
+         <number>2</number>
+        </property>
+        <widget class="QWidget" name="tabProfile">
          <attribute name="title">
-          <string>Tab 1</string>
+          <string>Profile</string>
          </attribute>
         </widget>
-        <widget class="QWidget" name="tab_2">
+        <widget class="QWidget" name="tabSend">
          <attribute name="title">
-          <string>Tab 2</string>
+          <string>Send</string>
+         </attribute>
+        </widget>
+        <widget class="QWidget" name="tabSettings">
+         <attribute name="title">
+          <string>Settings</string>
+         </attribute>
+        </widget>
+        <widget class="QWidget" name="tabHelp">
+         <attribute name="title">
+          <string>Help</string>
          </attribute>
         </widget>
        </widget>
