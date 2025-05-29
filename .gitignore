@@ -1,8 +1,48 @@
-__pycache__/
-*.pyc
-private_files/
-description*.txt
-message*.txt
-
-.vscode
+# Qt Creator / CMake config
+*.user
+*.user.*
 CMakeLists.txt.user
+
+# Qt build artifacts
+*.pro.user
+*.autosave
+*.qmlproject.user
+*.qmake.stash
+
+# CMake generated
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+build/
+out/
+bin/
+lib/
+
+# Ninja
+*.ninja
+*.ninja_log
+*.ninja_deps
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Object files and executables
+*.o
+*.obj
+*.so
+*.dll
+*.exe
+*.a
+*.lib
+
+# Qt translation files (optional)
+*.qm
+
+# Backup or temp files
+*~
+*.swp
+*.bak
+*.tmp
+*.log
