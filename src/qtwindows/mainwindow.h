@@ -16,7 +16,7 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-    bool ConstructorByProfile(const std::string& foto_path, const std::string& user_name);
+    void ConstructorByProfile(Ui::MainWindow *ui);
 
 private:
     Ui::MainWindow *ui;

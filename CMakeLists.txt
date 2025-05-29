@@ -59,6 +59,8 @@ include_directories(${CMAKE_SOURCE_DIR}/lib/libzip)
 add_subdirectory(lib/libzip)
 target_link_libraries(${PROJECT_NAME} PRIVATE zip ZLIB::ZLIB)
 
+include_directories(${PROJECT_SOURCE_DIR}/src)
+
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an
 # explicit, fixed bundle identifier manually though.
