@@ -27,6 +27,9 @@ set(PROJECT_SOURCES
         src/file/tozip.h
         src/user/user_data.cpp
         src/user/user_data.h
+
+        # Resources
+        src/resources.qrc
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
@@ -58,7 +61,7 @@ find_package(ZLIB REQUIRED)
 include_directories(${CMAKE_SOURCE_DIR}/lib/libzip)
 add_subdirectory(lib/libzip)
 target_link_libraries(${PROJECT_NAME} PRIVATE zip ZLIB::ZLIB)
-
+# src/
 include_directories(${PROJECT_SOURCE_DIR}/src)
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.

@@ -13,13 +13,12 @@ class MainWindow : public QMainWindow
 {
     Q_OBJECT
 
+private:
+    Ui::MainWindow *ui;
+
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-    void ConstructorByProfile(Ui::MainWindow *ui);
-
-private:
-    Ui::MainWindow *ui;
 };
 
 #endif // MAINWINDOW_H

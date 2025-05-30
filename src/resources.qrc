@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/src">
+        <file>user/udata/not_foto.jpg</file>
+    </qresource>
+</RCC>
