@@ -56,11 +56,27 @@ else()
 endif()
 
 target_link_libraries(cross-device-data-transfer PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
+# local zlib
+set(BUILD_SHARED_LIBS OFF)
+set(ZLIB_BUILD_SHARED OFF CACHE BOOL "Build shared ZLIB" FORCE)
+set(ZLIB_BUILD_STATIC ON CACHE BOOL "Build static ZLIB" FORCE)
+add_subdirectory(lib/zlib)
+
 # libzip
-find_package(ZLIB REQUIRED)
-include_directories(${CMAKE_SOURCE_DIR}/lib/libzip)
+set(BUILD_SHARED_LIBS OFF)  # щоб libzip була статичною, за потреби
+set(ZLIB_LIBRARY ZLIB::ZLIBSTATIC) # вказуємо яку саме ціль libzip має використати
+set(ZLIB_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/lib/zlib)  # не обов'язково, але надійно
 add_subdirectory(lib/libzip)
-target_link_libraries(${PROJECT_NAME} PRIVATE zip ZLIB::ZLIB)
+
+# linking
+target_link_libraries(${PROJECT_NAME}
+    PRIVATE
+        Qt${QT_VERSION_MAJOR}::Widgets
+        zip
+        ZLIB::ZLIBSTATIC
+)
+
+
 # src/
 include_directories(${PROJECT_SOURCE_DIR}/src)
 

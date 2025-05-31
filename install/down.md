@@ -20,7 +20,9 @@
    + check lib/
 
 4. **zlib**  
-   + check lib/
+   + **macOS:** brew
+   + **Windows:** `vcpkg install zlib`  
+   + **Linux:** is  
 
 5. **pkg-config**  
    + **macOS:** `brew install pkg-config`  
