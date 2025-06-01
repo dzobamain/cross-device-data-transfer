@@ -3,7 +3,7 @@
  * @brief main file.
 */
 
-#include "qtwindows/mainwindow.h"
+#include "qtwindow/mainwindow.h"
 
 #include <QApplication>
 

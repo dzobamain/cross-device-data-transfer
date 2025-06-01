@@ -16,9 +16,11 @@ set(PROJECT_SOURCES
         src/main.cpp
 
         #QTWindows
-        src/qtwindows/mainwindow.cpp
-        src/qtwindows/mainwindow.h
-        src/qtwindows/mainwindow.ui
+        src/qtwindow/mainwindow.cpp
+        src/qtwindow/mainwindow.h
+        src/qtwindow/mainwindow.ui
+        src/qtwindow/tab/tprofile.cpp
+        src/qtwindow/tab/tprofile.h
 
         #Core
         src/file/fcrud.cpp
@@ -56,29 +58,16 @@ else()
 endif()
 
 target_link_libraries(cross-device-data-transfer PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
-# local zlib
-set(BUILD_SHARED_LIBS OFF)
-set(ZLIB_BUILD_SHARED OFF CACHE BOOL "Build shared ZLIB" FORCE)
-set(ZLIB_BUILD_STATIC ON CACHE BOOL "Build static ZLIB" FORCE)
-add_subdirectory(lib/zlib)
-
 # libzip
-set(BUILD_SHARED_LIBS OFF)  # щоб libzip була статичною, за потреби
-set(ZLIB_LIBRARY ZLIB::ZLIBSTATIC) # вказуємо яку саме ціль libzip має використати
-set(ZLIB_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/lib/zlib)  # не обов'язково, але надійно
+find_package(ZLIB REQUIRED)
+include_directories(${ZLIB_INCLUDE_DIRS})
+include_directories(${CMAKE_SOURCE_DIR}/lib/libzip)
 add_subdirectory(lib/libzip)
-
-# linking
-target_link_libraries(${PROJECT_NAME}
-    PRIVATE
-        Qt${QT_VERSION_MAJOR}::Widgets
-        zip
-        ZLIB::ZLIBSTATIC
-)
-
-
+target_link_libraries(${PROJECT_NAME} PRIVATE zip ZLIB::ZLIB)
 # src/
 include_directories(${PROJECT_SOURCE_DIR}/src)
+# window
+include_directories(${PROJECT_SOURCE_DIR}/src/qtwindow)
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an
