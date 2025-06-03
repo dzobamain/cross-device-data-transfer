@@ -3,17 +3,13 @@
  * @brief main file.
 */
 
-#include "qtwindow/mainwindow.h"
-
 #include <QApplication>
+#include <qtwindow/mainwindow.h>
 
-int main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]) {
     QApplication app(argc, argv);
-    MainWindow main_window;
-    main_window.setWindowTitle("cross device data transfer");
-
-    main_window.show();
-
+    MainWindow w;
+    w.show();
     return app.exec();
 }
+

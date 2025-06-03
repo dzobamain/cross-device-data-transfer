@@ -1,0 +1,34 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"lib/libzip/ossfuzz/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "zip::@1dcd1b6f2a3a85803506"
+		}
+	],
+	"id" : "zip_write_encrypt_aes256_file_fuzzer_autogen_timestamp_deps::@e4d74189f42c38319558",
+	"isGeneratorProvided" : true,
+	"name" : "zip_write_encrypt_aes256_file_fuzzer_autogen_timestamp_deps",
+	"paths" : 
+	{
+		"build" : "lib/libzip/ossfuzz",
+		"source" : "lib/libzip/ossfuzz"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

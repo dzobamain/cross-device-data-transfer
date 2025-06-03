@@ -12,67 +12,68 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 
-set(PROJECT_SOURCES
-        src/main.cpp
+set(CMAKE_AUTOUIC_SEARCH_PATHS ${PROJECT_SOURCE_DIR}/ui)
 
-        #QTWindows
-        src/qtwindow/mainwindow.cpp
-        src/qtwindow/mainwindow.h
-        src/qtwindow/mainwindow.ui
-        src/qtwindow/tab/tprofile.cpp
-        src/qtwindow/tab/tprofile.h
+set(HEADERS
+    # QTWindow
+    include/qtwindow/mainwindow.h
+    include/qtwindow/tab/tprofile.h
 
-        #Core
-        src/file/fcrud.cpp
-        src/file/fcrud.h
-        src/file/tozip.cpp
-        src/file/tozip.h
-        src/user/user_data.cpp
-        src/user/user_data.h
-
-        # Resources
-        src/resources.qrc
+    # Core
+    include/file/fcrud.h
+    include/file/tozip.h
+    include/user/user_data.h
 )
 
-if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
-    qt_add_executable(cross-device-data-transfer
-        MANUAL_FINALIZATION
-        ${PROJECT_SOURCES}
-    )
-# Define target properties for Android with Qt 6 as:
-#    set_property(TARGET cross-device-data-transfer APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
-#                 ${CMAKE_CURRENT_SOURCE_DIR}/android)
-# For more information, see https://doc.qt.io/qt-6/qt-add-executable.html#target-creation
-else()
-    if(ANDROID)
-        add_library(cross-device-data-transfer SHARED
-            ${PROJECT_SOURCES}
-        )
-# Define properties for Android with Qt 5 after find_package() calls as:
-#    set(ANDROID_PACKAGE_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/android")
-    else()
-        add_executable(cross-device-data-transfer
-            ${PROJECT_SOURCES}
-        )
-    endif()
-endif()
+set(SOURCES
+    src/main.cpp
 
+    # QTWindow
+    src/qtwindow/mainwindow.cpp
+    include/qtwindow/mainwindow.h
+    src/qtwindow/tab/tprofile.cpp
+
+    # Core
+    src/file/fcrud.cpp
+    src/file/tozip.cpp
+    src/user/user_data.cpp
+)
+
+set(UI_FILES
+    ui/mainwindow.ui
+)
+
+set(RESOURCE_FILES
+    src/resources.qrc
+)
+
+qt_add_executable(cross-device-data-transfer
+    MANUAL_FINALIZATION
+    ${SOURCES}
+    ${UI_FILES}
+    ${RESOURCE_FILES}
+    ${HEADERS}
+)
+
+# Lib
 target_link_libraries(cross-device-data-transfer PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
-# libzip
+# - libzip
 find_package(ZLIB REQUIRED)
 include_directories(${ZLIB_INCLUDE_DIRS})
 include_directories(${CMAKE_SOURCE_DIR}/lib/libzip)
 add_subdirectory(lib/libzip)
 target_link_libraries(${PROJECT_NAME} PRIVATE zip ZLIB::ZLIB)
-# include all headers file
-include_directories(${PROJECT_SOURCE_DIR}/src)
 
-# Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
-# If you are developing for iOS or macOS you should consider setting an
-# explicit, fixed bundle identifier manually though.
+# Include
+target_include_directories(cross-device-data-transfer PRIVATE
+    ${PROJECT_SOURCE_DIR}/include
+    ${PROJECT_SOURCE_DIR}/ui
+)
+
 if(${QT_VERSION} VERSION_LESS 6.1.0)
-  set(BUNDLE_ID_OPTION MACOSX_BUNDLE_GUI_IDENTIFIER com.example.cross-device-data-transfer)
+    set(BUNDLE_ID_OPTION MACOSX_BUNDLE_GUI_IDENTIFIER com.example.cross-device-data-transfer)
 endif()
+
 set_target_properties(cross-device-data-transfer PROPERTIES
     ${BUNDLE_ID_OPTION}
     MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
@@ -88,6 +89,4 @@ install(TARGETS cross-device-data-transfer
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
 
-if(QT_VERSION_MAJOR EQUAL 6)
-    qt_finalize_executable(cross-device-data-transfer)
-endif()
+qt_finalize_executable(cross-device-data-transfer)
