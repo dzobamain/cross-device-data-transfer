@@ -8,6 +8,8 @@
 
 # CMake build artifacts
 
+/build/*
+
 CMakeLists.txt.user
 CMakeCache.txt
 CMakeFiles/
