@@ -30,7 +30,6 @@ set(SOURCES
 
     # QTWindow
     src/qtwindow/mainwindow.cpp
-    include/qtwindow/mainwindow.h
     src/qtwindow/tab/tprofile.cpp
 
     # Core
