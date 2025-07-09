@@ -1,7 +1,6 @@
 
 # CMake build artifacts
 
-build/*
 !build/.gitkeep
 
 CMakeLists.txt.user
