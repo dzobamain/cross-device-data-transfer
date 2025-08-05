@@ -15,9 +15,9 @@
 #include <file/fcrud.h>
 
 #ifdef _WIN32
-    #define USER_DATA_FILE "user\\udata\\user_data.txt"
+    #define USER_DATA_FILE "src\\user\\udata\\user_data.txt"
 #else
-    #define USER_DATA_FILE "user/udata/user_data.txt"
+    #define USER_DATA_FILE "src/user/udata/user_data.txt"
 #endif
 
 bool ResetToDefault(const bool reset_name, const bool reset_foto)
@@ -28,13 +28,20 @@ bool ResetToDefault(const bool reset_name, const bool reset_foto)
     
     const std::string default_name = "user_name";
     #ifdef _WIN32
-        const std::string default_foto = "user\\udata\\not_foto.jpg";
+        const std::string default_foto = "src\\user\\udata\\not_foto.jpg";
     #else
-        const std::string default_foto = "user/udata/not_foto.jpg";
+        const std::string default_foto = "src/user/udata/not_foto.jpg";
     #endif
 
     /* Reset values */
     std::vector current_user_data = ReadFileAsArray(USER_DATA_FILE);
+
+    if (current_user_data.size() < 3) {
+        std::cerr << "ResetToDefault(): User data file is empty. Resetting to default values.\n";
+
+        std::string save_as = default_name + "\n" + default_foto + "\n";
+        return WriteToFile(USER_DATA_FILE, save_as);
+    }
 
     if (reset_name && reset_foto) {
         std::string save_as = default_name + "\n" + default_foto + "\n" + current_user_data[2] + "\n";

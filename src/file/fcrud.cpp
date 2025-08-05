@@ -57,6 +57,17 @@ bool RemoveFile(const std::string& file_path)
 
 bool WriteToFile(const std::string& file_path, const std::string& text)
 {
+    namespace fs = std::filesystem;
+
+    fs::path path(file_path);
+
+    if (!fs::exists(path.parent_path())) {
+        if (!fs::create_directories(path.parent_path())) {
+            std::cerr << "Error WriteToFile: Cannot create directories for " << file_path << std::endl;
+            return false;
+        }
+    }
+
     std::ofstream file(file_path);
 
     if (!file) {
@@ -65,10 +76,9 @@ bool WriteToFile(const std::string& file_path, const std::string& text)
     }
 
     file << text;
-    file.close();
-
     return true;
 }
+
 
 std::vector<std::string> ReadFileAsArray(const std::string& file_path)
 {
