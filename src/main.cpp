@@ -3,8 +3,13 @@
  * @brief main file.
 */
 
-int main(char *argv[]) 
+#include <iostream>
+#include <user/user_data.h>
+
+int main() 
 {
-    
+    std::cout << "cross-device-data-transfer.out started\n";
+
+    return -1;
 }
 
