@@ -23,6 +23,8 @@
 
 bool ResetToDefault(const bool reset_name, const bool reset_foto, const bool reset_id)
 {
+    std::cout << "[" << __FILE__ << "] " << __FUNCTION__ << "(): Reset data." << std::endl;
+
     if (!reset_name && !reset_foto && !reset_id) {
         return true;
     }
@@ -43,7 +45,7 @@ bool ResetToDefault(const bool reset_name, const bool reset_foto, const bool res
 
     /* Reset all if file is empty or damaged */
     if (current_user_data.size() < number_data) {
-        std::cout << "[" << __FILE__ << "] " << __FUNCTION__ << "(): User data file is empty or invalid. Resetting to default values.\n";
+        std::cout << "[" << __FILE__ << "] " << __FUNCTION__ << "(): User data file is empty or invalid. Resetting to default values." << std::endl;
 
         save_as = default_name + "\n" + default_foto + "\n" + default_id + "\n";
         return WriteToFile(USER_DATA_FILE, save_as);

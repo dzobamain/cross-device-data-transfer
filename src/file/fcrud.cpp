@@ -21,36 +21,42 @@
 
 bool MoveFile(const std::string& from_path, const std::string& to_path)
 {
+    std::cout << "[" << __FILE__ << "] " << __FUNCTION__ << "(): Moving file from " << from_path << " to " << to_path << std::endl;
+
     try {
         std::filesystem::rename(from_path, to_path);
         return true;
     }
     catch (const std::filesystem::filesystem_error& e) {
-        std::cerr << "Error MoveFile: " << e.what() << std::endl;
+        std::cerr << "[Error]" << "[" << __FILE__ << "] " << __FUNCTION__ << "(): " << e.what() << std::endl;
         return false;
     }
 }
 
 bool CopyFile(const std::string& from_path, const std::string& to_path)
 {
+    std::cout << "[" << __FILE__ << "] " << __FUNCTION__ << "(): Copying file from " << from_path << " to " << to_path << std::endl;
+
     try {
         std::filesystem::copy_file(from_path, to_path);
         return true;
     }
     catch (const std::filesystem::filesystem_error& e) {
-        std::cerr << "Error CopyFile: " << e.what() << std::endl;
+        std::cerr << "[Error]" << "[" << __FILE__ << "] " << __FUNCTION__ << "(): " << e.what() << std::endl;
         return false;
     }
 }
 
 bool RemoveFile(const std::string& file_path)
 {
+    std::cout << "[" << __FILE__ << "] " << __FUNCTION__ << "(): Removing file " << file_path << std::endl;
+
     try {
         std::filesystem::remove(file_path);
         return true;
     }
     catch(const std::filesystem::filesystem_error& e) {
-        std::cerr << "Error RemoveFile: " << e.what() << std::endl;
+        std::cerr << "[Error]" << "[" << __FILE__ << "] " << __FUNCTION__ << "(): " << e.what() << std::endl;
         return false;
     }
 }
@@ -59,11 +65,13 @@ bool WriteToFile(const std::string& file_path, const std::string& text)
 {
     namespace fs = std::filesystem;
 
+    std::cout << "[" << __FILE__ << "] " << __FUNCTION__ << "(): Writing to file " << file_path << std::endl;
+
     fs::path path(file_path);
 
     if (!fs::exists(path.parent_path())) {
         if (!fs::create_directories(path.parent_path())) {
-            std::cerr << "Error WriteToFile: Cannot create directories for " << file_path << std::endl;
+            std::cerr << "[Error]" << "[" << __FILE__ << "] " << __FUNCTION__ << "(): Cannot create directories for " << file_path << std::endl;
             return false;
         }
     }
@@ -71,7 +79,7 @@ bool WriteToFile(const std::string& file_path, const std::string& text)
     std::ofstream file(file_path);
 
     if (!file) {
-        std::cerr << "Error WriteToFile: Cannot open file " << file_path << std::endl;
+        std::cerr << "[Error]" << "[" << __FILE__ << "] " << __FUNCTION__ << "(): Cannot open file " << file_path << std::endl;
         return false;
     }
 
@@ -79,14 +87,15 @@ bool WriteToFile(const std::string& file_path, const std::string& text)
     return true;
 }
 
-
 std::vector<std::string> ReadFileAsArray(const std::string& file_path)
 {
+    std::cout << "[" << __FILE__ << "] " << __FUNCTION__ << "(): Reading file " << file_path << std::endl;
+
     std::vector<std::string> lines;
     std::ifstream file(file_path);
 
     if (!file) {
-        std::cerr << "Error ReadFileAsArray: Cannot open file " << file_path << std::endl;
+        std::cerr << "[Error]" << "[" << __FILE__ << "] " << __FUNCTION__ << "(): Cannot open file " << file_path << std::endl;
         return lines;
     }
 
@@ -102,10 +111,13 @@ std::vector<std::string> ReadFileAsArray(const std::string& file_path)
 
 std::string GetFileName(const std::string& full_path)
 {
+    std::cout << "[" << __FILE__ << "] " << __FUNCTION__ << "(): Getting filename from path " << full_path << std::endl;
     return std::filesystem::path(full_path).filename().string();
 }
 
 std::string GetDirectory(const std::string& full_path)
 {
+    std::cout << "[" << __FILE__ << "] " << __FUNCTION__ << "(): Getting directory from path " << full_path << std::endl;
     return std::filesystem::path(full_path).parent_path().filename().string();
 }
+

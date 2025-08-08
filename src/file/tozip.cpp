@@ -33,7 +33,7 @@ bool CompressToZip(const std::string& source_path, const std::string& zip_path)
     }
 
     if (!std::filesystem::exists(source_path)) {
-        std::cerr << "Error CompressToZip: " << source_path << " not found." << std::endl;
+        std::cerr << "[Error]" << "[" << __FILE__ << "] " << __FUNCTION__ << "(): " << source_path << " not found." << std::endl;
         return false;
     }
 
@@ -60,7 +60,7 @@ zip_t* CreateZipArchive(const std::string& zip_path)
     int err = 0;
     zip_t* archive = zip_open(zip_path.c_str(), ZIP_CREATE | ZIP_TRUNCATE, &err);
     if (!archive) {
-        std::cerr << "Error CreateZipArchive: " << zip_path << std::endl;
+        std::cerr << "[Error]" << "[" << __FILE__ << "] " << __FUNCTION__ << "(): " << zip_path << std::endl;
     }
 
     return archive;
@@ -72,7 +72,7 @@ bool AddFileToZip(zip_t* archive, const std::string& file_path, const std::strin
 
     if (!source || zip_file_add(archive, relative_path.c_str(), source, ZIP_FL_OVERWRITE) < 0) {
         zip_source_free(source);
-        std::cerr << "Error AddFileToZip: " << file_path << std::endl;
+        std::cerr << "[Error]" << "[" << __FILE__ << "] " << __FUNCTION__ << "(): " << file_path << std::endl;
         return false;
     }
     
