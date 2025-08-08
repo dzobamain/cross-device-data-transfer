@@ -10,10 +10,9 @@ int main()
 {
     std::cout << "cross-device-data-transfer.out started\n";
 
-    bool res = ResetToDefault(true, true);
+    bool res = ResetToDefault(true, true, true);
 
-    std::cout << res;
+    std::cout << "cross-device-data-transfer.out ended\n";
 
     return -1;
 }
-

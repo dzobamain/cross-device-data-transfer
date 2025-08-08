@@ -14,94 +14,59 @@
 #include <user/user_data.h>
 #include <file/fcrud.h>
 
+/* Path to user data */
 #ifdef _WIN32
     #define USER_DATA_FILE "src\\user\\udata\\user_data.txt"
 #else
     #define USER_DATA_FILE "src/user/udata/user_data.txt"
 #endif
 
-bool ResetToDefault(const bool reset_name, const bool reset_foto)
+bool ResetToDefault(const bool reset_name, const bool reset_foto, const bool reset_id)
 {
-    if (!reset_name && !reset_foto) {
+    if (!reset_name && !reset_foto && !reset_id) {
         return true;
     }
     
+    /* Default values */
+    const int number_data = 3;
     const std::string default_name = "user_name";
-    #ifdef _WIN32
-        const std::string default_foto = "src\\user\\udata\\not_foto.jpg";
-    #else
-        const std::string default_foto = "src/user/udata/not_foto.jpg";
-    #endif
+#ifdef _WIN32
+    const std::string default_foto = "src\\user\\udata\\not_foto.jpg";
+#else
+    const std::string default_foto = "src/user/udata/not_foto.jpg";
+#endif
+    const std::string default_id = "0000000000";
 
-    /* Reset values */
-    std::vector current_user_data = ReadFileAsArray(USER_DATA_FILE);
+    /* Read current user data */
+    std::vector<std::string> current_user_data = ReadFileAsArray(USER_DATA_FILE);
+    std::string save_as;
 
-    if (current_user_data.size() < 3) {
-        std::cerr << "ResetToDefault(): User data file is empty. Resetting to default values.\n";
+    /* Reset all if file is empty or damaged */
+    if (current_user_data.size() < number_data) {
+        std::cout << "[" << __FILE__ << "] " << __FUNCTION__ << "(): User data file is empty or invalid. Resetting to default values.\n";
 
-        std::string save_as = default_name + "\n" + default_foto + "\n";
+        save_as = default_name + "\n" + default_foto + "\n" + default_id + "\n";
         return WriteToFile(USER_DATA_FILE, save_as);
     }
 
-    if (reset_name && reset_foto) {
-        std::string save_as = default_name + "\n" + default_foto + "\n" + current_user_data[2] + "\n";
-        return WriteToFile(USER_DATA_FILE, default_name + default_foto);
-    }
+    /* Copy current values */
+    std::string name   = current_user_data[0];
+    std::string foto   = current_user_data[1];
+    std::string id     = current_user_data[2];
 
-    /* - Reset name or photo to default */
-    if (reset_name) {
-        std::string save_as = default_name + "\n" + current_user_data[1] + "\n" + current_user_data[2] + "\n";
-        return WriteToFile(USER_DATA_FILE, save_as);
-    } 
-    else {
-        std::string save_as = current_user_data[0] + "\n" + default_foto + "\n" + current_user_data[2] + "\n";
-        return WriteToFile(USER_DATA_FILE, save_as);
-    }
+    /* Reset required fields */
+    if (reset_name) name = default_name;
+    if (reset_foto) foto = default_foto;
+    if (reset_id)   id   = default_id;
+
+    /* Prepare data for saving */
+    save_as = name + "\n" + foto + "\n" + id + "\n";
+
+    /* Save updated values */
+    return WriteToFile(USER_DATA_FILE, save_as);
 }
 
-bool isAllDigits(const std::string& str)
-{
-    if (str.empty())
-        return false;
-    for (size_t i = 0; i < str.size(); ++i) {
-        if (str[i] < '0' || str[i] > '9') {
-            return false;
-        }
-    }
-
-    return true;
-}
-
-bool isValidUTF8(const std::string& str) 
-{
-    int i = 0;
-    while (i < str.size()) {
-        unsigned char byte = str[i];
-
-        if (byte <= 0x7F)
-            i++;
-        else if ((byte & 0xE0) == 0xC0) {
-            if (i + 1 >= str.size() || (str[i + 1] & 0xC0) != 0x80) 
-                return false;
-            i += 2;
-        }
-        else if ((byte & 0xF0) == 0xE0) {
-            if (i + 2 >= str.size() || (str[i + 1] & 0xC0) != 0x80 || (str[i + 2] & 0xC0) != 0x80) 
-                return false;
-            i += 3;
-        } 
-        else if ((byte & 0xF8) == 0xF0) {
-            if (i + 3 >= str.size() || (str[i + 1] & 0xC0) != 0x80 || (str[i + 2] & 0xC0) != 0x80 || (str[i + 3] & 0xC0) != 0x80) 
-                return false;
-            i += 4;
-        } 
-        else {
-            return false;
-        }
-    }
-    return true;
-}
-
+/* Data check */
 bool IsUserNameValid(const std::string& name)
 {
     const int max_size = 50;
@@ -140,6 +105,49 @@ bool IsIdValid(const std::string& id)
         return false;
     if (!isAllDigits(id))
         return false;
+
+    return true;
+}
+
+bool isValidUTF8(const std::string& str) 
+{
+    int i = 0;
+    while (i < str.size()) {
+        unsigned char byte = str[i];
+
+        if (byte <= 0x7F)
+            i++;
+        else if ((byte & 0xE0) == 0xC0) {
+            if (i + 1 >= str.size() || (str[i + 1] & 0xC0) != 0x80) 
+                return false;
+            i += 2;
+        }
+        else if ((byte & 0xF0) == 0xE0) {
+            if (i + 2 >= str.size() || (str[i + 1] & 0xC0) != 0x80 || (str[i + 2] & 0xC0) != 0x80) 
+                return false;
+            i += 3;
+        } 
+        else if ((byte & 0xF8) == 0xF0) {
+            if (i + 3 >= str.size() || (str[i + 1] & 0xC0) != 0x80 || (str[i + 2] & 0xC0) != 0x80 || (str[i + 3] & 0xC0) != 0x80) 
+                return false;
+            i += 4;
+        } 
+        else {
+            return false;
+        }
+    }
+    return true;
+}
+
+bool isAllDigits(const std::string& str)
+{
+    if (str.empty())
+        return false;
+    for (size_t i = 0; i < str.size(); ++i) {
+        if (str[i] < '0' || str[i] > '9') {
+            return false;
+        }
+    }
 
     return true;
 }
