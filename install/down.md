@@ -11,25 +11,7 @@
    + **Windows:** `vcpkg install cmake`  
    + **Linux (Ubuntu/Debian):** `sudo apt install cmake`  
 
-2. **Qt**  
-   + **macOS:** `brew install qt` / [Download](https://www.qt.io/download)  
-   + **Windows:** `vcpkg install qt6` / [Download](https://www.qt.io/download)  
-   + **Linux:** `sudo apt install qtbase5-dev qt6-base-dev` / [Download](https://www.qt.io/download)  
-
-3. **libzip**  
-   + check lib/
-
-4. **zlib**  
-   + **macOS:** brew
-   + **Windows:** `vcpkg install zlib`  
-   + **Linux:** is  
-
-5. **pkg-config**  
-   + **macOS:** `brew install pkg-config`  
-   + **Windows:** `vcpkg install pkg-config`  
-   + **Linux:** `sudo apt install pkg-config`  
-
-6. **Ninja** *(optional)*  
-   + **macOS:** `brew install ninja`  
-   + **Windows:** `vcpkg install ninja`  
-   + **Linux:** `sudo apt install ninja-build`  
+2. **WxWidget**  
+   + **macOS:** `brew install wxwidgets`
+   + **Windows:** `vcpkg install wxwidgets`  
+   + **Linux:** `sudo apt install libwxgtk3.0-gtk3-dev`
