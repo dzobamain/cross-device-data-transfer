@@ -11,17 +11,14 @@ info() { echo -e "${BLUE}$1${NC}"; }
 success() { echo -e "${GREEN}$1${NC}"; }
 error() { echo -e "${RED}$1${NC}"; }
 
-# -------- Install instructions --------
-# Linux:
-# - (Debian/Ubuntu):
-#   sudo apt install build-essential cmake libbz2-dev liblzma-dev libzstd-dev
-# - (Arch/Manjaro):
-#   sudo pacman -S --needed base-devel cmake bzip2 xz zstd
-#
-# macOS (Homebrew):
-#   brew install cmake bzip2 xz zstd zlib
+# -------- Check wx-config --------
+if ! command -v wx-config &>/dev/null; then
+    error "wxWidgets is not installed. Install it first:"
+    echo "macOS: brew install wxwidgets"
+    echo "Ubuntu/Debian: sudo apt install libwxgtk3.2-dev"
+    exit 1
+fi
 
-# -------- Create directories --------
 info "Creating build directories..."
 mkdir -p build/zlib build/libzip build/bin
 
@@ -83,32 +80,16 @@ STATIC_LIBS=(
   build/libzip/lib/libzip.a
 )
 
-# -------- System libraries --------
-if [[ "$OSTYPE" == "darwin"* ]]; then
-  BREW_PREFIX=$(brew --prefix)
-  INCLUDE_DIRS+=(-I"$BREW_PREFIX/include")
-  SYSTEM_LIBS=(
-    -L"$BREW_PREFIX/lib" -lbz2
-    -L"$BREW_PREFIX/lib" -llzma
-    -L"$BREW_PREFIX/lib" -lzstd
-  )
-else
-  SYSTEM_LIBS=(
-    -lbz2
-    -llzma
-    -lzstd
-  )
-fi
-
-# -------- Output binary --------
-OUT_FILE=build/bin/cross-device-data-transfer.out
-
 # -------- Compile --------
 info "Compiling the main program..."
-g++ -std=c++17 "${SRC_FILES[@]}" "${INCLUDE_DIRS[@]}" "${STATIC_LIBS[@]}" "${SYSTEM_LIBS[@]}" -o "$OUT_FILE"
-
-#mkdir -p build/bin/user/udata
-#cp src/user/udata/user_data.txt build/bin/user/udata/user_data.txt
+clang++ -std=c++17 \
+    "${SRC_FILES[@]}" \
+    "${INCLUDE_DIRS[@]}" \
+    "${STATIC_LIBS[@]}" \
+    $(wx-config --cxxflags) \
+    $(wx-config --libs std,core,base) \
+    -lbz2 -llzma -lzstd \
+    -o build/bin/cross-device-data-transfer.out
 
 success "Build completed successfully!"
-echo -e "Run: ${BLUE}./$OUT_FILE${NC}"
+echo -e "Run: ${BLUE}./build/bin/cross-device-data-transfer.out${NC}"

@@ -5,14 +5,14 @@
 
 #include <iostream>
 #include <user/user_data.h>
+#include <wx/wx.h>
 
-int main() 
+int main(int argc, char** argv) 
 {
     std::cout << "cross-device-data-transfer.out started\n";
 
-    bool res = ResetToDefault(true, true, true);
-
     std::cout << "cross-device-data-transfer.out ended\n";
 
-    return -1;
+    return 0;
 }
+
