@@ -7,6 +7,8 @@ RED='\033[0;31m'
 BLUE='\033[1;34m'
 NC='\033[0m'
 
+OUTPUT_NAME="cross-device-data-transfer.out"
+
 info() { echo -e "${BLUE}$1${NC}"; }
 success() { echo -e "${GREEN}$1${NC}"; }
 error() { echo -e "${RED}$1${NC}"; }
@@ -14,8 +16,7 @@ error() { echo -e "${RED}$1${NC}"; }
 # -------- Check wx-config --------
 if ! command -v wx-config &>/dev/null; then
     error "wxWidgets is not installed. Install it first:"
-    echo "macOS: brew install wxwidgets"
-    echo "Ubuntu/Debian: sudo apt install libwxgtk3.2-dev"
+    echo "Check install/install_lib.*"
     exit 1
 fi
 
@@ -59,7 +60,6 @@ else
     success "libzip already built."
 fi
 
-# -------- Source files --------
 SRC_FILES=(
   src/main.cpp
   src/file/fcrud.cpp
@@ -67,18 +67,25 @@ SRC_FILES=(
   src/user/user_data.cpp
 )
 
-# -------- Include directories --------
 INCLUDE_DIRS=(
   -Iinclude
   -Ibuild/zlib/include
   -Ibuild/libzip/include
 )
 
-# -------- Static libraries --------
 STATIC_LIBS=(
   build/zlib/lib/libz.a
   build/libzip/lib/libzip.a
 )
+
+SYSTEM_LIBS=(
+  -lbz2
+  -llzma
+  -lzstd
+)
+
+BUILD_DIR="build/bin"
+OUTPUT_PATH="$BUILD_DIR/$OUTPUT_NAME"
 
 # -------- Compile --------
 info "Compiling the main program..."
@@ -88,8 +95,8 @@ clang++ -std=c++17 \
     "${STATIC_LIBS[@]}" \
     $(wx-config --cxxflags) \
     $(wx-config --libs std,core,base) \
-    -lbz2 -llzma -lzstd \
-    -o build/bin/cross-device-data-transfer.out
+    "${SYSTEM_LIBS[@]}" \
+    -o "$OUTPUT_PATH"
 
 success "Build completed successfully!"
-echo -e "Run: ${BLUE}./build/bin/cross-device-data-transfer.out${NC}"
+echo -e "Run: ${BLUE}./${OUTPUT_PATH}${NC}"
