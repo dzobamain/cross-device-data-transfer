@@ -1,59 +1,81 @@
 @echo off
 setlocal enabledelayedexpansion
 
-echo Creating directories...
-mkdir build\zlib 2>nul
-mkdir build\libzip 2>nul
-mkdir build\bin 2>nul
+set OUTPUT_NAME=cross-device-data-transfer.exe
+set BUILD_DIR=build\bin
+set OUTPUT_PATH=%BUILD_DIR%\%OUTPUT_NAME%
 
-:: === ZLIB ===
-if not exist build\zlib\lib\zlibstatic.lib (
-    echo Compiling zlib...
-    cd lib\zlib
-    mkdir build 2>nul
-    cd build
-    cmake .. -G "MinGW Makefiles" -DCMAKE_INSTALL_PREFIX=..\..\..\build\zlib -DBUILD_SHARED_LIBS=OFF
-    cmake --build . --target install --config Release
-    cd ..\..\..
-) else (
-    echo zlib is already built
-)
+REM -------- Functions --------
+:info
+echo [INFO] %*
+goto :eof
 
-:: === LIBZIP ===
-if not exist build\libzip\lib\libzip.lib (
-    echo Compiling libzip...
-    cd lib\libzip
-    mkdir build 2>nul
-    cd build
+:success
+echo [SUCCESS] %*
+goto :eof
 
-    set ZLIB_PATH=%~dp0build\zlib
-    cmake .. -G "MinGW Makefiles" ^
-        -DZLIB_LIBRARY=%ZLIB_PATH:\=\\%\lib\zlibstatic.lib ^
-        -DZLIB_INCLUDE_DIR=%ZLIB_PATH:\=\\%\include ^
-        -DCMAKE_INSTALL_PREFIX=%~dp0build\libzip ^
-        -DBUILD_SHARED_LIBS=OFF
+:error
+echo [ERROR] %*
+exit /b 1
 
-    cmake --build . --target install --config Release
-    cd ..\..\..
-) else (
-    echo libzip is already built
-)
-
-echo Current directory: %CD%
-if exist src\main.cpp (
-    echo Found src\main.cpp
-) else (
-    echo ERROR: src\main.cpp not found
+REM -------- Check wx-config --------
+where wx-config >nul 2>&1
+if errorlevel 1 (
+    call :error wxWidgets is not installed. Install it first:
+    echo Check install/install_lib.*
     exit /b 1
 )
 
-echo Compiling the main program...
-g++ src\main.cpp ^
-  -Iinclude ^
-  -Ibuild\zlib\include ^
-  -Ibuild\libzip\include ^
-  build\zlib\lib\zlibstatic.lib ^
-  build\libzip\lib\libzip.lib ^
-  -o build\bin\cddt.exe
+call :info Creating build directories...
+if not exist build\zlib mkdir build\zlib
+if not exist build\libzip mkdir build\libzip
+if not exist %BUILD_DIR% mkdir %BUILD_DIR%
 
-echo Build completed successfully. Run: build\bin\cddt.exe
+REM -------- Build zlib --------
+if not exist build\zlib\lib\libz.a (
+    call :info Building zlib...
+    pushd lib\zlib
+    popd
+) else (
+    call :success zlib already built.
+)
+
+REM -------- Build libzip --------
+if not exist build\libzip\lib\libzip.a (
+    call :info Building libzip...
+    pushd lib\libzip
+    if not exist build mkdir build
+    pushd build
+
+    set ZLIB_INSTALL_DIR=%CD%\..\..\..\build\zlib
+    set LIBZIP_INSTALL_DIR=%CD%\..\..\..\build\libzip
+
+    cmake .. -DZLIB_LIBRARY="%ZLIB_INSTALL_DIR%\lib\libz.a" -DZLIB_INCLUDE_DIR="%ZLIB_INSTALL_DIR%\include" -DCMAKE_INSTALL_PREFIX="%LIBZIP_INSTALL_DIR%" -DBUILD_SHARED_LIBS=OFF -DENABLE_BZIP2=ON -DENABLE_LZMA=ON -DENABLE_ZSTD=ON
+
+    cmake --build . --target install
+
+    popd
+    popd
+) else (
+    call :success libzip already built.
+)
+
+set SRC_FILES=src\main.cpp src\file\fcrud.cpp src\file\tozip.cpp src\user\user_data.cpp
+set INCLUDE_DIRS=-Iinclude -Ibuild\zlib\include -Ibuild\libzip\include
+set STATIC_LIBS=build\zlib\lib\libz.a build\libzip\lib\libzip.a
+set SYSTEM_LIBS=-lbz2 -llzma -lzstd
+
+REM -------- Compile --------
+call :info Compiling the main program...
+
+clang++ -std=c++17 %SRC_FILES% %INCLUDE_DIRS% %STATIC_LIBS% %SYSTEM_LIBS% -o %OUTPUT_PATH%
+
+if errorlevel 1 (
+    call :error Build failed.
+    exit /b 1
+)
+
+call :success Build completed successfully!
+echo Run: .\%OUTPUT_PATH%
+
+endlocal
