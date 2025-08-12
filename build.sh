@@ -8,6 +8,8 @@ BLUE='\033[1;34m'
 NC='\033[0m'
 
 OUTPUT_NAME="cross-device-data-transfer.out"
+BUILD_DIR="build/bin"
+OUTPUT_PATH="$BUILD_DIR/$OUTPUT_NAME"
 
 info() { echo -e "${BLUE}$1${NC}"; }
 success() { echo -e "${GREEN}$1${NC}"; }
@@ -20,8 +22,12 @@ if ! command -v wx-config &>/dev/null; then
     exit 1
 fi
 
+# Extra WX paths (macOS Homebrew example)
+WX_INCLUDE_1="/opt/homebrew/Cellar/wxwidgets/3.3.1/include/wx-3.3"
+WX_INCLUDE_2="/opt/homebrew/Cellar/wxwidgets/3.3.1/lib/wx/include/osx_cocoa-unicode-3.3"
+
 info "Creating build directories..."
-mkdir -p build/zlib build/libzip build/bin
+mkdir -p build/zlib build/libzip "$BUILD_DIR"
 
 # -------- Build zlib --------
 if [ ! -f build/zlib/lib/libz.a ]; then
@@ -65,12 +71,16 @@ SRC_FILES=(
   src/file/fcrud.cpp
   src/file/tozip.cpp
   src/user/user_data.cpp
+
+  wxui/mainwindow.cpp
 )
 
 INCLUDE_DIRS=(
   -Iinclude
   -Ibuild/zlib/include
   -Ibuild/libzip/include
+  -I"$WX_INCLUDE_1"
+  -I"$WX_INCLUDE_2"
 )
 
 STATIC_LIBS=(
@@ -83,9 +93,6 @@ SYSTEM_LIBS=(
   -llzma
   -lzstd
 )
-
-BUILD_DIR="build/bin"
-OUTPUT_PATH="$BUILD_DIR/$OUTPUT_NAME"
 
 # -------- Compile --------
 info "Compiling the main program..."

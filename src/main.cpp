@@ -7,12 +7,19 @@
 #include <user/user_data.h>
 #include <wx/wx.h>
 
-int main(int argc, char** argv) 
-{
-    std::cout << "cross-device-data-transfer.out started\n";
+#include <wx/wx.h>
+#include "../wxui/mainwindow.h"
 
-    std::cout << "cross-device-data-transfer.out ended\n";
+class App : public wxApp {
+public:
+    bool OnInit() override {
+        MainWindow* window = new MainWindow();
+        window->Show(true);
+        return true;
+    }
+};
 
-    return 0;
-}
+// (started main())
+wxIMPLEMENT_APP(App);
+
 
