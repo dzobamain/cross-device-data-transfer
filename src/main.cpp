@@ -12,14 +12,16 @@
 
 class App : public wxApp {
 public:
-    bool OnInit() override {
+    bool OnInit() override 
+    {
         MainWindow* window = new MainWindow();
         window->Show(true);
+        
         return true;
     }
 };
 
-// (started main())
+// started program
 wxIMPLEMENT_APP(App);
 
 
