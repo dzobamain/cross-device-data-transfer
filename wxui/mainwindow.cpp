@@ -7,17 +7,20 @@
 
 MainWindow::MainWindow() : wxFrame(nullptr, wxID_ANY, "Cross Device Data Transfer", wxDefaultPosition, wxSize(800, 600))
 {
+    InitUI();
+
+    SetMinSize(wxSize(400, 290));
+}
+
+void MainWindow::InitUI()
+{
     wxNotebook* notebook = new wxNotebook(this, wxID_ANY);
 
-    wxPanelForTab* tabSettings = new wxPanelForTab("Settings", notebook, wxID_ANY);
-    wxPanelForTab* tabSend = new wxPanelForTab("Send", notebook, wxID_ANY);
-    wxPanelForTab* tabHelp = new wxPanelForTab("Help", notebook, wxID_ANY);
-
-    notebook->AddPage(tabSettings, wxString(tabSettings->GetTabName()));
-    notebook->AddPage(tabSend, wxString(tabSend->GetTabName()));
-    notebook->AddPage(tabHelp, wxString(tabHelp->GetTabName()));
+    notebook->AddPage(new wxPanelForTab("Settings", notebook), "Settings");
+    notebook->AddPage(new wxPanelForTab("Send", notebook), "Send");
+    notebook->AddPage(new wxPanelForTab("Help", notebook), "Help");
 
     wxBoxSizer* sizer = new wxBoxSizer(wxVERTICAL);
-    sizer->Add(notebook, 1, wxEXPAND);
+    sizer->Add(notebook, 1, wxEXPAND | wxALL, 10);
     SetSizer(sizer);
 }

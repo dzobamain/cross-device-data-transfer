@@ -21,6 +21,13 @@ public:
 
     void SetTabName(const std::string& name);
     const std::string& GetTabName() const;
+
+    void InitTabContents();
+
+    wxBoxSizer* InitSettingsContents();
+    wxBoxSizer* InitSendContents();
+    wxBoxSizer* InitHelpContents();
+    wxBoxSizer* InitUnknownTabContents();
 };
 
 #endif // WXEXTENSIONS_H
