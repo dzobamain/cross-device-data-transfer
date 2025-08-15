@@ -80,6 +80,7 @@ INCLUDE_DIRS=(
   -Iinclude
   -Ibuild/zlib/include
   -Ibuild/libzip/include
+  -Ilib/json
   -I"$WX_INCLUDE_1"
   -I"$WX_INCLUDE_2"
 )

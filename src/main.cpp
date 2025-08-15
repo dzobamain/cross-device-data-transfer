@@ -10,6 +10,8 @@
 #include <wx/wx.h>
 #include "../wxui/mainwindow.h"
 
+#include <json.hpp>
+
 class App : public wxApp {
 public:
     bool OnInit() override 

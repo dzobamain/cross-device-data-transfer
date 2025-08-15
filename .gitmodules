@@ -5,3 +5,8 @@
 [submodule "lib/libzip"]
     path = lib/libzip
     url = https://github.com/nih-at/libzip.git
+
+[submodule "lib/json"]
+    path = lib/json
+    url = https://github.com/nlohmann/json.git
+
