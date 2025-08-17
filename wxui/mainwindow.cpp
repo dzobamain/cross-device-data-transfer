@@ -4,8 +4,9 @@
 
 #include "mainwindow.h"
 #include "wxExtensions.h"
+#include <project/config.h>
 
-MainWindow::MainWindow() : wxFrame(nullptr, wxID_ANY, "Cross Device Data Transfer", wxDefaultPosition, wxSize(800, 600))
+MainWindow::MainWindow() : wxFrame(nullptr, wxID_ANY, wxString(AppConfig::APP_NAME), wxDefaultPosition, wxSize(800, 600))
 {
     InitUI();
 
