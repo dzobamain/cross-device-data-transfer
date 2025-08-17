@@ -73,7 +73,7 @@ SRC_FILES=(
   src/user/user_data.cpp
 
   wxui/mainwindow.cpp
-  wxui/wxExtensions.cpp
+  wxui/wxPanelForTab.cpp
 )
 
 INCLUDE_DIRS=(

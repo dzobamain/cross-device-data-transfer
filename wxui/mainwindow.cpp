@@ -3,7 +3,7 @@
 #include <wx/notebook.h>
 
 #include "mainwindow.h"
-#include "wxExtensions.h"
+#include "wxPanelForTab.h"
 #include <project/config.h>
 
 MainWindow::MainWindow() : wxFrame(nullptr, wxID_ANY, wxString(AppConfig::APP_NAME), wxDefaultPosition, wxSize(800, 600))

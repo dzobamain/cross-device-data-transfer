@@ -3,7 +3,7 @@
 #include <wx/notebook.h>
 #include <wx/hyperlink.h>
 
-#include "wxExtensions.h"
+#include "wxPanelForTab.h"
 
 wxPanelForTab::wxPanelForTab(const std::string &tName,
                              wxWindow *parent,
@@ -54,7 +54,7 @@ wxBoxSizer *wxPanelForTab::InitSettingsContents()
 {
     wxBoxSizer *sizer = new wxBoxSizer(wxVERTICAL);
 
-    sizer->Add(new wxStaticText(this, wxID_ANY, "Settings content here"), 0, wxALL, 10);
+    sizer->Add(new wxStaticText(this, wxID_ANY, "Settings Content"), 0, wxALL, 10);
 
     return sizer;
 }
