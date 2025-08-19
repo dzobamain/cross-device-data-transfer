@@ -4,6 +4,8 @@
 #include <wx/hyperlink.h>
 
 #include "wxPanelForTab.h"
+#include <project/config.h>
+#include "uiconfig.h"
 
 wxPanelForTab::wxPanelForTab(const std::string &tName,
                              wxWindow *parent,
@@ -30,15 +32,15 @@ void wxPanelForTab::InitTabContents()
 {
     wxBoxSizer *sizer = new wxBoxSizer(wxVERTICAL);
 
-    if (tabName == "Settings")
+    if (tabName == UiConfig::TAB_SETTINGS)
     {
         sizer = InitSettingsContents();
     }
-    else if (tabName == "Send")
+    else if (tabName == UiConfig::TAB_SEND)
     {
         sizer = InitSendContents();
     }
-    else if (tabName == "Help")
+    else if (tabName == UiConfig::TAB_HELP)
     {
         sizer = InitHelpContents();
     }
@@ -78,7 +80,7 @@ wxBoxSizer *wxPanelForTab::InitHelpContents()
                    this,
                    wxID_ANY,
                    "View Source on GitHub",
-                   "https://github.com/dzobamain/cross-device-data-transfer",
+                   AppConfig::PROJECT_GITHUB_URL,
                    wxDefaultPosition,
                    wxDefaultSize,
                    wxHL_DEFAULT_STYLE),
