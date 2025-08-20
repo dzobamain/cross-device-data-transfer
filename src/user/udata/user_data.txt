@@ -1,3 +1,0 @@
-user_name
-src/user/udata/not_foto.jpg
-0000000000

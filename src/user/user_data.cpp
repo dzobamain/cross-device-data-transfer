@@ -16,9 +16,9 @@
 
 /* Path to user data */
 #ifdef _WIN32
-    #define USER_DATA_FILE "src\\user\\udata\\user_data.txt"
+    #define USER_DATA_FILE ""
 #else
-    #define USER_DATA_FILE "src/user/udata/user_data.txt"
+    #define USER_DATA_FILE ""
 #endif
 
 bool ResetToDefault(const bool reset_name, const bool reset_foto, const bool reset_id)
@@ -33,9 +33,9 @@ bool ResetToDefault(const bool reset_name, const bool reset_foto, const bool res
     const int number_data = 3;
     const std::string default_name = "user_name";
 #ifdef _WIN32
-    const std::string default_foto = "src\\user\\udata\\not_foto.jpg";
+    const std::string default_foto = "";
 #else
-    const std::string default_foto = "src/user/udata/not_foto.jpg";
+    const std::string default_foto = "";
 #endif
     const std::string default_id = "0000000000";
 

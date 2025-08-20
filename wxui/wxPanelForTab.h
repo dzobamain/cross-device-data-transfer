@@ -28,6 +28,8 @@ public:
     wxBoxSizer* InitSendContents();
     wxBoxSizer* InitHelpContents();
     wxBoxSizer* InitUnknownTabContents();
+
+    void OnSettingsChangeButtonClicked(wxCommandEvent& event);
 };
 
 #endif // WXEXTENSIONS_H

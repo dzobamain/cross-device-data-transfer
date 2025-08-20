@@ -9,6 +9,8 @@
 
 MainWindow::MainWindow() : wxFrame(nullptr, wxID_ANY, wxString(AppConfig::APP_NAME), wxDefaultPosition, wxSize(UiConfig::WINDOW_WIDTH, UiConfig::WINDOW_HEIGHT))
 {   
+    wxInitAllImageHandlers(); // Enable support for PNG, JPEG / JPG, BMP, GIF, TIFF, XPM
+    
     InitUI();
 
     SetMinSize(wxSize(UiConfig::MIN_WINDOW_WIDTH, UiConfig::MIN_WINDOW_HEIGHT));

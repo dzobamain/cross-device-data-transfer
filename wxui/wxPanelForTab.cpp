@@ -6,6 +6,7 @@
 #include "wxPanelForTab.h"
 #include <project/config.h>
 #include "uiconfig.h"
+#include <user/user_data.h>
 
 wxPanelForTab::wxPanelForTab(const std::string &tName,
                              wxWindow *parent,
@@ -52,13 +53,34 @@ void wxPanelForTab::InitTabContents()
     SetSizer(sizer);
 }
 
-wxBoxSizer *wxPanelForTab::InitSettingsContents()
+// Init
+wxBoxSizer* wxPanelForTab::InitSettingsContents()
 {
-    wxBoxSizer *sizer = new wxBoxSizer(wxVERTICAL);
+    wxBoxSizer* mainSizer = new wxBoxSizer(wxVERTICAL);
 
-    sizer->Add(new wxStaticText(this, wxID_ANY, "Settings Content"), 0, wxALL, 10);
+    wxBoxSizer* row_foto_name = new wxBoxSizer(wxHORIZONTAL);
+    wxBoxSizer* row2 = new wxBoxSizer(wxHORIZONTAL);
+    wxBoxSizer* row3 = new wxBoxSizer(wxHORIZONTAL);
 
-    return sizer;
+    row_foto_name->Add(new wxStaticBitmap(this, wxID_ANY, wxBitmap("foto.png", wxBITMAP_TYPE_PNG)), 0, wxALL, 10);
+    row_foto_name->Add(new wxStaticText(this, wxID_ANY, "user_name"), 0, wxALL, 10);
+
+    mainSizer->Add(row_foto_name, 0, wxEXPAND);
+
+    row2->Add(new wxStaticText(this, wxID_ANY, "Text 1"), 0, wxALL, 10);
+    row2->Add(new wxStaticText(this, wxID_ANY, "Text 2"), 0, wxALL, 10);
+    
+    mainSizer->Add(row2, 0, wxEXPAND);
+
+    row3->Add(new wxStaticText(this, wxID_ANY, "Text 1"), 0, wxALL, 10);
+    row3->Add(new wxStaticText(this, wxID_ANY, "Text 2"), 0, wxALL, 10);
+
+    mainSizer->Add(row3, 0, wxEXPAND);
+
+    //mainSizer->Add(row3, 0, wxALIGN_CENTER);
+    //button1->Bind(wxEVT_BUTTON, &wxPanelForTab::OnSettingsChangeButtonClicked, this);
+
+    return mainSizer;
 }
 
 wxBoxSizer *wxPanelForTab::InitSendContents()
@@ -104,4 +126,13 @@ wxBoxSizer* wxPanelForTab::InitUnknownTabContents()
     return sizer;
 }
 
+// Tabs func 
+// - Settings 
+void wxPanelForTab::OnSettingsChangeButtonClicked(wxCommandEvent& event)
+{
+    wxLogMessage("Settings button clicked!");
+}
 
+// - Send 
+
+// - Help 
