@@ -62,10 +62,19 @@ wxBoxSizer* wxPanelForTab::InitSettingsContents()
     wxBoxSizer* row2 = new wxBoxSizer(wxHORIZONTAL);
     wxBoxSizer* row3 = new wxBoxSizer(wxHORIZONTAL);
 
-    row_foto_name->Add(new wxStaticBitmap(this, wxID_ANY, wxBitmap("foto.png", wxBITMAP_TYPE_PNG)), 0, wxALL, 10);
+    wxImage img("data/not_foto.png", wxBITMAP_TYPE_PNG);
+    img = img.Scale(100, 100, wxIMAGE_QUALITY_HIGH);
+    wxStaticBitmap* foto = new wxStaticBitmap(this, wxID_ANY, wxBitmap(img));
+
+    row_foto_name->Add(foto, 0, wxALL, 10);
     row_foto_name->Add(new wxStaticText(this, wxID_ANY, "user_name"), 0, wxALL, 10);
 
     mainSizer->Add(row_foto_name, 0, wxEXPAND);
+
+    wxButton* button1 = new wxButton(this, wxID_ANY, "To def");
+    row2->Add(button1, 0, wxALL, 10);
+
+    button1->Bind(wxEVT_BUTTON, &wxPanelForTab::OnSettingsChangeButtonClicked, this);
 
     row2->Add(new wxStaticText(this, wxID_ANY, "Text 1"), 0, wxALL, 10);
     row2->Add(new wxStaticText(this, wxID_ANY, "Text 2"), 0, wxALL, 10);
@@ -76,9 +85,6 @@ wxBoxSizer* wxPanelForTab::InitSettingsContents()
     row3->Add(new wxStaticText(this, wxID_ANY, "Text 2"), 0, wxALL, 10);
 
     mainSizer->Add(row3, 0, wxEXPAND);
-
-    //mainSizer->Add(row3, 0, wxALIGN_CENTER);
-    //button1->Bind(wxEVT_BUTTON, &wxPanelForTab::OnSettingsChangeButtonClicked, this);
 
     return mainSizer;
 }
@@ -131,6 +137,7 @@ wxBoxSizer* wxPanelForTab::InitUnknownTabContents()
 void wxPanelForTab::OnSettingsChangeButtonClicked(wxCommandEvent& event)
 {
     wxLogMessage("Settings button clicked!");
+    ResetToDefault(true, true, true);
 }
 
 // - Send 

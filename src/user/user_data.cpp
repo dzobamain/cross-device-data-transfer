@@ -11,15 +11,9 @@
 #include <filesystem>
 #include <vector>
 
+#include <project/config.h>
 #include <user/user_data.h>
 #include <file/fcrud.h>
-
-/* Path to user data */
-#ifdef _WIN32
-    #define USER_DATA_FILE ""
-#else
-    #define USER_DATA_FILE ""
-#endif
 
 bool ResetToDefault(const bool reset_name, const bool reset_foto, const bool reset_id)
 {
@@ -33,9 +27,9 @@ bool ResetToDefault(const bool reset_name, const bool reset_foto, const bool res
     const int number_data = 3;
     const std::string default_name = "user_name";
 #ifdef _WIN32
-    const std::string default_foto = "";
+    const std::string default_foto = "data\\not_foto.png";
 #else
-    const std::string default_foto = "";
+    const std::string default_foto = "data/not_foto.png";
 #endif
     const std::string default_id = "0000000000";
 
