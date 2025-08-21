@@ -6,13 +6,12 @@
  * It includes functions for reading, updating, and maintaining user information.
  */
 
-
 #include <string>
 #include <filesystem>
 #include <vector>
 
-#include <project/config.h>
 #include <user/user_data.h>
+#include <project/config.h>
 #include <file/fcrud.h>
 
 bool ResetToDefault(const bool reset_name, const bool reset_foto, const bool reset_id)
@@ -26,11 +25,7 @@ bool ResetToDefault(const bool reset_name, const bool reset_foto, const bool res
     /* Default values */
     const int number_data = 3;
     const std::string default_name = "user_name";
-#ifdef _WIN32
-    const std::string default_foto = "data\\not_foto.png";
-#else
-    const std::string default_foto = "data/not_foto.png";
-#endif
+    const std::string default_foto = "data/not_foto.jpg";
     const std::string default_id = "0000000000";
 
     /* Read current user data */
@@ -46,9 +41,9 @@ bool ResetToDefault(const bool reset_name, const bool reset_foto, const bool res
     }
 
     /* Copy current values */
-    std::string name   = current_user_data[0];
-    std::string foto   = current_user_data[1];
-    std::string id     = current_user_data[2];
+    std::string name = current_user_data[0];
+    std::string foto = current_user_data[1];
+    std::string id = current_user_data[2];
 
     /* Reset required fields */
     if (reset_name) name = default_name;

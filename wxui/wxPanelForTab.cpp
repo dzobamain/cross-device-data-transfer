@@ -1,4 +1,5 @@
 #include <string>
+#include <vector>
 #include <wx/wx.h>
 #include <wx/notebook.h>
 #include <wx/hyperlink.h>
@@ -7,6 +8,7 @@
 #include <project/config.h>
 #include "uiconfig.h"
 #include <user/user_data.h>
+#include <file/fcrud.h>
 
 wxPanelForTab::wxPanelForTab(const std::string &tName,
                              wxWindow *parent,
@@ -54,33 +56,53 @@ void wxPanelForTab::InitTabContents()
 }
 
 // Init
-wxBoxSizer* wxPanelForTab::InitSettingsContents()
+wxBoxSizer *wxPanelForTab::InitSettingsContents()
 {
-    wxBoxSizer* mainSizer = new wxBoxSizer(wxVERTICAL);
+    wxBoxSizer *mainSizer = new wxBoxSizer(wxVERTICAL);
 
-    wxBoxSizer* row_foto_name = new wxBoxSizer(wxHORIZONTAL);
-    wxBoxSizer* row2 = new wxBoxSizer(wxHORIZONTAL);
-    wxBoxSizer* row3 = new wxBoxSizer(wxHORIZONTAL);
+    std::vector data = ReadFileAsArray(USER_DATA_FILE);
 
-    wxImage img("data/not_foto.png", wxBITMAP_TYPE_PNG);
-    img = img.Scale(100, 100, wxIMAGE_QUALITY_HIGH);
-    wxStaticBitmap* foto = new wxStaticBitmap(this, wxID_ANY, wxBitmap(img));
+    // row 1
+    wxBoxSizer *row_data = new wxBoxSizer(wxHORIZONTAL);
 
-    row_foto_name->Add(foto, 0, wxALL, 10);
-    row_foto_name->Add(new wxStaticText(this, wxID_ANY, "user_name"), 0, wxALL, 10);
+    wxImage img(data[1], wxBITMAP_TYPE_ANY);
+    if (img.IsOk())
+    {
+        img = img.Scale(128, 128, wxIMAGE_QUALITY_HIGH);
+        wxStaticBitmap *foto = new wxStaticBitmap(this, wxID_ANY, wxBitmap(img));
+        row_data->Add(foto, 0, wxALL, 10);
+    }
+    else
+    {
+        row_data->Add(new wxStaticText(this, wxID_ANY, "Image load failed"), 0, wxALL, 10);
+    }
 
-    mainSizer->Add(row_foto_name, 0, wxEXPAND);
+    wxStaticText *userName = new wxStaticText(this, wxID_ANY, data[0]);
+    wxStaticText *userId = new wxStaticText(this, wxID_ANY, data[2]);
 
-    wxButton* button1 = new wxButton(this, wxID_ANY, "To def");
-    row2->Add(button1, 0, wxALL, 10);
+    wxFont fontBase(16, wxFONTFAMILY_DEFAULT, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_NORMAL);
 
-    button1->Bind(wxEVT_BUTTON, &wxPanelForTab::OnSettingsChangeButtonClicked, this);
+    userName->SetFont(fontBase);
+    userId->SetFont(fontBase);
+
+    wxBoxSizer *rightSizer = new wxBoxSizer(wxVERTICAL);
+    rightSizer->Add(userName, 0, wxBOTTOM, 10);
+    rightSizer->Add(userId, 0, wxTOP, 10);
+
+    row_data->Add(rightSizer, 0, wxALIGN_CENTER_VERTICAL | wxALL, 10);
+
+    mainSizer->Add(row_data, 0, wxALIGN_CENTER);
+
+    // row 2
+    wxBoxSizer *row2 = new wxBoxSizer(wxHORIZONTAL);
 
     row2->Add(new wxStaticText(this, wxID_ANY, "Text 1"), 0, wxALL, 10);
     row2->Add(new wxStaticText(this, wxID_ANY, "Text 2"), 0, wxALL, 10);
-    
+
     mainSizer->Add(row2, 0, wxEXPAND);
 
+    // row 3
+    wxBoxSizer *row3 = new wxBoxSizer(wxHORIZONTAL);
     row3->Add(new wxStaticText(this, wxID_ANY, "Text 1"), 0, wxALL, 10);
     row3->Add(new wxStaticText(this, wxID_ANY, "Text 2"), 0, wxALL, 10);
 
@@ -119,11 +141,11 @@ wxBoxSizer *wxPanelForTab::InitHelpContents()
     return sizer;
 }
 
-wxBoxSizer* wxPanelForTab::InitUnknownTabContents()
+wxBoxSizer *wxPanelForTab::InitUnknownTabContents()
 {
-    wxBoxSizer* sizer = new wxBoxSizer(wxVERTICAL);
+    wxBoxSizer *sizer = new wxBoxSizer(wxVERTICAL);
 
-    wxStaticText* label = new wxStaticText(this, wxID_ANY, "Tab not found");
+    wxStaticText *label = new wxStaticText(this, wxID_ANY, "Tab not found");
 
     sizer->AddStretchSpacer(1);
     sizer->Add(label, 0, wxALIGN_CENTER);
@@ -132,14 +154,13 @@ wxBoxSizer* wxPanelForTab::InitUnknownTabContents()
     return sizer;
 }
 
-// Tabs func 
-// - Settings 
-void wxPanelForTab::OnSettingsChangeButtonClicked(wxCommandEvent& event)
+// Tabs func
+// - Settings
+void wxPanelForTab::OnSettingsChangeButtonClicked(wxCommandEvent &event)
 {
     wxLogMessage("Settings button clicked!");
-    ResetToDefault(true, true, true);
 }
 
-// - Send 
+// - Send
 
-// - Help 
+// - Help
