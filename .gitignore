@@ -1,3 +1,7 @@
+# Temporary files
+
+data/user.json
+
 # Logs
 
 var/debug.log

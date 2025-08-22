@@ -21,11 +21,11 @@ struct UserData
     std::string photo_path;
 };
 
-void to_json(nlohmann::json& j, const UserData& u);
-void from_json(const nlohmann::json& j, UserData& u);
+extern void to_json(nlohmann::json& j, const UserData& u);
+extern void from_json(const nlohmann::json& j, UserData& u);
 
-bool SaveUserData(const UserData& data, const std::string& path);
-bool LoadUserData(UserData& data, const std::string& path);
+extern bool SaveUserData(const UserData& data, const std::string& path);
+extern bool LoadUserData(UserData& data, const std::string& path);
 
 extern bool ResetToDefault(const bool reset_name = false, const bool reset_foto = false, const bool reset_id = false);
 
