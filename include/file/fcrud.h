@@ -14,5 +14,6 @@ extern bool WriteToFile(const std::string& file_path, const std::string& text);
 extern std::vector<std::string> ReadFileAsArray(const std::string& file_path);
 extern std::string GetFileName(const std::string& full_path);
 extern std::string GetDirectory(const std::string& full_path);
+extern bool FileExists(const std::string& path);
 
 #endif /* FCRUD_H */

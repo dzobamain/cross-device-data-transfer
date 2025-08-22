@@ -8,53 +8,108 @@
 
 #include <string>
 #include <filesystem>
+#include <sys/stat.h> 
+#include <fstream>
 #include <vector>
+#include <json.hpp>
 
+#include <util/log.h>
 #include <user/user_data.h>
 #include <project/config.h>
 #include <file/fcrud.h>
 
+void to_json(nlohmann::json& j, const UserData& u)
+{
+    j = nlohmann::json{
+        {"id", u.id},
+        {"name", u.name},
+        {"photo_path", u.photo_path}
+    };
+}
+
+void from_json(const nlohmann::json& j, UserData& u)
+{
+    j.at("id").get_to(u.id);
+    j.at("name").get_to(u.name);
+    j.at("photo_path").get_to(u.photo_path);
+}
+
+bool SaveUserData(const UserData& user, const std::string& file_path) {
+    try 
+    {
+        nlohmann::json j = user;
+        std::ofstream file(file_path);
+        if (!file.is_open()) {
+            LOG_ERR("Failed to open file for saving: " << file_path);
+            return false;
+        }
+
+        file << j.dump(4);
+        LOG_OUT("User data saved to " << file_path);
+        return true;
+    } 
+    catch (const std::exception& e) 
+    {
+        LOG_ERR("Exception while saving user data: " << e.what());
+        return false;
+    }
+}
+
+bool LoadUserData(UserData& user, const std::string& file_path)
+{
+    try 
+    {
+        std::ifstream file(file_path);
+        if (!file.is_open()) {
+            LOG_ERR("Failed to open file for loading: " << file_path);
+            return false;
+        }
+
+        file.seekg(0, std::ios::end);
+        if (file.tellg() == 0) {
+            LOG_ERR("User data file is empty: " << file_path);
+            return false;
+        }
+        file.seekg(0, std::ios::beg);
+
+        nlohmann::json j;
+        file >> j;
+        user = j.get<UserData>();
+        LOG_OUT("User data loaded from " << file_path);
+        return true;
+    } 
+    catch (const std::exception& e) 
+    {
+        LOG_ERR("Exception while loading user data: " << e.what());
+        return false;
+    }
+}
+
+
 bool ResetToDefault(const bool reset_name, const bool reset_foto, const bool reset_id)
 {
-    std::cout << "[" << __FILE__ << "] " << __FUNCTION__ << "(): Reset data." << std::endl;
+    LOG_OUT("Reset data.");
 
     if (!reset_name && !reset_foto && !reset_id) {
         return true;
     }
-    
+
     /* Default values */
-    const int number_data = 3;
     const std::string default_name = "user_name";
     const std::string default_foto = "data/not_foto.jpg";
-    const std::string default_id = "0000000000";
+    const std::string default_id   = "0000000000";
 
-    /* Read current user data */
-    std::vector<std::string> current_user_data = ReadFileAsArray(USER_DATA_FILE);
-    std::string save_as;
-
-    /* Reset all if file is empty or damaged */
-    if (current_user_data.size() < number_data) {
-        std::cout << "[" << __FILE__ << "] " << __FUNCTION__ << "(): User data file is empty or invalid. Resetting to default values." << std::endl;
-
-        save_as = default_name + "\n" + default_foto + "\n" + default_id + "\n";
-        return WriteToFile(USER_DATA_FILE, save_as);
+    UserData user;
+    if (!LoadUserData(user, USER_DATA_FILE)) {
+        LOG_ERR("User data file is empty or invalid. Resetting to default values.");
+        user = {default_id, default_name, default_foto};
     }
 
-    /* Copy current values */
-    std::string name = current_user_data[0];
-    std::string foto = current_user_data[1];
-    std::string id = current_user_data[2];
+    if (reset_name) user.name = default_name;
+    if (reset_foto) user.photo_path = default_foto;
+    if (reset_id)   user.id = default_id;
 
-    /* Reset required fields */
-    if (reset_name) name = default_name;
-    if (reset_foto) foto = default_foto;
-    if (reset_id)   id   = default_id;
-
-    /* Prepare data for saving */
-    save_as = name + "\n" + foto + "\n" + id + "\n";
-
-    /* Save updated values */
-    return WriteToFile(USER_DATA_FILE, save_as);
+    return SaveUserData(user, USER_DATA_FILE);
 }
 
 /* Data check */
@@ -62,12 +117,18 @@ bool IsUserNameValid(const std::string& name)
 {
     const int max_size = 50;
 
-    if (name.empty())
+    if (name.empty()) {
+        LOG_ERR("Name is empty.");
         return false;
-    if (name.size() <= 0 || name.size() > max_size)
+    }
+    if (name.size() > max_size) {
+        LOG_ERR("Name exceeds max size (" << max_size << ")");
         return false;
-    if (!isValidUTF8(name))
+    }
+    if (!isValidUTF8(name)) {
+        LOG_ERR("Name is not valid UTF-8: " << name);
         return false;
+    }
 
     return true;
 }
@@ -76,12 +137,18 @@ bool IsUserFotoValid(const std::string& foto)
 {
     const int max_size = 100;
 
-    if (foto.empty())
+    if (foto.empty()) {
+        LOG_ERR("Photo path is empty.");
         return false;
-    if (foto.size() <= 0 || foto.size() > max_size)
+    }
+    if (foto.size() > max_size) {
+        LOG_ERR("Photo path exceeds max size (" << max_size << ")");
         return false;
-    if (!std::filesystem::exists(foto))
+    }
+    if (!std::filesystem::exists(foto)) {
+        LOG_ERR("Photo file does not exist: " << foto);
         return false;
+    }
     
     return true;
 }
@@ -90,12 +157,18 @@ bool IsIdValid(const std::string& id)
 {
     const int id_size = 10;
 
-    if (id.empty())
+    if (id.empty()) {
+        LOG_ERR("ID is empty.");
         return false;
-    if (id.size() != id_size)
+    }
+    if (id.size() != id_size) {
+        LOG_ERR("ID length is not " << id_size << ": " << id);
         return false;
-    if (!isAllDigits(id))
+    }
+    if (!isAllDigits(id)) {
+        LOG_ERR("ID contains non-digit characters: " << id);
         return false;
+    }
 
     return true;
 }

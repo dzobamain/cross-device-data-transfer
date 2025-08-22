@@ -4,6 +4,7 @@
 #include <wx/notebook.h>
 #include <wx/hyperlink.h>
 
+#include <util/log.h>
 #include "wxPanelForTab.h"
 #include <project/config.h>
 #include "uiconfig.h"
@@ -16,9 +17,19 @@ wxPanelForTab::wxPanelForTab(const std::string &tName,
                              const wxPoint &pos,
                              const wxSize &size,
                              long style,
-                             const wxString &name) : wxPanel(parent, id, pos, size, style, name), tabName(tName)
+                             const wxString &name)
+    : wxPanel(parent, id, pos, size, style, name), tabName(tName)
 {
-    InitTabContents();
+    LOG_OUT("Creating wxPanelForTab: " << tabName);
+
+    try {
+        InitTabContents();
+        LOG_OUT("InitTabContents called successfully for tab: " << tabName);
+    } catch (const std::exception& e) {
+        LOG_FATAL("Exception in wxPanelForTab constructor: " << e.what());
+    } catch (...) {
+        LOG_FATAL("Unknown exception in wxPanelForTab constructor");
+    }
 }
 
 void wxPanelForTab::SetTabName(const std::string &name)
@@ -33,6 +44,7 @@ const std::string &wxPanelForTab::GetTabName() const
 
 void wxPanelForTab::InitTabContents()
 {
+    LOG_OUT("InitTabContents start for tab: " << tabName);
     wxBoxSizer *sizer = new wxBoxSizer(wxVERTICAL);
 
     if (tabName == UiConfig::TAB_SETTINGS)
@@ -53,6 +65,7 @@ void wxPanelForTab::InitTabContents()
     }
 
     SetSizer(sizer);
+    LOG_OUT("InitTabContents finished for tab: " << tabName);
 }
 
 // Init
@@ -60,12 +73,10 @@ wxBoxSizer *wxPanelForTab::InitSettingsContents()
 {
     wxBoxSizer *mainSizer = new wxBoxSizer(wxVERTICAL);
 
-    std::vector data = ReadFileAsArray(USER_DATA_FILE);
-
     // row 1
     wxBoxSizer *row_data = new wxBoxSizer(wxHORIZONTAL);
 
-    wxImage img(data[1], wxBITMAP_TYPE_ANY);
+    wxImage img("data/not_foto.jpg", wxBITMAP_TYPE_ANY);
     if (img.IsOk())
     {
         img = img.Scale(128, 128, wxIMAGE_QUALITY_HIGH);
@@ -77,8 +88,8 @@ wxBoxSizer *wxPanelForTab::InitSettingsContents()
         row_data->Add(new wxStaticText(this, wxID_ANY, "Image load failed"), 0, wxALL, 10);
     }
 
-    wxStaticText *userName = new wxStaticText(this, wxID_ANY, data[0]);
-    wxStaticText *userId = new wxStaticText(this, wxID_ANY, data[2]);
+    wxStaticText *userName = new wxStaticText(this, wxID_ANY, "user_name");
+    wxStaticText *userId = new wxStaticText(this, wxID_ANY, "0000000000");
 
     wxFont fontBase(16, wxFONTFAMILY_DEFAULT, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_NORMAL);
 
@@ -107,6 +118,8 @@ wxBoxSizer *wxPanelForTab::InitSettingsContents()
     row3->Add(new wxStaticText(this, wxID_ANY, "Text 2"), 0, wxALL, 10);
 
     mainSizer->Add(row3, 0, wxEXPAND);
+
+    ResetToDefault(true, true, true);
 
     return mainSizer;
 }
