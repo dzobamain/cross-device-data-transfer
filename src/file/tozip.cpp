@@ -10,7 +10,6 @@
  *  - libzip (https://libzip.org)
 */
 
-#include <iostream>
 #include <string>
 #include <filesystem>
 #include <zip.h>

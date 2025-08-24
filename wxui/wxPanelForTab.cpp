@@ -1,7 +1,5 @@
 #include <string>
-#include <vector>
 #include <wx/wx.h>
-#include <wx/notebook.h>
 #include <wx/hyperlink.h>
 
 #include <util/log.h>
@@ -9,7 +7,6 @@
 #include <project/config.h>
 #include "uiconfig.h"
 #include <user/user_data.h>
-#include <file/fcrud.h>
 
 wxPanelForTab::wxPanelForTab(const std::string &tName,
                              wxWindow *parent,

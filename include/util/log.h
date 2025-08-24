@@ -1,6 +1,14 @@
 #ifndef LOG_H
 #define LOG_H
 
+#include <iostream>
+/*
+ * Note:
+ * If you include <util/log.h>, 
+ * you do NOT need to include <iostream> separately in your .cpp files,
+ * as it is already included here for std::cout / std::cerr.
+ */
+
 #define DEBUG_PATH "var/debug.log"
 
 #define LOG_OUT(msg) \

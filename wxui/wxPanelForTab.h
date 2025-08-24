@@ -1,9 +1,8 @@
-#ifndef WXEXTENSIONS_H
-#define WXEXTENSIONS_H
+#ifndef WXPANELFORTAB_H
+#define WXPANELFORTAB_H
 
 #include <string>
 #include <wx/wx.h>
-#include <wx/notebook.h>
 
 class wxPanelForTab : public wxPanel
 {
@@ -32,4 +31,4 @@ public:
     void OnSettingsChangeButtonClicked(wxCommandEvent& event);
 };
 
-#endif // WXEXTENSIONS_H
+#endif // WXPANELFORTAB_H

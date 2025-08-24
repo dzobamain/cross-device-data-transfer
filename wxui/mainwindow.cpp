@@ -1,7 +1,5 @@
-#include <string>
 #include <wx/wx.h>
 #include <wx/notebook.h>
-#include <filesystem>
 
 #include "mainwindow.h"
 #include "uiconfig.h"
@@ -10,8 +8,7 @@
 #include <util/log.h>
 
 MainWindow::MainWindow() 
-    : wxFrame(nullptr, wxID_ANY, wxString(AppConfig::APP_NAME), 
-              wxDefaultPosition, wxSize(UiConfig::WINDOW_WIDTH, UiConfig::WINDOW_HEIGHT))
+    : wxFrame(nullptr, wxID_ANY, wxString(AppConfig::APP_NAME), wxDefaultPosition, wxSize(UiConfig::WINDOW_WIDTH, UiConfig::WINDOW_HEIGHT))
 {   
     LOG_OUT("Creating main window");
 

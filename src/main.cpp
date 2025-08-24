@@ -3,10 +3,8 @@
  * @brief main file.
  */
 
-#include <iostream>
 #include <fstream>
 #include <wx/wx.h>
-#include <json.hpp>
 
 #include <util/log.h>
 #include "../wxui/mainwindow.h"

@@ -8,9 +8,7 @@
 
 #include <string>
 #include <filesystem>
-#include <sys/stat.h> 
 #include <fstream>
-#include <vector>
 #include <json.hpp>
 
 #include <util/log.h>
@@ -125,7 +123,7 @@ bool IsUserNameValid(const std::string& name)
         LOG_ERR("Name exceeds max size (" << max_size << ")");
         return false;
     }
-    if (!isValidUTF8(name)) {
+    if (!IsValidUTF8(name)) {
         LOG_ERR("Name is not valid UTF-8: " << name);
         return false;
     }
@@ -165,7 +163,7 @@ bool IsIdValid(const std::string& id)
         LOG_ERR("ID length is not " << id_size << ": " << id);
         return false;
     }
-    if (!isAllDigits(id)) {
+    if (!IsAllDigits(id)) {
         LOG_ERR("ID contains non-digit characters: " << id);
         return false;
     }
@@ -173,7 +171,7 @@ bool IsIdValid(const std::string& id)
     return true;
 }
 
-bool isValidUTF8(const std::string& str) 
+bool IsValidUTF8(const std::string& str) 
 {
     int i = 0;
     while (i < str.size()) {
@@ -203,7 +201,7 @@ bool isValidUTF8(const std::string& str)
     return true;
 }
 
-bool isAllDigits(const std::string& str)
+bool IsAllDigits(const std::string& str)
 {
     if (str.empty())
         return false;

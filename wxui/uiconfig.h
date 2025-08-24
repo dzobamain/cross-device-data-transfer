@@ -1,7 +1,5 @@
-#ifndef UI_CONFIG_H
-#define UI_CONFIG_H
-
-#include <string>
+#ifndef UICONFIG_H
+#define UICONFIG_H
 
 namespace UiConfig
 {
@@ -16,4 +14,4 @@ namespace UiConfig
     const char* const TAB_HELP = "Help";
 }
 
-#endif // UI_CONFIG_H
+#endif // UICONFIG_H

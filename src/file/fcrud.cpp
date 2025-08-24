@@ -11,8 +11,6 @@
  * Suitable for managing local plain text files within the application.
 */
 
-#include <iostream>
-#include <cerrno>
 #include <string>
 #include <filesystem>
 #include <sys/stat.h>
