@@ -19,12 +19,17 @@ wxPanelForTab::wxPanelForTab(const std::string &tName,
 {
     LOG_OUT("Creating wxPanelForTab: " << tabName);
 
-    try {
+    try
+    {
         InitTabContents();
         LOG_OUT("InitTabContents called successfully for tab: " << tabName);
-    } catch (const std::exception& e) {
+    }
+    catch (const std::exception &e)
+    {
         LOG_FATAL("Exception in wxPanelForTab constructor: " << e.what());
-    } catch (...) {
+    }
+    catch (...)
+    {
         LOG_FATAL("Unknown exception in wxPanelForTab constructor");
     }
 }
@@ -71,12 +76,35 @@ wxBoxSizer *wxPanelForTab::InitSettingsContents()
     wxBoxSizer *mainSizer = new wxBoxSizer(wxVERTICAL);
 
     // row 1
+    UserData userData;
+    const int max_attempts = 3;
+    int attempts = 0;
+    ResetToDefault(USER_DATA_FILE, true, true, true);
+
+    do
+    {
+        userData = LoadUserData(USER_DATA_FILE);
+
+        if (!userData.empty())
+            break;
+
+        ResetToDefault(USER_DATA_FILE, true, true, true);
+
+        attempts++;
+    } while (attempts < max_attempts);
+
+    if (userData.empty())
+    {
+        LOG_FATAL("Unable to load valid user data after " << max_attempts << " attempts");
+    }
+
     wxBoxSizer *row_data = new wxBoxSizer(wxHORIZONTAL);
 
-    wxImage img("data/not_foto.jpg", wxBITMAP_TYPE_ANY);
+    int img_size = 128;
+    wxImage img(userData.photo_path, wxBITMAP_TYPE_ANY);
     if (img.IsOk())
     {
-        img = img.Scale(128, 128, wxIMAGE_QUALITY_HIGH);
+        img = img.Scale(img_size, img_size, wxIMAGE_QUALITY_HIGH);
         wxStaticBitmap *foto = new wxStaticBitmap(this, wxID_ANY, wxBitmap(img));
         row_data->Add(foto, 0, wxALL, 10);
     }
@@ -85,8 +113,8 @@ wxBoxSizer *wxPanelForTab::InitSettingsContents()
         row_data->Add(new wxStaticText(this, wxID_ANY, "Image load failed"), 0, wxALL, 10);
     }
 
-    wxStaticText *userName = new wxStaticText(this, wxID_ANY, "user_name");
-    wxStaticText *userId = new wxStaticText(this, wxID_ANY, "0000000000");
+    wxStaticText *userName = new wxStaticText(this, wxID_ANY, userData.name);
+    wxStaticText *userId = new wxStaticText(this, wxID_ANY, userData.id);
 
     wxFont fontBase(16, wxFONTFAMILY_DEFAULT, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_NORMAL);
 
@@ -100,23 +128,6 @@ wxBoxSizer *wxPanelForTab::InitSettingsContents()
     row_data->Add(rightSizer, 0, wxALIGN_CENTER_VERTICAL | wxALL, 10);
 
     mainSizer->Add(row_data, 0, wxALIGN_CENTER);
-
-    // row 2
-    wxBoxSizer *row2 = new wxBoxSizer(wxHORIZONTAL);
-
-    row2->Add(new wxStaticText(this, wxID_ANY, "Text 1"), 0, wxALL, 10);
-    row2->Add(new wxStaticText(this, wxID_ANY, "Text 2"), 0, wxALL, 10);
-
-    mainSizer->Add(row2, 0, wxEXPAND);
-
-    // row 3
-    wxBoxSizer *row3 = new wxBoxSizer(wxHORIZONTAL);
-    row3->Add(new wxStaticText(this, wxID_ANY, "Text 1"), 0, wxALL, 10);
-    row3->Add(new wxStaticText(this, wxID_ANY, "Text 2"), 0, wxALL, 10);
-
-    mainSizer->Add(row3, 0, wxEXPAND);
-
-    ResetToDefault(true, true, true);
 
     return mainSizer;
 }

@@ -15,15 +15,19 @@ struct UserData
     std::string id;
     std::string name;
     std::string photo_path;
+
+    bool empty() const {
+        return id.empty() && name.empty() && photo_path.empty();
+    }
 };
 
 void to_json(nlohmann::json& j, const UserData& u);
 void from_json(const nlohmann::json& j, UserData& u);
 
-bool SaveUserData(const UserData& data, const std::string& path);
-bool LoadUserData(UserData& data, const std::string& path);
+bool SaveUserData(const UserData& user, const std::string& file_path);
+UserData LoadUserData(const std::string& file_path);
 
-bool ResetToDefault(const bool reset_name = false, const bool reset_foto = false, const bool reset_id = false);
+bool ResetToDefault(const std::string& file_path, const bool reset_name = false, const bool reset_foto = false, const bool reset_id = false);
 
 bool IsUserNameValid(const std::string& name);
 bool IsUserFotoValid(const std::string& foto);
