@@ -79,7 +79,6 @@ wxBoxSizer *wxPanelForTab::InitSettingsContents()
     UserData userData;
     const int max_attempts = 3;
     int attempts = 0;
-    ResetToDefault(USER_DATA_FILE, true, true, true);
 
     do
     {

@@ -28,6 +28,7 @@ Makefile
 
 build/bin
 build/libzip
+build/wxWidgets
 build/zlib
 *.o
 *.obj
