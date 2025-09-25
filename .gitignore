@@ -1,35 +1,32 @@
-# Temporary files
+# .gitignore
 
+# Temporary files
 data/user.json
 
 # Logs
-
 var/debug.log
 
-# CMake build artifacts
-
-!build/.gitkeep
-
-CMakeLists.txt.user
+# CMake / Build artifacts
+# CMake generated files
 CMakeCache.txt
 CMakeFiles/
 cmake_install.cmake
 Makefile
 *.idx
+CMakeLists.txt.user
 
 # Ninja
-
 .ninja
 .ninja_log
 .ninja_deps
 .ninja/
 
-# Build output
-
-build/bin
-build/libzip
-build/wxWidgets
-build/zlib
+# Build output (binaries, libs, object files)
+build/bin/
+build/libzip/
+build/wxWidgets/
+build/zlib/
+build/cross-device-data-transfer
 *.o
 *.obj
 *.so
@@ -39,7 +36,6 @@ build/zlib
 *.lib
 
 # Backup / temp / logs
-
 *~
 *.swp
 *.bak
@@ -47,9 +43,9 @@ build/zlib
 *.log
 
 # IDE configs
-
 .vscode/
 *.code-workspace
-
 .idea/
 *.iml
+
+temp/*
